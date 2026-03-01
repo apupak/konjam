@@ -2,11 +2,32 @@
 description: Konjam is a free, practical guide to spoken Chennai Tamil. Learn everyday phrases, auto-rickshaw negotiation, street slang, and survival vocabulary — all phonetically.
 comments: true
 ---
-# Welcome to KONJAM
+<h1 id="typewriter-text" style="min-height: 48px; border-right: 2px solid; animation: blink 1s step-end infinite;"></h1>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const text = "Welcome to KONJAM";
+    const el = document.getElementById("typewriter-text");
+    let i = 0;
+    function type() {
+        if (i < text.length) {
+            el.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, 100);
+        } else {
+            el.style.borderRight = "none";
+        }
+    }
+    setTimeout(type, 500);
+});
+</script>
+<style>
+@keyframes blink { 50% { border-color: transparent; } }
+</style>
 
 Vanakkam! Welcome to **KONJAM** (**K**nowledge **O**f **N**ative **J**argon **A**nd **M**adras — and yes, we totally forced that backronym 🙃).
 
-![KONJAM Hero Illustration](assets/img/hero.png)
+![KONJAM Hero Illustration](assets/img/hero.png){: .floating-hero }
 
 <div class="phrase-card" markdown>
 ## 🎯 Our Mission
@@ -48,6 +69,7 @@ We focus on maximizing your return on investment by teaching you high-frequency 
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script type="module">
   import { calculateProgress } from './assets/js/progress.js';
   import { getHighScores } from './assets/js/scores.js';

@@ -36,8 +36,8 @@
 }
 
 .phrase-card:hover {
-    transform: translateY(-2px) translateX(4px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateY(-4px) translateX(4px) scale(1.02);
+    box-shadow: 0 10px 20px -3px rgba(137, 207, 240, 0.4), 0 4px 6px -2px rgba(255, 182, 193, 0.4);
     background-color: var(--md-primary-fg-color--transparent);
 }
 
@@ -755,4 +755,25 @@ input:checked+.swalpa-slider:before {
         grid-template-columns: repeat(15, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
+}
+
+/* --- Micro-Animations --- */
+@keyframes hoverFloat {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating-hero {
+    animation: hoverFloat 4s ease-in-out infinite;
+    display: block;
+    margin: 0 auto;
 }
