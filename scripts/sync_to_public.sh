@@ -29,7 +29,7 @@ if [ -d "$PRIVATE_REPO/overrides" ]; then
     cp -R "$PRIVATE_REPO/overrides" "$TEMP_DIR/overrides"
 fi
 
-# CI/CD
+# CI/CD Workflows
 if [ -d "$PRIVATE_REPO/.github" ]; then
     cp -R "$PRIVATE_REPO/.github" "$TEMP_DIR/.github"
 fi
