@@ -51,17 +51,6 @@ document.addEventListener("DOMContentLoaded", function () {
             basePath = src.substring(0, src.indexOf('assets/js/audio.js'));
         }
 
-        // Update Favicon
-        const favicon = document.querySelector('link[rel="icon"]');
-        if (favicon) {
-            favicon.href = `${basePath}assets/img/favicon_${themeColor}.png`;
-        }
-
-        // Update Header Logo
-        const logo = document.querySelector('.md-header__button.md-logo img');
-        if (logo) {
-            logo.src = `${basePath}assets/img/logo_${themeColor}.png`;
-        }
 
         console.log(`[SWALPA Branding] Applied ${themeColor} theme assets`);
     };

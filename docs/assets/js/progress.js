@@ -6,7 +6,7 @@
 import { getHighScores } from './scores.js';
 
 const RANKS = [
-    { title: "🌱 Tourist", threshold: 0, desc: "Just arrived at Central Station. Confused but curious." },
+    { title: "🌴 Tourist", threshold: 0, desc: "Just arrived at Central Station. Confused but curious." },
     { title: "💻 Techie", threshold: 100, desc: "Can find the nearest Filter Kaapi. Know the MRTS lines." },
     { title: "🏠 Resident", threshold: 500, desc: "You don't need Google Maps for T. Nagar anymore." },
     { title: "🛵 Ooru Local", threshold: 1500, desc: "You can negotiate with any auto driver. Legend." },
