@@ -37,7 +37,27 @@ Welcome to your Chennai progress dashboard! As you complete lessons and navigate
         const badgeDefs = window.BADGE_DEFINITIONS || {};
         const currentStreak = window.localStorage.getItem('swalpa_streak') || 1;
 
-        let html = `
+        let authHtml = "";
+        if (user) {
+            authHtml = `
+                <div style="margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.05); padding: 10px 20px; border-radius: 12px;">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <img src="${user.photoURL}" style="width: 32px; height: 32px; border-radius: 50%;" />
+                        <span>Logged in as <b>${user.displayName}</b></span>
+                    </div>
+                    <button id="firebase-logout-btn" style="background: none; border: 1px solid rgba(255,255,255,0.2); color: #94A3B8; padding: 4px 12px; border-radius: 6px; cursor: pointer; font-size: 12px;">Logout</button>
+                </div>
+            `;
+        } else {
+            authHtml = `
+                <div style="margin-bottom: 20px; text-align: center; background: rgba(137, 207, 240, 0.1); padding: 20px; border-radius: 12px; border: 1px solid rgba(137, 207, 240, 0.2);">
+                    <p style="margin-top: 0; font-size: 14px; color: var(--md-default-fg-color);">Log in to sync your progress across devices!</p>
+                    <button id="firebase-login-btn" style="background: var(--konjam-ombre-gradient); border: none; color: #1E293B; padding: 12px 24px; border-radius: 20px; cursor: pointer; font-weight: 700; font-family: 'Outfit'; box-shadow: 0 4px 15px rgba(137, 207, 240, 0.3);">Log in with Google</button>
+                </div>
+            `;
+        }
+
+        let html = authHtml + `
             <div class="swalpa-profile-card">
                 <div class="swalpa-profile-rank-header">
                     <div class="sp-emoji">${progress.rank.title.split(' ')[0]}</div>
@@ -113,6 +133,30 @@ Welcome to your Chennai progress dashboard! As you complete lessons and navigate
         html += `</div>`;
         const root = document.getElementById('swalpa-profile-root');
         if (root) root.innerHTML = html;
+
+        // Attaching Listeners
+        if (user) {
+            const logoutBtn = document.getElementById('firebase-logout-btn');
+            if (logoutBtn) logoutBtn.addEventListener('click', () => {
+                console.log("Logout clicked.");
+                signOut(auth);
+            });
+        } else {
+            const loginBtn = document.getElementById('firebase-login-btn');
+            if (loginBtn) {
+                loginBtn.addEventListener('click', async () => {
+                    console.log("Login button clicked! Attempting redirect...");
+                    try {
+                        await signInWithRedirect(auth, provider);
+                    } catch (err) {
+                        console.error("Firebase Login Error:", err);
+                        alert("Login failed to initiate. Check your console for details.");
+                    }
+                });
+            } else {
+                console.warn("Login button not found in DOM.");
+            }
+        }
 
         const shareBtn = document.getElementById('profile-share-btn');
         if (shareBtn) shareBtn.addEventListener('click', () => {
