@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-import { getAuth, GoogleAuthProvider, signInWithRedirect, signOut, onAuthStateChanged, getRedirectResult } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithRedirect, signOut, onAuthStateChanged, getRedirectResult, setPersistence, browserLocalPersistence } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 import { getFirestore, doc, setDoc, getDoc, onSnapshot } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 const firebaseConfig = {
@@ -18,4 +18,7 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 const provider = new GoogleAuthProvider();
 
-export { auth, db, provider, signInWithRedirect, signOut, onAuthStateChanged, getRedirectResult, doc, setDoc, getDoc, onSnapshot };
+// Set Auth Persistence to LOCAL (default, but explicit helps with some storage partitioning issues)
+setPersistence(auth, browserLocalPersistence).catch(e => console.error("Persistence failed:", e));
+
+export { auth, db, provider, signInWithPopup, signInWithRedirect, signOut, onAuthStateChanged, getRedirectResult, doc, setDoc, getDoc, onSnapshot };
