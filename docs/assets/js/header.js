@@ -8,6 +8,55 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Dynamic injections
+    const headerInner = document.querySelector('.md-header__inner');
+
+    if (headerInner) {
+        // Create a container for the auth button if it doesn't exist
+        let authContainer = document.querySelector('.konjam-header-auth');
+        if (!authContainer) {
+            authContainer = document.createElement('div');
+            authContainer.className = 'konjam-header-auth';
+            headerInner.appendChild(authContainer);
+        }
+
+        // Load Firebase and handle auth state
+        import('/assets/js/firebase-config.js').then(firebase => {
+            firebase.onAuthStateChanged(firebase.auth, (user) => {
+                if (user) {
+                    authContainer.innerHTML = `
+                        <a href="/profile/" class="konjam-auth-btn profile-btn" title="View Profile">
+                            <img src="${user.photoURL}" referrerPolicy="no-referrer" />
+                            <span>${user.displayName.split(' ')[0]}</span>
+                        </a>
+                    `;
+                } else {
+                    authContainer.innerHTML = `
+                        <button class="konjam-auth-btn login-btn" id="header-login-btn">
+                            <span>Login</span>
+                        </button>
+                    `;
+
+                    const loginBtn = document.getElementById('header-login-btn');
+                    if (loginBtn) {
+                        loginBtn.addEventListener('click', async () => {
+                            try {
+                                const res = await firebase.signInWithPopup(firebase.auth, firebase.provider);
+                                console.log("Header login success:", res.user.displayName);
+                                // Progress loading happens in profile.md or we could trigger it here if needed
+                                // For simplicity, we just reload as that's the established pattern in this project
+                                window.location.reload();
+                            } catch (err) {
+                                console.error("Header login failed:", err);
+                                alert("Login failed: " + err.message);
+                            }
+                        });
+                    }
+                }
+            });
+        }).catch(err => console.error("KONJAM: Auth injection failed.", err));
+    }
+
     // Dynamically import progress module so it works across all site pages
     import('/assets/js/progress.js').then(module => {
         const progress = module.calculateProgress();
@@ -22,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const rankName = rankParts.slice(1).join(' ');
 
             const progressUi = `
-                <div class="swalpa-header-progress" title="${progress.percentToNext}% to ${progress.nextRank ? progress.nextRank.title : 'Max Rank'}" onclick="window.location.href='/profile/'">
+                <div class="konjam-header-progress" title="${progress.percentToNext}% to ${progress.nextRank ? progress.nextRank.title : 'Max Rank'}" onclick="window.location.href='/profile/'">
                     <span class="shp-emoji">${emoji}</span>
                     <span class="shp-rank">${rankName}</span>
                     
@@ -38,6 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
             headerTitle.insertAdjacentHTML('afterend', progressUi);
         }
     }).catch(err => {
-        console.error("SWALPA: Could not load progress indicator in header.", err);
+        console.error("KONJAM: Could not load progress indicator in header.", err);
     });
 });
