@@ -88,11 +88,11 @@ def generate_audio(mode='phonetic', custom_voice=None, custom_output_dir=None):
                     word = TAMIL_MAPPING[safe_filename]
                 else:
                     raw_word = match.group(1).strip().split('\n')[-1]
-                    word = re.sub(r'[*‘“’”]+', '', raw_word).strip()
+                    word = re.sub(r'[*‘“’”|/]+', '', raw_word).strip()
                     # Do not strip_accents on Tamil words because it strips vowel marks!
                 
                 # If word is empty or just punctuation, fallback to phonetic
-                if not re.search(r'[a-zA-Z\u0C80-\u0CFF]', word):
+                if not re.search(r'[a-zA-Z\u0B80-\u0BFF]', word):
                     word = phonetic_text.replace('-', ' ')
 
                 tts_text = f"<speak><lang xml:lang='ta-IN'>{word}</lang></speak>"
