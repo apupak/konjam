@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Triangle background -->
+  <path d="M 100 15 L 180 155 L 20 155 Z" fill="#F4B41A" stroke="#000000" stroke-width="15" stroke-linejoin="round"/>
+  
+  <g transform="translate(0, 5)">
+      <!-- Computer monitor -->
+      <rect x="120" y="70" width="5" height="40" rx="2" fill="#000"/>
+      <!-- Monitor Stand -->
+      <rect x="122" y="110" width="2" height="15" fill="#000"/>
+      <!-- Desk -->
+      <rect x="110" y="125" width="30" height="5" rx="2" fill="#000"/>
+      <!-- Desk Legs -->
+      <rect x="115" y="130" width="5" height="20" rx="1" fill="#000"/>
+      <rect x="130" y="130" width="5" height="20" rx="1" fill="#000"/>
+
+      <!-- Person Head -->
+      <circle cx="90" cy="73" r="10" fill="#000"/>
+
+      <!-- Person Body -->
+      <path d="M 85 85 Q 92 88, 92 105" fill="none" stroke="#000" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Person Arm -->
+      <path d="M 90 90 L 100 105 L 115 105" fill="none" stroke="#000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <!-- Person Legs -->
+      <path d="M 92 105 L 105 105 L 105 130" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- Chair -->
+      <path d="M 65 95 Q 65 110, 80 115" fill="none" stroke="#000" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 72 115 L 68 140" fill="none" stroke="#000" stroke-width="6" stroke-linecap="round"/>
+      <path d="M 85 115 L 89 140" fill="none" stroke="#000" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Text -->
+  <text x="100" y="195" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="900" font-size="34" letter-spacing="1" text-anchor="middle" fill="#000">WIP</text>
+</svg>

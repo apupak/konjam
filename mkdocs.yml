@@ -27,6 +27,12 @@ theme:
       primary: pink
       accent: blue
       toggle:
+        icon: material/book-open-blank-variant
+        name: Switch to beige mode
+    - scheme: beige
+      primary: custom
+      accent: custom
+      toggle:
         icon: material/weather-night
         name: Switch to dark mode
   font:

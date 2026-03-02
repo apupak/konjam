@@ -1052,4 +1052,24 @@ input:checked+.konjam-slider:before {
     color: var(--md-primary-fg-color);
     font-weight: 600;
     text-decoration: underline;
+}[data-md-color-scheme="beige"] {
+    --konjam-blue: #D4A373; 
+    --konjam-pink: #D4A373; 
+    --konjam-ombre-gradient: linear-gradient(135deg, #eaddcf, #f3ede6);
+
+    --md-primary-fg-color: #8B5E34;
+    --md-primary-fg-color--transparent: rgba(139, 94, 52, 0.1);
+    --md-accent-fg-color: #C07F47;
+
+    --md-default-bg-color: #F8F5F0; 
+    --md-default-fg-color: #332B26; 
+    --md-default-fg-color--light: #5A5049;
+    --md-default-fg-color--lighter: #82776F;
+    --md-default-fg-color--lightest: #A89F97;
+
+    --md-code-bg-color: #E8E2DA;
+    --md-code-fg-color: #332B26;
+
+    --md-typeset-color: var(--md-default-fg-color);
+    --md-typeset-a-color: #9C602B;
 }
