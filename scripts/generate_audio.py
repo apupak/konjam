@@ -40,8 +40,8 @@ def generate_audio(mode='phonetic', custom_voice=None, custom_output_dir=None):
     docs_dir = os.path.join(os.path.dirname(__file__), '..', 'docs')
     
     if mode == 'native':
-        audio_dir = os.path.join(docs_dir, 'assets', custom_output_dir or 'audio_native')
-        voice_name = custom_voice or "ta-IN-Wavenet-A"
+        audio_dir = os.path.join(docs_dir, 'assets', custom_output_dir or 'audio_native_v4_male')
+        voice_name = custom_voice or "ta-IN-Chirp3-HD-Puck"
         lang_code = "ta-IN"
     else:
         audio_dir = os.path.join(docs_dir, 'assets', custom_output_dir or 'audio')
@@ -73,7 +73,6 @@ def generate_audio(mode='phonetic', custom_voice=None, custom_output_dir=None):
 
     for file_path in md_files:
         name = os.path.basename(file_path)
-        if 'flashcard' in name: continue
             
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
@@ -106,7 +105,24 @@ def generate_audio(mode='phonetic', custom_voice=None, custom_output_dir=None):
             
             generation_map[safe_filename] = (tts_text, is_ssml, phonetic_text)
 
-    print(f"Mode: {mode}. Found {len(generation_map)} unique audio items.")
+    # Add WOTD phrases
+    wotd_path = os.path.join(docs_dir, 'assets', 'js', 'wotd.js')
+    if os.path.exists(wotd_path):
+        import ast
+        with open(wotd_path, 'r', encoding='utf-8') as f:
+            wotd_content = f.read()
+        
+        # Simple regex extraction for WOTD objects
+        wotd_pattern = re.compile(r'\{\s*kan:\s*"([^"]+)",\s*dKan:\s*"([^"]+)",\s*eng:\s*"([^"]+)",\s*audio:\s*"([^"]+)"\s*\}')
+        for match in wotd_pattern.finditer(wotd_content):
+            kan_text, dkan_text, eng_text, audio_key = match.groups()
+            
+            # Use TAMIL_MAPPING override if it exists, otherwise use the Tamil kan text
+            wordToSay = TAMIL_MAPPING.get(audio_key, kan_text)
+            tts_text = f"<speak><lang xml:lang='ta-IN'>{wordToSay}</lang></speak>"
+            generation_map[audio_key] = (tts_text, True, dkan_text)
+
+    print(f"Mode: {mode}. Found {len(generation_map)} unique audio items. Default Voice: {voice_name}")
     
     url = "https://texttospeech.googleapis.com/v1/text:synthesize"
     headers = {"X-Goog-Api-Key": api_key, "Content-Type": "application/json"}
@@ -139,6 +155,8 @@ def generate_audio(mode='phonetic', custom_voice=None, custom_output_dir=None):
         
         if "Wavenet" in voice_name and not custom_voice:
             payload["voice"]["ssmlGender"] = "FEMALE"
+        if "Chirp" in voice_name and not custom_voice:
+            pass # Use default gender config from google registry
         
         max_retries = 3
         for attempt in range(max_retries):
@@ -167,6 +185,19 @@ def generate_audio(mode='phonetic', custom_voice=None, custom_output_dir=None):
             print(f"[{i}/{len(sorted_filenames)}] Success: {success_count}, Errors: {errors}")
             
     print(f"DONE: {success_count} assets generated in {audio_dir}")
+
+    # Orphan Check
+    all_mp3_files = set(glob.glob(os.path.join(audio_dir, '*.mp3')))
+    used_mp3_files = set(os.path.join(audio_dir, f"{name}.mp3") for name in generation_map.keys())
+    orphaned_files = all_mp3_files - used_mp3_files
+    
+    if orphaned_files:
+        print(f"\n[WARNING] Found {len(orphaned_files)} orphaned file(s) in {audio_dir}:")
+        for orphan in sorted(orphaned_files):
+            print(f"  - {os.path.basename(orphan)}")
+        print("\nThese files are no longer referenced in markdown or WOTD and can likely be deleted.")
+    else:
+        print("\nAll files in the directory are actively used. No orphaned files found.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Generate Konjam audio.')

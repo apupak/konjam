@@ -9,38 +9,38 @@ hide:
 Welcome to the KONJAM Play Zone! These games are designed to train your practical, spoken Tamil muscles for true Chennai survival.
 
 <div class="konjam-feature-list">
-    <div class="konjam-feature-item">
+    <a href="meter_podu/" class="konjam-feature-item">
         <div class="konjam-feature-icon">🛺</div>
         <div class="konjam-feature-content">
             <h3>Meter Podu</h3>
             <p>The ultimate Chennai negotiation game. Handle fares, give precise directions, and navigate local traffic all in spoken Tamil.</p>
         </div>
         <div class="konjam-feature-action">
-            <a href="meter_podu/" class="konjam-button">Play Now</a>
+            <span class="konjam-button">Play Now</span>
         </div>
-    </div>
+    </a>
 
-    <div class="konjam-feature-item">
+    <a href="suffix_station/" class="konjam-feature-item">
         <div class="konjam-feature-icon">🧩</div>
         <div class="konjam-feature-content">
             <h3>Suffix Station</h3>
             <p>Master Tamil grammar quickly. Connect the right roots and suffixes before the train leaves the station.</p>
         </div>
         <div class="konjam-feature-action">
-            <a href="suffix_station/" class="konjam-button">Play Now</a>
+            <span class="konjam-button">Play Now</span>
         </div>
-    </div>
+    </a>
 
-    <div class="konjam-feature-item">
+    <a href="adjust_pannunga/" class="konjam-feature-item">
         <div class="konjam-feature-icon">🤝</div>
         <div class="konjam-feature-content">
             <h3>Adjust Pannunga</h3>
             <p>Master everyday interactions. From buying vegetables to resolving minor conflicts respectfully.</p>
         </div>
         <div class="konjam-feature-action">
-            <a href="adjust_pannunga/" class="konjam-button">Play Now</a>
+            <span class="konjam-button">Play Now</span>
         </div>
-    </div>
+    </a>
 </div>
 
 ---
