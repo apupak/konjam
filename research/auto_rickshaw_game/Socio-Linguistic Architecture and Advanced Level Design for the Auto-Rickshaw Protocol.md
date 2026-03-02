@@ -1,8 +1,8 @@
 # **Socio-Linguistic Architecture and Advanced Level Design for the Auto-Rickshaw Protocol**
 
-The SWALPA project represents a paradigm shift in language pedagogy, moving away from rote memorization toward a high-stakes, immersion-based simulation of urban life in Bangalore. Central to this experience is the "Auto-Rickshaw Protocol," a game mechanic that treats linguistic proficiency as a form of social currency. In the congested, high-friction environment of Bangalore, the auto-rickshaw is more than a vehicle; it is a mobile theater of negotiation where power dynamics, regional identity, and economic survival intersect.1
+The Konjam project represents a paradigm shift in language pedagogy, moving away from rote memorization toward a high-stakes, immersion-based simulation of urban life in Chennai. Central to this experience is the "Auto-Rickshaw Protocol," a game mechanic that treats linguistic proficiency as a form of social currency. In the congested, high-friction environment of Chennai, the auto-rickshaw is more than a vehicle; it is a mobile theater of negotiation where power dynamics, regional identity, and economic survival intersect.1
 
-This document details the deep level design for Levels 7, 8, and 9, integrating the "Respect-Patience-Fare" (RPF) engine with authentic "Bangalore Kannada" dialect.
+This document details the deep level design for Levels 7, 8, and 9, integrating the "Respect-Patience-Fare" (RPF) engine with authentic "Chennai Tamil" dialect.
 
 ## ---
 
@@ -11,14 +11,14 @@ This document details the deep level design for Levels 7, 8, and 9, integrating 
 The game operates on a **State-Based Engine** where every linguistic choice impacts three primary variables:
 
 1. **Respect (Maryade)**: Measures the NPC's view of the player. High respect unlocks "loyalty discounts" and de-escalates conflicts.3  
-2. **Wallet (Duddu)**: The literal cost of the trip. Bangalore drivers often view themselves as "hobbyists" who charge based on whim or "Outsider Taxes".4  
+2. **Wallet (Duddu)**: The literal cost of the trip. Chennai drivers often view themselves as "hobbyists" who charge based on whim or "Outsider Taxes".4  
 3. **Patience (Shakti)**: A decaying meter. In high-stress zones like Majestic, it decays by \-2 per minute of real-time deliberation.6
 
 ### **The Four-Choice Matrix (Standardized)**
 
 * **Choice A (English)**: Direct/Clear. Result: Respect (-15 to \-20), Cost (+10% to \+20%). Perceived as "arrogant" or "outsider".5  
-* **Choice B (Kannada \- Polite)**: Respectful honorifics (Anna/Sir). Result: Respect (+10 to \+25), Cost (-10%). Builds "familial rapport".  
-* **Choice C (Kannada \- Mix/Attempt)**: "Broken" or formal Kannada. Result: Small Respect gain, Neutral cost. Seen as a goodwill gesture.  
+* **Choice B (Tamil \- Polite)**: Respectful honorifics (Anna/Sir). Result: Respect (+10 to \+25), Cost (-10%). Builds "familial rapport".  
+* **Choice C (Tamil \- Mix/Attempt)**: "Broken" or formal Tamil. Result: Small Respect gain, Neutral cost. Seen as a goodwill gesture.  
 * **Choice D (Scenario-Specific)**: Contextual slang or local logic (e.g., "Adjust maadi"). Result: High Respect/Patience gains.9
 
 ## ---
@@ -40,13 +40,13 @@ The auto-rickshaw jerks and dies. Shankar Anna stares at the dashboard in silenc
 
 * **Choice A**: "Excuse me? Why did we stop? I'm going to be late for my meeting\!"  
   * **Effect**: Respect \-20, Wallet \+15% (Aggression Tax), Patience \-15.  
-  * **Kannada/Outcome**: (Direct English) Driver perceives lack of empathy for his livelihood.5  
+  * **Tamil/Outcome**: (Direct English) Driver perceives lack of empathy for his livelihood.5  
 * **Choice B**: "Anna, yenaythu? Engine problem-aa?" (Brother, what happened? Is it an engine problem?).17  
   * **Effect**: Respect \+15, Wallet Neutral, Patience \+10.  
   * **Logic**: Using "Anna" and asking a question builds a shared problem state.3  
 * **Choice C**: "Auto stop aythu? Help beka?" (Auto stopped? Do you need help?).  
   * **Effect**: Respect \+5, Wallet Neutral, Patience \+5.  
-  * **Logic**: Simple Kannada shows effort but lacks the deep respect of Choice B.  
+  * **Logic**: Simple Tamil shows effort but lacks the deep respect of Choice B.  
 * **Choice D**: "Ayyo\! Shankar Nag avru ididre nimma auto ondu second-alli sari madthidru\!" (Ayyo\! If Shankar Nag were here, he would have fixed your auto in a second\!).  
   * **Effect**: Respect \+30, Wallet Neutral, Patience \+20.  
   * **Logic**: Invoking the driver's idol triggers a nostalgia-based patience boost.14
@@ -57,13 +57,13 @@ Shankar declares the engine "Dead." He demands the full fare plus a "service fee
 
 * **Choice A**: "I’m not paying you a single rupee. You didn't drop me where you promised."  
   * **Effect**: Respect \-25, Patience \-30 (**Trigger: Language Barrier**).  
-  * **Logic**: Driver claims "Kannada mathadi\!" (Speak Kannada\!) to ignore the protest.8  
-* **Choice B**: "Anna, swalpa nyaya mathadi. Half-way mathra bandiddivi, half fare thagoli." (Brother, speak a little fairly. We've only come halfway, take half fare.).17  
+  * **Logic**: Driver claims "Tamil mathadi\!" (Speak Tamil\!) to ignore the protest.8  
+* **Choice B**: "Anna, Konjam nyaya mathadi. Half-way mathra bandiddivi, half fare thagoli." (Brother, speak a little fairly. We've only come halfway, take half fare.).17  
   * **Effect**: Respect \+20, Wallet \-50% (of original), Patience \+10.  
   * **Logic**: Appeals to the driver’s "higher moral fiber".1  
 * **Choice C**: "Full fare beda. Discount kodi please." (No full fare. Give a discount please.).17  
   * **Effect**: Respect \+5, Wallet \-20%, Patience Neutral.  
-* **Choice D**: "Anna, swalpa adjust maadi. Nanu bere auto hidiyoke bere hodu beku." (Brother, please adjust. I have to find another auto elsewhere.).9  
+* **Choice D**: "Anna, Konjam adjust maadi. Nanu bere auto hidiyoke bere hodu beku." (Brother, please adjust. I have to find another auto elsewhere.).9  
   * **Effect**: Respect \+15, Wallet \-40%, Patience \+15.  
   * **Logic**: The "Adjust" mantra acknowledges the shared inconvenience.12
 
@@ -138,7 +138,7 @@ Manju demands a flat ₹200, citing traffic and an "empty return".23
   * **Logic**: Using "aarama illa" (not well) and "Anna" signals a genuine crisis.  
 * **Choice C**: "Emergency hospital. Fast hogi please." (Emergency hospital. Go fast please.).  
   * **Effect**: Respect \+10, Wallet Neutral, Patience \+5.  
-* **Choice D**: *Points at the relative.* "Anna, swalpa adjust maadi. Devaru nimage olledu madthare." (Brother, please adjust. God will do good to you.).17  
+* **Choice D**: *Points at the relative.* "Anna, Konjam adjust maadi. Devaru nimage olledu madthare." (Brother, please adjust. God will do good to you.).17  
   * **Effect**: Respect \+40, Wallet Neutral, Patience \+30.  
   * **Logic**: Invoking divine blessing ("Devaru") is standard for requesting favors from elders.17
 
@@ -148,7 +148,7 @@ Manju demands a flat ₹200, citing traffic and an "empty return".23
 
 * **Choice A**: "Here is 240 as promised. Thanks for the ride." (Direct English).  
   * **Effect**: Respect \-10, Wallet \-₹240, Patience Neutral.  
-* **Choice B**: "Anna, neevu devru thara bandri. Idhu thagoli, swalpa jasthi idhe. Dhanyavadagalu." (Brother, you came like God. Take this, it's a little extra. Thank you.).17  
+* **Choice B**: "Anna, neevu devru thara bandri. Idhu thagoli, Konjam jasthi idhe. Dhanyavadagalu." (Brother, you came like God. Take this, it's a little extra. Thank you.).17  
   * **Effect**: Respect \+60 (Max Respect), Wallet \-₹300, Patience \+40.  
   * **Logic**: Re-emphasizing "Devru" (God) status cements the relationship.17  
 * **Choice C**: "Thanks Anna. ArAmAg'iri." (Thanks brother. Be comfortable/stay well.).  
@@ -165,14 +165,14 @@ Manju demands a flat ₹200, citing traffic and an "empty return".23
 
 When the player selects Choice A (English) in a high-tension node, the game may trigger a "Barrier Check."
 
-* **NPC Dialogue**: "Kannada mathadi\! Hindi-English namage gothilla\!" (Speak Kannada\! We don't know Hindi-English\!).8  
-* **Penalty**: Patience decays at 3x speed until a Kannada phrase is used.
+* **NPC Dialogue**: "Tamil mathadi\! Hindi-English namage gothilla\!" (Speak Tamil\! We don't know Hindi-English\!).8  
+* **Penalty**: Patience decays at 3x speed until a Tamil phrase is used.
 
 ### **2\. The "Adjust Maadi" Fail-Safe**
 
 If a player’s Respect score drops below 10, NPCs will no longer stop. The player must use the **"Adjust Maadi" Global Reset**:
 
-* **Phrase**: "Swalpa adjust maadi" (Please adjust a little).10  
+* **Phrase**: "Konjam adjust maadi" (Please adjust a little).10  
 * **Effect**: Resets NPC hostility to "Neutral" and allows the player to resume the protocol.9
 
 ### **3\. Phonetic Bonus**
@@ -181,30 +181,30 @@ The game uses a microphone-input confidence interval. If the player speaks the L
 
 #### **Works cited**
 
-1. Vampires of Bangalore – Auto rickshaw drivers | Maverickvedam's Blog \- WordPress.com, accessed February 27, 2026, [https://maverickvedam.wordpress.com/2011/05/03/vampires-of-bangalore-auto-rickshaw-drivers/](https://maverickvedam.wordpress.com/2011/05/03/vampires-of-bangalore-auto-rickshaw-drivers/)  
-2. Language wars: Bengaluru's auto drivers, non-local techies and a Kannada lesson, accessed February 27, 2026, [https://thesouthfirst.com/karnataka/language-wars-bengalurus-auto-drivers-non-local-techies-and-a-kannada-lesson/](https://thesouthfirst.com/karnataka/language-wars-bengalurus-auto-drivers-non-local-techies-and-a-kannada-lesson/)  
-3. NAMMA BENGALURU\! \- PC's Interest\!, accessed February 27, 2026, [https://prateekchakraborty.wordpress.com/2016/04/30/namma-bengaluru/](https://prateekchakraborty.wordpress.com/2016/04/30/namma-bengaluru/)  
-4. Bengaluru Man Uses ChatGPT to Negotiate Auto Fare in Kannada, Internet Applauds Smart Use of AI \- The CSR Journal, accessed February 27, 2026, [https://thecsrjournal.in/bengaluru-man-uses-chatgpt-negotiate-auto-fare-kannada/](https://thecsrjournal.in/bengaluru-man-uses-chatgpt-negotiate-auto-fare-kannada/)  
-5. Why do so many Bangalore auto drivers behave like hooligans on the road? \- Reddit, accessed February 27, 2026, [https://www.reddit.com/r/bangalore/comments/1lz00tt/why\_do\_so\_many\_bangalore\_auto\_drivers\_behave\_like/](https://www.reddit.com/r/bangalore/comments/1lz00tt/why_do_so_many_bangalore_auto_drivers_behave_like/)  
-6. What are the major problems Bangalore city is facing? \- Quora, accessed February 27, 2026, [https://www.quora.com/What-are-the-major-problems-Bangalore-city-is-facing](https://www.quora.com/What-are-the-major-problems-Bangalore-city-is-facing)  
-7. A Study of the Autorickshaw Sector in Bangalore City CiSTUP, IISc \- Scribd, accessed February 27, 2026, [https://www.scribd.com/document/499993640/A-Study-of-the-Autorickshaw-Sector-in-Bangalore-CiSTUP-Index-Of](https://www.scribd.com/document/499993640/A-Study-of-the-Autorickshaw-Sector-in-Bangalore-CiSTUP-Index-Of)  
-8. Uber driver threatened me and told I know your pickup location : r/bangalore \- Reddit, accessed February 27, 2026, [https://www.reddit.com/r/bangalore/comments/1e3rtyo/uber\_driver\_threatened\_me\_and\_told\_i\_know\_your/](https://www.reddit.com/r/bangalore/comments/1e3rtyo/uber_driver_threatened_me_and_told_i_know_your/)  
-9. What are the common slang words used in Bangalore Kannada ..., accessed February 27, 2026, [https://talkpal.ai/culture/what-are-the-common-slang-words-used-in-bangalore-kannada/](https://talkpal.ai/culture/what-are-the-common-slang-words-used-in-bangalore-kannada/)  
-10. Understanding Bangalorean Slang: A Guide for Non-Kannada ..., accessed February 27, 2026, [https://multibhashi.com/blogs/bangalorean-slang-guide-non-kannada-multibhashi](https://multibhashi.com/blogs/bangalorean-slang-guide-non-kannada-multibhashi)  
-11. Learn Kannada | PDF | Shiva | Curry \- Scribd, accessed February 27, 2026, [https://www.scribd.com/document/517333622/Learn-Kannada](https://www.scribd.com/document/517333622/Learn-Kannada)  
-12. Old Bangalore. : r/bangalore \- Reddit, accessed February 27, 2026, [https://www.reddit.com/r/bangalore/comments/pt1i5v/old\_bangalore/](https://www.reddit.com/r/bangalore/comments/pt1i5v/old_bangalore/)  
-13. Bangalore – Travel guide at Wikivoyage, accessed February 27, 2026, [https://en.wikivoyage.org/wiki/Bangalore](https://en.wikivoyage.org/wiki/Bangalore)  
-14. Characteristics of Drivers- Esp. in Bangalore \- Page 2 \- Team-BHP, accessed February 27, 2026, [https://www.team-bhp.com/forum/shifting-gears/14972-characteristics-drivers-esp-bangalore-2.html](https://www.team-bhp.com/forum/shifting-gears/14972-characteristics-drivers-esp-bangalore-2.html)  
-15. What are some travel hacks with respect to Electronic city flyover in Bangalore? Specific times to take/avoid flyover? Patterns when traffic Jam appears? Best way to get out of traffic jam if stuck in flyover. Any specific lane to follow? \- Quora, accessed February 27, 2026, [https://www.quora.com/What-are-some-travel-hacks-with-respect-to-Electronic-city-flyover-in-Bangalore-Specific-times-to-take-avoid-flyover-Patterns-when-traffic-Jam-appears-Best-way-to-get-out-of-traffic-jam-if-stuck-in-flyover-Any](https://www.quora.com/What-are-some-travel-hacks-with-respect-to-Electronic-city-flyover-in-Bangalore-Specific-times-to-take-avoid-flyover-Patterns-when-traffic-Jam-appears-Best-way-to-get-out-of-traffic-jam-if-stuck-in-flyover-Any)  
-16. Rants on Bangalore's traffic situation \- Page 721 \- Team-BHP, accessed February 27, 2026, [https://www.team-bhp.com/forum/street-experiences/67737-rants-bangalores-traffic-situation-721.html](https://www.team-bhp.com/forum/street-experiences/67737-rants-bangalores-traffic-situation-721.html)  
-17. Which are the most common Kannada phrases/expressions used in ..., accessed February 27, 2026, [https://www.quora.com/Which-are-the-most-common-Kannada-phrases-expressions-used-in-everyday-life-and-their-meaning](https://www.quora.com/Which-are-the-most-common-Kannada-phrases-expressions-used-in-everyday-life-and-their-meaning)  
-18. Auto drivers are bastards. : r/bangalore \- Reddit, accessed February 27, 2026, [https://www.reddit.com/r/bangalore/comments/128i74r/auto\_drivers\_are\_bastards/](https://www.reddit.com/r/bangalore/comments/128i74r/auto_drivers_are_bastards/)  
-19. Bengaluru Congestion Pricing Scheme Report \- JICA Report PDF, accessed February 27, 2026, [https://openjicareport.jica.go.jp/pdf/12235198\_04.pdf](https://openjicareport.jica.go.jp/pdf/12235198_04.pdf)  
-20. Hi Bangalore\! I'm working on a game where you are an auto driver in Bangalore. \- Reddit, accessed February 27, 2026, [https://www.reddit.com/r/bangalore/comments/19bd8so/hi\_bangalore\_im\_working\_on\_a\_game\_where\_you\_are/](https://www.reddit.com/r/bangalore/comments/19bd8so/hi_bangalore_im_working_on_a_game_where_you_are/)  
-21. Bangalore Central | Getaway2india's Blog, accessed February 27, 2026, [https://getaway2india.wordpress.com/tag/bangalore-central/](https://getaway2india.wordpress.com/tag/bangalore-central/)  
-22. Bangalore's Autorickshaw Sector Study | PDF | Public Transport | Taxicab \- Scribd, accessed February 27, 2026, [https://www.scribd.com/document/194562861/Autorickshaws-Blore-FinalReport-Dec12-Cistup](https://www.scribd.com/document/194562861/Autorickshaws-Blore-FinalReport-Dec12-Cistup)  
-23. I am working on a game where you are an auto driver in Bangalore \- Reddit, accessed February 27, 2026, [https://www.reddit.com/r/bangalore/comments/1hyx02o/i\_am\_working\_on\_a\_game\_where\_you\_are\_an\_auto/](https://www.reddit.com/r/bangalore/comments/1hyx02o/i_am_working_on_a_game_where_you_are_an_auto/)  
-24. I am a north Indian guy, going to Bangalore for the first time. What are some important tips you would like to give me? \- Quora, accessed February 27, 2026, [https://www.quora.com/I-am-a-north-Indian-guy-going-to-Bangalore-for-the-first-time-What-are-some-important-tips-you-would-like-to-give-me](https://www.quora.com/I-am-a-north-Indian-guy-going-to-Bangalore-for-the-first-time-What-are-some-important-tips-you-would-like-to-give-me)  
-25. Bengaluru man uses ChatGPT to bargain auto fare like an elder brother \- without knowing Kannada. Even the driver was impressed \- The Economic Times, accessed February 27, 2026, [https://m.economictimes.com/magazines/panache/bengaluru-man-uses-chatgpt-to-bargain-auto-fare-like-an-elder-brother-without-knowing-kannada-even-the-driver-was-impressed/articleshow/120723465.cms](https://m.economictimes.com/magazines/panache/bengaluru-man-uses-chatgpt-to-bargain-auto-fare-like-an-elder-brother-without-knowing-kannada-even-the-driver-was-impressed/articleshow/120723465.cms)  
-26. Bengaluru man's video on how to use ChatGPT to negotiate auto fare in Kannada is viral, accessed February 27, 2026, [https://www.indiatoday.in/trending-news/story/bengaluru-man-uses-chatgpt-to-negotiate-auto-fare-in-kannada-viral-tutorial-video-2716741-2025-04-29](https://www.indiatoday.in/trending-news/story/bengaluru-man-uses-chatgpt-to-negotiate-auto-fare-in-kannada-viral-tutorial-video-2716741-2025-04-29)  
-27. What are the most common slang words used by Bangalore youth today? \- Talkpal, accessed February 27, 2026, [https://talkpal.ai/culture/what-are-the-most-common-slang-words-used-by-bangalore-youth-today/](https://talkpal.ai/culture/what-are-the-most-common-slang-words-used-by-bangalore-youth-today/)
+1. Vampires of Chennai – Auto rickshaw drivers | Maverickvedam's Blog \- WordPress.com, accessed February 27, 2026, [https://maverickvedam.wordpress.com/2011/05/03/vampires-of-Chennai-auto-rickshaw-drivers/](https://maverickvedam.wordpress.com/2011/05/03/vampires-of-Chennai-auto-rickshaw-drivers/)  
+2. Language wars: Chennai's auto drivers, non-local techies and a Tamil lesson, accessed February 27, 2026, [https://thesouthfirst.com/karnataka/language-wars-Chennais-auto-drivers-non-local-techies-and-a-Tamil-lesson/](https://thesouthfirst.com/karnataka/language-wars-Chennais-auto-drivers-non-local-techies-and-a-Tamil-lesson/)  
+3. NAMMA Chennai\! \- PC's Interest\!, accessed February 27, 2026, [https://prateekchakraborty.wordpress.com/2016/04/30/namma-Chennai/](https://prateekchakraborty.wordpress.com/2016/04/30/namma-Chennai/)  
+4. Chennai Man Uses ChatGPT to Negotiate Auto Fare in Tamil, Internet Applauds Smart Use of AI \- The CSR Journal, accessed February 27, 2026, [https://thecsrjournal.in/Chennai-man-uses-chatgpt-negotiate-auto-fare-Tamil/](https://thecsrjournal.in/Chennai-man-uses-chatgpt-negotiate-auto-fare-Tamil/)  
+5. Why do so many Chennai auto drivers behave like hooligans on the road? \- Reddit, accessed February 27, 2026, [https://www.reddit.com/r/Chennai/comments/1lz00tt/why\_do\_so\_many\_Chennai\_auto\_drivers\_behave\_like/](https://www.reddit.com/r/Chennai/comments/1lz00tt/why_do_so_many_Chennai_auto_drivers_behave_like/)  
+6. What are the major problems Chennai city is facing? \- Quora, accessed February 27, 2026, [https://www.quora.com/What-are-the-major-problems-Chennai-city-is-facing](https://www.quora.com/What-are-the-major-problems-Chennai-city-is-facing)  
+7. A Study of the Autorickshaw Sector in Chennai City CiSTUP, IISc \- Scribd, accessed February 27, 2026, [https://www.scribd.com/document/499993640/A-Study-of-the-Autorickshaw-Sector-in-Chennai-CiSTUP-Index-Of](https://www.scribd.com/document/499993640/A-Study-of-the-Autorickshaw-Sector-in-Chennai-CiSTUP-Index-Of)  
+8. Uber driver threatened me and told I know your pickup location : r/Chennai \- Reddit, accessed February 27, 2026, [https://www.reddit.com/r/Chennai/comments/1e3rtyo/uber\_driver\_threatened\_me\_and\_told\_i\_know\_your/](https://www.reddit.com/r/Chennai/comments/1e3rtyo/uber_driver_threatened_me_and_told_i_know_your/)  
+9. What are the common slang words used in Chennai Tamil ..., accessed February 27, 2026, [https://talkpal.ai/culture/what-are-the-common-slang-words-used-in-Chennai-Tamil/](https://talkpal.ai/culture/what-are-the-common-slang-words-used-in-Chennai-Tamil/)  
+10. Understanding Chennaian Slang: A Guide for Non-Tamil ..., accessed February 27, 2026, [https://multibhashi.com/blogs/Chennaian-slang-guide-non-Tamil-multibhashi](https://multibhashi.com/blogs/Chennaian-slang-guide-non-Tamil-multibhashi)  
+11. Learn Tamil | PDF | Shiva | Curry \- Scribd, accessed February 27, 2026, [https://www.scribd.com/document/517333622/Learn-Tamil](https://www.scribd.com/document/517333622/Learn-Tamil)  
+12. Old Chennai. : r/Chennai \- Reddit, accessed February 27, 2026, [https://www.reddit.com/r/Chennai/comments/pt1i5v/old\_Chennai/](https://www.reddit.com/r/Chennai/comments/pt1i5v/old_Chennai/)  
+13. Chennai – Travel guide at Wikivoyage, accessed February 27, 2026, [https://en.wikivoyage.org/wiki/Chennai](https://en.wikivoyage.org/wiki/Chennai)  
+14. Characteristics of Drivers- Esp. in Chennai \- Page 2 \- Team-BHP, accessed February 27, 2026, [https://www.team-bhp.com/forum/shifting-gears/14972-characteristics-drivers-esp-Chennai-2.html](https://www.team-bhp.com/forum/shifting-gears/14972-characteristics-drivers-esp-Chennai-2.html)  
+15. What are some travel hacks with respect to Electronic city flyover in Chennai? Specific times to take/avoid flyover? Patterns when traffic Jam appears? Best way to get out of traffic jam if stuck in flyover. Any specific lane to follow? \- Quora, accessed February 27, 2026, [https://www.quora.com/What-are-some-travel-hacks-with-respect-to-Electronic-city-flyover-in-Chennai-Specific-times-to-take-avoid-flyover-Patterns-when-traffic-Jam-appears-Best-way-to-get-out-of-traffic-jam-if-stuck-in-flyover-Any](https://www.quora.com/What-are-some-travel-hacks-with-respect-to-Electronic-city-flyover-in-Chennai-Specific-times-to-take-avoid-flyover-Patterns-when-traffic-Jam-appears-Best-way-to-get-out-of-traffic-jam-if-stuck-in-flyover-Any)  
+16. Rants on Chennai's traffic situation \- Page 721 \- Team-BHP, accessed February 27, 2026, [https://www.team-bhp.com/forum/street-experiences/67737-rants-Chennais-traffic-situation-721.html](https://www.team-bhp.com/forum/street-experiences/67737-rants-Chennais-traffic-situation-721.html)  
+17. Which are the most common Tamil phrases/expressions used in ..., accessed February 27, 2026, [https://www.quora.com/Which-are-the-most-common-Tamil-phrases-expressions-used-in-everyday-life-and-their-meaning](https://www.quora.com/Which-are-the-most-common-Tamil-phrases-expressions-used-in-everyday-life-and-their-meaning)  
+18. Auto drivers are bastards. : r/Chennai \- Reddit, accessed February 27, 2026, [https://www.reddit.com/r/Chennai/comments/128i74r/auto\_drivers\_are\_bastards/](https://www.reddit.com/r/Chennai/comments/128i74r/auto_drivers_are_bastards/)  
+19. Chennai Congestion Pricing Scheme Report \- JICA Report PDF, accessed February 27, 2026, [https://openjicareport.jica.go.jp/pdf/12235198\_04.pdf](https://openjicareport.jica.go.jp/pdf/12235198_04.pdf)  
+20. Hi Chennai\! I'm working on a game where you are an auto driver in Chennai. \- Reddit, accessed February 27, 2026, [https://www.reddit.com/r/Chennai/comments/19bd8so/hi\_Chennai\_im\_working\_on\_a\_game\_where\_you\_are/](https://www.reddit.com/r/Chennai/comments/19bd8so/hi_Chennai_im_working_on_a_game_where_you_are/)  
+21. Chennai Central | Getaway2india's Blog, accessed February 27, 2026, [https://getaway2india.wordpress.com/tag/Chennai-central/](https://getaway2india.wordpress.com/tag/Chennai-central/)  
+22. Chennai's Autorickshaw Sector Study | PDF | Public Transport | Taxicab \- Scribd, accessed February 27, 2026, [https://www.scribd.com/document/194562861/Autorickshaws-Blore-FinalReport-Dec12-Cistup](https://www.scribd.com/document/194562861/Autorickshaws-Blore-FinalReport-Dec12-Cistup)  
+23. I am working on a game where you are an auto driver in Chennai \- Reddit, accessed February 27, 2026, [https://www.reddit.com/r/Chennai/comments/1hyx02o/i\_am\_working\_on\_a\_game\_where\_you\_are\_an\_auto/](https://www.reddit.com/r/Chennai/comments/1hyx02o/i_am_working_on_a_game_where_you_are_an_auto/)  
+24. I am a north Indian guy, going to Chennai for the first time. What are some important tips you would like to give me? \- Quora, accessed February 27, 2026, [https://www.quora.com/I-am-a-north-Indian-guy-going-to-Chennai-for-the-first-time-What-are-some-important-tips-you-would-like-to-give-me](https://www.quora.com/I-am-a-north-Indian-guy-going-to-Chennai-for-the-first-time-What-are-some-important-tips-you-would-like-to-give-me)  
+25. Chennai man uses ChatGPT to bargain auto fare like an elder brother \- without knowing Tamil. Even the driver was impressed \- The Economic Times, accessed February 27, 2026, [https://m.economictimes.com/magazines/panache/Chennai-man-uses-chatgpt-to-bargain-auto-fare-like-an-elder-brother-without-knowing-Tamil-even-the-driver-was-impressed/articleshow/120723465.cms](https://m.economictimes.com/magazines/panache/Chennai-man-uses-chatgpt-to-bargain-auto-fare-like-an-elder-brother-without-knowing-Tamil-even-the-driver-was-impressed/articleshow/120723465.cms)  
+26. Chennai man's video on how to use ChatGPT to negotiate auto fare in Tamil is viral, accessed February 27, 2026, [https://www.indiatoday.in/trending-news/story/Chennai-man-uses-chatgpt-to-negotiate-auto-fare-in-Tamil-viral-tutorial-video-2716741-2025-04-29](https://www.indiatoday.in/trending-news/story/Chennai-man-uses-chatgpt-to-negotiate-auto-fare-in-Tamil-viral-tutorial-video-2716741-2025-04-29)  
+27. What are the most common slang words used by Chennai youth today? \- Talkpal, accessed February 27, 2026, [https://talkpal.ai/culture/what-are-the-most-common-slang-words-used-by-Chennai-youth-today/](https://talkpal.ai/culture/what-are-the-most-common-slang-words-used-by-Chennai-youth-today/)

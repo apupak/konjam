@@ -35,7 +35,7 @@ Because KONJAM has no backend, the browser's `localStorage` is the absolute sour
 
 3. **`respectPoints` (Integer)**
    * **Purpose**: Global score calculating the user's proficiency level in the "Adjust Maadi" and "Meter Haaki" JS games.
-   * **Impact**: Determines the user's global ranking on their Profile Dashboard (e.g., "Tourist", "Local", "Bangalore Guru").
+   * **Impact**: Determines the user's global ranking on their Profile Dashboard (e.g., "Tourist", "Local", "Chennai Guru").
 
 ---
 

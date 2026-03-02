@@ -6,86 +6,68 @@ description: Essential Tamil survival phrases for your first days in Chennai —
 ---
 # 02. Survival, Logistics, and Emergencies
 
+The first days in a new linguistic environment require a specific set of high-utility words. This module covers the essential vocabulary required to fulfill basic needs, navigate transport, and manage crises, utilizing practical, everyday language rather than textbook translations.
+
 Mastering this core vocabulary will allow you to survive your first few days in Chennai. These aren't just words; they are the communicative tools you need to negotiate, direct transport, fulfill basic needs, and handle critical situations.
 
 ## 1. The Binary Engine of Needs (Want vs. Don't Want)
-In a new city, clearly expressing your desires and boundaries is critical.
+Two fundamental words dictate the expression of boundaries and desires in Chennai. Mastering these allows a newcomer to navigate markets, auto-rickshaw rides, and persistent vendors.
 
-*   **Venum** ⟨VEH-noom⟩ **(Want / Need):** The absolute essential. Use it to request items or express necessity.
-    *   *Usage:* "Enakku ⟨eh-nuh-KUU⟩ thanni ⟨THUN-nee⟩ **venum**" (I want water).
-*   **Vendaam** ⟨VAYN-daam⟩ **(Don't want / Don't need):** Your shield against unwanted offers, higher fares, or persistent vendors. 
-    *   *Usage:* "Plastic bag **vendaam**" (No plastic bag). "Extra muppathu ruba **vendaam**" (I won't pay 30 rupees extra).
+| Tamil Script | Phonetic Guide | English Meaning | Usage Context |
+| :--- | :--- | :--- | :--- |
+| **ேவண்டும் / ேவணும்** | ⟨VEH-noom⟩ | Want / Need | The core request mechanism. e.g., "Enakku thanni **venum**" (I want water). |
+| **ேவண்டாம் / ேவணாம்** | ⟨VAYN-daam⟩ | Don't want / Don't need | A critical defensive phrase. Used to reject persistent hawkers or decline unwanted services. |
+| **இல்ைல / இல்ல** | ⟨ILL-lah⟩ | No / Not here / Absence | Used to state that an object does not exist or is not available. e.g., "Thanni **illa**" (There is no water). |
+| **ஆமா** | ⟨AA-maa⟩ | Yes | Simple confirmation. |
+| **ெதரியாது** | ⟨they-ree-YAA-dhoo⟩ | I don't know | Essential for establishing language limitations. e.g., "Enakku Tamil **theriyadhu**" (I do not know Tamil). |
 
-## 2. Establishing Reality (Presence and Knowledge)
-These words help you determine if something exists or if you understand a situation.
+## 2. Spatial Navigation (Directions)
+Directing auto-rickshaws and cabs requires clear directional adverbs. The suffix "-nga" is implicitly understood here as the polite command form, which will be discussed in detail in the grammar section.
 
-*   **Illa** ⟨ILL-lah⟩ **(No / Not here):** A powerful word indicating non-existence, absence, or direct disagreement.
-    *   *Usage:* "Thanni ⟨THUN-nee⟩ **illa**" (There is no water).
-*   **Theriyadhu** ⟨they-ree-YAA-dhoo⟩ **(I don't know):** Highly useful for establishing boundaries regarding local knowledge or language limits.
-    *   *Usage:* "Enakku ⟨eh-nuh-KUU⟩ Tamil **theriyadhu**" (I don't know Tamil).
+| Tamil Script | Phonetic Guide | English Meaning | Usage Context |
+| :--- | :--- | :--- | :--- |
+| **முன்னாடி** | ⟨MOON-naa-dee⟩ | Forward / Ahead | Instructing a driver to move up slightly. |
+| **பின்னாடி** | ⟨PIN-naa-dee⟩ | Behind / Back | Instructing a driver to reverse. |
+| **வலது பக்கம்** | ⟨vuh-luh-DHOO PUK-kum⟩ | Right side | Indicating a right turn. |
+| **இடது பக்கம்** | ⟨ee-duh-DHOO PUK-kum⟩ | Left side | Indicating a left turn. |
+| **ேநரா** | ⟨NAY-rah⟩ | Straight | Instructing to keep going without turning. |
+| **இங்க** | ⟨ING-gah⟩ | Here | Instructing someone to stop here. |
+| **அங்க** | ⟨UNG-gah⟩ | There | Pointing to a destination. |
 
-## 3. The Commands of Motion (Verbs)
-Always remember to add an `-nga` to the verb root to be polite to strangers and service personnel in Tamil.
+## 3. Transactions and General Commands
+Financial interactions rely heavily on a few standard phrases that function across fruit stalls, tea shops, and transport services.
 
-*   **Vaanga** ⟨VAA-ngah⟩ **(Come):** The respectful imperative of *Vaa* ⟨VAA⟩. Essential for requesting someone to come over.
-*   **Ponga** ⟨POH-ngah⟩ **(Go):** The respectful imperative of *Po* ⟨POH⟩. Crucial for directing transport.
-*   **Niruthunga** ⟨nee-ROOT-thung-gah⟩ **(Stop):** The standard respectful command for instructing an auto or cab driver to halt.
-
-## 4. Navigating the Streets (Directions)
-
-*   **Munnadi** ⟨MOON-naa-dee⟩ **(Forward / Ahead):** Used to indicate forward motion.
-*   **Pinnadi** ⟨PIN-naa-dee⟩ **(Behind / Back):** Indicates the rear or reversing direction.
-*   **Valadhu pakkam** ⟨vuh-luh-DHOO PUK-kum⟩ **(Right side):** Made of *Valadhu* (Right) and *pakkam* (Side).
-*   **Idadhu pakkam** ⟨ee-duh-DHOO PUK-kum⟩ **(Left side):** Made of *Idadhu* (Left) and *pakkam* (Side).
-*   **Nera** ⟨NAY-rah⟩ **(Straight):** A directional adverb used extensively in navigation.
-
-## 5. Transactions and Giving
-
-*   **Evvalavu aachu?** ⟨EV-vuh-luh-voo AAH-choo⟩ **(How much did it become?):** The critical phrase for all financial transactions and market inquiries.
-*   **Kudunga** ⟨KOO-doong-gah⟩ **(Give):** The respectful imperative used when requesting items in a shop.
-*   **Eduthukkonga** ⟨eh-doot-tuh-KONG-gah⟩ **(Take):** Use this respectfully when handing cash or items to a vendor.
-*   **Konjam kammi pannunga** ⟨KON-jum KUM-mee PUN-noong-gah⟩ **(Reduce a little):** The standard, polite mechanism for initiating bargaining in a market.
-*   **Vidunga** ⟨vee-DOONG-gah⟩ **(Leave / Let go):** Tell the vendor to keep the change, or use it to drop a subject.
-
-## 6. Communication Actions
-
-*   **Sollunga** ⟨SOL-loong-gah⟩ **(Tell / Say):** Used to prompt information. *"Tamil la ⟨tuh-MILL luh⟩ sollunga"* (Say it in Tamil).
-*   **Anuppunga** ⟨UH-noop-poong-gah⟩ **(Send):** The respectful imperative. *"Location anuppunga"* (Send the location).
-*   **Podunga** ⟨POH-doong-gah⟩ **(Put):** Used physically and mechanically *"Meter podunga"*.
-*   **Pannunga** ⟨PUN-noong-gah⟩ **(Do):** The universal auxiliary verb. Attach it to any English noun to create a 'Tanglish' verb (e.g., "Google Pay pannunga").
-
-## 7. Dining and Restaurants
-
-| Tamil | English Meaning | Context / Usage |
+| Tamil Phrase | Phonetic Guide | English Meaning |
 | :--- | :--- | :--- |
-| **Saappittaachaa?** ⟨saap-pit-TAACH-chaa⟩ | Had lunch/dinner? | Universal greeting after "Hello". |
-| **Menu kudunga** ⟨MEN-oo KOO-doong-gah⟩ | Give menu | Asking for the menu respectfully. |
-| **Single tea kudunga** | Give one tea | Ordering tea at a local stall. |
-| **Bill kudunga** ⟨BILL KOO-doong-gah⟩ | Give bill | Finishing the meal. |
-| **Kaaram kammi pannunga** ⟨KAA-rum KUM-mee PUN-noong-gah⟩ | Make it less spicy | Very useful instruction for restaurants. |
-| **Saappadu nalla irukku** ⟨SAAP-paa-doo NUL-lah ee-ROOK-koo⟩ | Food is good | *"Dosa nalla irukku."* (Dosa is good). |
+| **எவ்வளவு ஆச்சு?** | ⟨yev-vuh-luh-VOO AAH-choo⟩ | How much did it become? (What is the total bill?) |
+| **குடுங்க** | ⟨koo-DOONG-gah⟩ | Give (respectful). |
+| **எடுத்துக்ேகாங்க** | ⟨yeh-doot-thoo-KOHNG-gah⟩ | Take (respectful, used when handing over cash). |
+| **ெகாஞ்சம் கம்மி பண்ணுங்க** | ⟨KOHN-jum KUM-mee PUN-noong-gah⟩ | Reduce a little (Polite bargaining). |
+| **விடுங்க** | ⟨VIH-doong-gah⟩ | Leave it / Let it go (Tell the vendor to keep the change). |
 
-## 8. Household Emergencies
+## 4. Medical Emergencies and Police Assistance
+In critical situations, direct and firm language is necessary, stripping away pleasantries to assert boundaries or seek immediate assistance. The ability to describe basic symptoms or call for authority figures is paramount for safety.
 
-| Tamil | English Meaning | Context / Usage |
+| Tamil Phrase | Phonetic Guide | English Meaning |
 | :--- | :--- | :--- |
-| **Thanni varala** ⟨THUN-nee vuh-RUL-lah⟩ | Water is not coming | Critical plumbing issue. |
-| **Current illa** ⟨current ILL-lah⟩ | No power | Reporting a power cut. |
-| **Clean pannunga** ⟨clean PUN-noong-gah⟩ | Clean it | *"Room clean pannunga."* (Clean the room). |
-| **Naalaikku vaanga** ⟨NAA-lai-koo VAA-ngah⟩ | Come tomorrow | *"Innaikku venam, naalaikku vaanga."* (Not today, come tomorrow). |
+| **எனக்கு ெஹல்ப் ேவணும்** | ⟨eh-nuh-KOO HELP veh-noom⟩ | I need help. |
+| **உடேன உதவி ேதைவ** | ⟨oo-duh-NAY oo-dhuh-vee THAY-vai⟩ | Need help immediately. |
+| **ேபாலீைஸ கூப்பிடுேவன்** | ⟨po-LEES-uh KOO-pih-doo-vayn⟩ | I will call the police. (A direct threat for severe harassment). |
+| **என் தப்பு தான்** | ⟨YEN thup-POO dhaan⟩ | It is my mistake (The safest way to apologize to authority or police). |
+| **மருத்துவமைனக்கு ேபாங்க** | ⟨muh-root-thoo-vuh-muh-nai-KOO POH-ngah⟩ | Go to the hospital. |
+| **தைல வலி** | ⟨thuh-LAI vuh-lee⟩| Headache. |
+| **காய்ச்சல்** | ⟨KAA-chul⟩ | Fever. |
+| **ரத்தம் வருது** | ⟨RUTH-thum vuh-roo-dhoo⟩ | Bleeding is happening. |
 
-## 9. Boundary Setting and Conflict
-Be extremely careful with these phrases. They are blunt and direct.
+## 5. Realistic Dialogue Scenario: The Street Vendor
 
-| Tamil | English Meaning | Context / Usage |
-| :--- | :--- | :--- |
-| **Enakku help venum** ⟨eh-nuh-KUU help VEH-noom⟩ | I need help | Emergency situation calling for assistance. |
-| **Po! / Ponga!** ⟨POH / POH-ngah⟩ | Go! / Get lost! | *Po* is a rude dismissal. *Ponga* is the respectful "Please go". |
-| **Police ah koopiduven** ⟨police ah KOO-pid-doo-ven⟩ | I will call police | A direct threat for severe harassment. |
-| **En thappu dhaan** ⟨EN THUP-poo dhaan⟩ | It is my mistake | The safest way to apologize to authority or police. |
+*   **Vendor:** சார், இது வாங்குங்க. இருநூறு ரூபா. ⟨SAAR, ee-dhoo VAANG-goong-gah. ee-roo-NOO-roo ROO-baa.⟩ *(Sir, buy this. Two hundred rupees.)*
+*   **You:** ேவணாம். எனக்கு ேவண்டாம். ⟨VAYN-daam. eh-nuh-KOO VAYN-daam.⟩ *(No need. I don't want it.)*
+*   **Vendor:** சரி, நூறு குடுங்க. ⟨SUH-ree, NOO-roo koo-DOONG-gah.⟩ *(Okay, give one hundred.)*
+*   **You:** இல்ல, ெராம்ப ஜாஸ்தி. விடுங்க. ⟨ILL-lah, ROM-bah JAAS-tee. VIH-doong-gah.⟩ *(No, it is too much. Leave it.)*
 
-<div class="swalpa-share-widget">
-    <button class="swalpa-share-button" onclick="window.triggerShare('Venum (I want) and Vendaam (I don\\'t want). The two most important survival words in Chennai. Master them on Konjam: https://konjam.org/02_survival_and_emergencies')">
+<div class="konjam-share-widget">
+    <button class="konjam-share-button" onclick="window.triggerShare('Venum (I want) and Vendaam (I don\\'t want). The two most important survival words in Chennai. Master them on Konjam: https://konjam.org/02_survival_and_emergencies')">
         <span class="share-icon">📤</span> Share
     </button>
 </div>

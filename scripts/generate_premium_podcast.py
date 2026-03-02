@@ -9,9 +9,9 @@ import argparse
 from typing import List, Tuple
 
 try:
-    from kannada_mapping import KANNADA_MAPPING
+    from Tamil_mapping import Tamil_MAPPING
 except ImportError:
-    KANNADA_MAPPING = {}
+    Tamil_MAPPING = {}
 
 def load_api_key():
     env_path = os.path.join(os.path.dirname(__file__), '..', '.env')
@@ -42,9 +42,9 @@ def wrap_with_ssml(text: str, speaker_key: str, default_lang="en-IN") -> str:
     def replace_phonetic(match):
         phonetic_text = match.group('phonetic').strip()
         safe_key = re.sub(r'[^a-zA-Z0-9_\-]', '_', phonetic_text).strip('_')
-        kannada_word = KANNADA_MAPPING.get(safe_key, phonetic_text.replace('-', ' '))
-        # Add a tiny pause before and after Kannada words for clarity
-        return f"<break time='100ms'/><lang xml:lang='kn-IN'>{kannada_word}</lang><break time='100ms'/>"
+        Tamil_word = Tamil_MAPPING.get(safe_key, phonetic_text.replace('-', ' '))
+        # Add a tiny pause before and after Tamil words for clarity
+        return f"<break time='100ms'/><lang xml:lang='kn-IN'>{Tamil_word}</lang><break time='100ms'/>"
 
     processed_text = phonetic_pattern.sub(replace_phonetic, text)
     
@@ -171,7 +171,7 @@ def stitch_podcast(output_dir: str, output_name: str):
         print(f"Failed to stitch podcast: {e}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Generate SWALPA Premium Podcast.')
+    parser = argparse.ArgumentParser(description='Generate Konjam Premium Podcast.')
     parser.add_argument('--script', default='research/podcasts/v3_traffic_5min.md', help='Path to script')
     parser.add_argument('--output-dir', default='v4_traffic_premium_sample', help='Output subdir')
     args = parser.parse_args()

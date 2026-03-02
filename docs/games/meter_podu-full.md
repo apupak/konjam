@@ -6,7 +6,7 @@ hide:
   - footer
 title: Meter Haaki
 description: Play Meter Haaki — negotiate auto fares in Kannada!
-image: assets/img/social/og_meter_haaki.jpg
+image: assets/img/social/og_meter_podu.jpg
 ---
 
 <style>
@@ -38,10 +38,10 @@ image: assets/img/social/og_meter_haaki.jpg
 </style>
 
 <div class="game-frame-container">
-    <iframe src="../play_meter_haaki/" id="game-iframe" style="width: 100%; height: 100%; border: none;"></iframe>
+    <iframe src="../play_meter_podu/" id="game-iframe" style="width: 100%; height: 100%; border: none;"></iframe>
 </div>
 
 <div style="position: fixed; bottom: 20px; right: 20px; z-index: 10000; display: flex; gap: 10px;">
     <button onclick="document.getElementById('game-iframe').requestFullscreen()" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 8px 12px; border-radius: 8px; cursor: pointer; font-size: 0.8rem; backdrop-filter: blur(5px);">👓 Fullscreen API</button>
-    <a href="../meter_haaki/" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 8px 12px; border-radius: 8px; cursor: pointer; font-size: 0.8rem; backdrop-filter: blur(5px); text-decoration: none;">← Exit</a>
+    <a href="../meter_podu/" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white; padding: 8px 12px; border-radius: 8px; cursor: pointer; font-size: 0.8rem; backdrop-filter: blur(5px); text-decoration: none;">← Exit</a>
 </div>

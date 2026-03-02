@@ -1,6 +1,6 @@
 #!/bin/bash
 # sync_to_public.sh
-# Selectively sync ONLY site-essential files from swalpa-private to the public swalpa repo.
+# Selectively sync ONLY site-essential files from Konjam-private to the public Konjam repo.
 # This avoids leaking research/, scripts/, bin/, test files, .env, etc.
 
 set -euo pipefail

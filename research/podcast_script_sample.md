@@ -1,6 +1,6 @@
-# Podcast Script: Intro to Namma Bengaluru
+# Podcast Script: Intro to Namma Chennai
 
-**Host**: Namaskara! Welcome to the very first episode of the Swalpa Podcast. I'm your host, and today we're talking about surviving your first day in Bangalore. Joining me is Guru, our local Kannada expert. Guru, how do we say "Welcome" to someone?
+**Host**: Namaskara! Welcome to the very first episode of the Konjam Podcast. I'm your host, and today we're talking about surviving your first day in Chennai. Joining me is Guru, our local Tamil expert. Guru, how do we say "Welcome" to someone?
 
 **Guru**: Namaskara! ⟨nuh-mus-KAA-rah⟩. It's the universal greeting.
 
@@ -12,4 +12,4 @@
 
 **Guru**: Correct. And if you're really in a hurry, you can add "Bega hogi" ⟨BAY-gah HOH-gee⟩.
 
-**Host**: Thanks Guru! We'll be back in the next segment with more street-smart Kannada.
+**Host**: Thanks Guru! We'll be back in the next segment with more street-smart Tamil.

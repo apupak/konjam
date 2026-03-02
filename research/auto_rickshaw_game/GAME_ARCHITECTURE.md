@@ -41,4 +41,4 @@ The game uses a branching dialogue system with localized randomness:
 
 ## 💾 State Persistence
 *   Use `localStorage` to save player progress and unlocked levels.
-*   "Flashcard Integration": Link back to the specific Swalpa markdown page if a player repeatedly fails a grammar check.
+*   "Flashcard Integration": Link back to the specific Konjam markdown page if a player repeatedly fails a grammar check.

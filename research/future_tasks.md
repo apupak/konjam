@@ -1,11 +1,11 @@
-# Future Tasks & Ideas for SWALPA
+# Future Tasks & Ideas for Konjam
 
-This document contains high-impact ideas to build into SWALPA next to increase user engagement, retention, and practical learning outcomes.
+This document contains high-impact ideas to build into Konjam next to increase user engagement, retention, and practical learning outcomes.
 
 ## 1. "Kelisi & Gurtisi" (Listen & Identify) Mini-Game 🎧
-Currently, the games (Meter Haaki, Suffix Station) are text-based. Given the high-quality native Kannada audio assets available, an **Audio Quiz Game** is the logical next step.
-* **Mechanic**: The user hears a Kannada phrase (e.g., *"Mundhe nillisi"*) but does not see the text. They must select the correct English translation from 4 choices before a timer expires.
-* **Value**: Trains auditory processing. Recognizing spoken Kannada dynamically in noisy environments is the hardest aspect of surviving in Bengaluru.
+Currently, the games (Meter Haaki, Suffix Station) are text-based. Given the high-quality native Tamil audio assets available, an **Audio Quiz Game** is the logical next step.
+* **Mechanic**: The user hears a Tamil phrase (e.g., *"Mundhe nillisi"*) but does not see the text. They must select the correct English translation from 4 choices before a timer expires.
+* **Value**: Trains auditory processing. Recognizing spoken Tamil dynamically in noisy environments is the hardest aspect of surviving in Chennai.
 
 ## 2. The "Survival Cheat Sheet" (Searchable Dictionary) 📖
 Vocabulary and phrases are currently distributed across 10 distinct subject lessons.

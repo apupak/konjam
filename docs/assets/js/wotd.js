@@ -1,5 +1,5 @@
 /**
- * SWALPA Word of the Day & Streak Tracker
+ * KONJAM Phrase of the Day & Streak Tracker
  */
 
 const WOTD_PHRASES = [
@@ -35,13 +35,13 @@ function getDeterministicWordIndex(dateStr) {
 // Ensure the WSD (Words Service Dictionary) audio is ready
 const wotdAudio = new Audio();
 window.playWotdAudio = function (filename) {
-    const voiceDir = localStorage.getItem('swalpa_voice_dir') || 'audio_native_v4_male';
+    const voiceDir = localStorage.getItem('konjam_voice_dir') || 'audio_native_v4_male';
     wotdAudio.src = `/assets/${voiceDir}/${filename}.mp3`;
-    wotdAudio.play().catch(e => console.log("WOTD Audio play failed:", filename));
+    wotdAudio.play().catch(e => console.log("[KONJAM] WOTD Audio play failed:", filename));
 };
 
 function initWotd() {
-    const root = document.getElementById('swalpa-wotd-root');
+    const root = document.getElementById('konjam-wotd-root');
     if (!root) return; // Only process if the container exists (homepage)
 
     const todayDateObj = new Date();
@@ -49,8 +49,8 @@ function initWotd() {
     const todayStr = `${todayDateObj.getFullYear()}-${(todayDateObj.getMonth() + 1).toString().padStart(2, '0')}-${todayDateObj.getDate().toString().padStart(2, '0')}`;
 
     // Streak Calculation
-    let lastVisitStr = localStorage.getItem('swalpa_last_visit');
-    let streakCount = parseInt(localStorage.getItem('swalpa_streak')) || 0;
+    let lastVisitStr = localStorage.getItem('konjam_last_visit');
+    let streakCount = parseInt(localStorage.getItem('konjam_streak')) || 0;
 
     if (!lastVisitStr) {
         // First visit
@@ -68,11 +68,11 @@ function initWotd() {
             streakCount = 1;
         }
 
-        localStorage.setItem('swalpa_last_visit', todayStr);
-        localStorage.setItem('swalpa_streak', streakCount.toString());
+        localStorage.setItem('konjam_last_visit', todayStr);
+        localStorage.setItem('konjam_streak', streakCount.toString());
 
         // Log daily activity for interacting with WOTD
-        if (window.swalpaLogActivity) window.swalpaLogActivity(1);
+        if (window.konjamLogActivity) window.konjamLogActivity(1);
 
         // Evaluate Streak Badges
         if (window.unlockBadge) {
@@ -90,21 +90,21 @@ function initWotd() {
     const streakIcon = isActiveStreak ? '🔥' : '⏳';
 
     root.innerHTML = `
-    <div class="swalpa-wotd-container" onclick="playWotdAudio('${phrase.audio}')">
-        <div class="swalpa-wotd-header">
-            <h3>Word of the Day</h3>
-            <div class="swalpa-streak-pill ${isActiveStreak ? 'active' : ''}" title="Your daily streak">
+    <div class="konjam-wotd-container" onclick="playWotdAudio('${phrase.audio}')">
+        <div class="konjam-wotd-header">
+            <h3>Phrase of the Day</h3>
+            <div class="konjam-streak-pill ${isActiveStreak ? 'active' : ''}" title="Your daily streak">
                 <span class="streak-icon">${streakIcon}</span>
                 <span class="streak-count">${streakCount} ${streakCount === 1 ? 'Day' : 'Days'}</span>
             </div>
         </div>
         
-        <div class="swalpa-wotd-body">
-            <div class="swalpa-wotd-kan">${phrase.kan}</div>
-            <div class="swalpa-wotd-dkan">⟨${phrase.dKan}⟩</div>
-            <div class="swalpa-wotd-eng">"${phrase.eng}"</div>
+        <div class="konjam-wotd-body">
+            <div class="konjam-wotd-kan">${phrase.kan}</div>
+            <div class="konjam-wotd-dkan">⟨${phrase.dKan}⟩</div>
+            <div class="konjam-wotd-eng">"${phrase.eng}"</div>
             
-            <div class="swalpa-wotd-play">
+            <div class="konjam-wotd-play">
                 <span class="audio-icon">🔊</span> Tap to Play
             </div>
         </div>

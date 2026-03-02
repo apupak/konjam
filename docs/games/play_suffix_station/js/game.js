@@ -154,11 +154,11 @@ function endGame() {
 }
 
 function getRank(score, accuracy) {
-    if (score >= 20 && accuracy >= 90) return { title: '🏆 Vyaakarana Guru', desc: 'Grammar Master! You think in Kannada suffixes.' };
-    if (score >= 15) return { title: '🔥 Sakkath Scholar', desc: 'Fantastic! The agglutination engine runs hot in your brain.' };
-    if (score >= 10) return { title: '⚡ Suffix Macha', desc: 'Solid skills. You can build words like a local.' };
+    if (score >= 20 && accuracy >= 90) return { title: '🏆 Vyaakarana Guru', desc: 'Grammar Master! You think in Tamil suffixes.' };
+    if (score >= 15) return { title: '🔥 Semma Scholar', desc: 'Fantastic! The agglutination engine runs hot in your brain.' };
+    if (score >= 10) return { title: '⚡ Suffix Machi', desc: 'Solid skills. You can build words like a local.' };
     if (score >= 5) return { title: '📚 Eager Learner', desc: 'Good start! Keep practicing those suffix patterns.' };
-    return { title: '🌱 Fresh Tourist', desc: 'Every journey starts with Swalpa. Try again!' };
+    return { title: '🌱 Fresh Tourist', desc: 'Every journey starts with Konjam. Try again!' };
 }
 
 // ═══════════════════════════════════════════════
@@ -363,8 +363,8 @@ function shareResult(platform) {
         : 0;
     const rank = getRank(state.score, accuracy);
 
-    const text = `🧩 Suffix Station Score: ${state.score} points!\n\nRank: ${rank.title}\n🎯 Accuracy: ${accuracy}%\n🔥 Best Streak: ${state.bestStreak}\n\nCan you build Kannada words faster? Try it on SWALPA.org!\n#SWALPA #LearnKannada #SuffixStation`;
-    const url = 'https://swalpa.org/games/suffix_station/';
+    const text = `🧩 Suffix Station Score: ${state.score} points!\n\nRank: ${rank.title}\n🎯 Accuracy: ${accuracy}%\n🔥 Best Streak: ${state.bestStreak}\n\nCan you build Tamil words faster? Try it on KONJAM.org!\n#KONJAM #LearnTamil #SuffixStation`;
+    const url = 'https://konjam.org/games/suffix_station/';
     const fullMessage = `${text}\n\n${url}`;
 
     if (platform === 'whatsapp') {

@@ -1,16 +1,16 @@
 /**
  * scores.js
- * Persistent local high-score tracking for SWALPA games.
+ * Persistent local high-score tracking for KONJAM games.
  */
 
-const SCORES_KEY = 'swalpa_high_scores';
+const SCORES_KEY = 'konjam_high_scores';
 
 export function getHighScores() {
     const scores = localStorage.getItem(SCORES_KEY);
     return scores ? JSON.parse(scores) : {
         'suffix-station': 0,
-        'meter-haaki': { level: 0, respect: 0 },
-        'adjust-maadi': { level: 0, respect: 0 }
+        'meter-podunga': { level: 0, respect: 0 },
+        'adjust-pannunga': { level: 0, respect: 0 }
     };
 }
 

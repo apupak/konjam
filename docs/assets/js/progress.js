@@ -19,7 +19,7 @@ export function calculateProgress() {
     let totalPoints = 0;
 
     // Lessons: 100 points per completed lesson
-    const completedStr = localStorage.getItem('swalpa_completed_lessons');
+    const completedStr = localStorage.getItem('konjam_completed_lessons');
     if (completedStr) {
         try {
             const completedArr = JSON.parse(completedStr);
@@ -30,14 +30,16 @@ export function calculateProgress() {
     // Suffix Station: 1 point per point
     totalPoints += scores['suffix-station'] || 0;
 
-    // Meter Haaki: level * 100 + respect
-    if (scores['meter-haaki']) {
-        totalPoints += (scores['meter-haaki'].level * 100) + (scores['meter-haaki'].respect || 0);
+    // Meter Podunga (Legacy: Meter Haaki): level * 100 + respect
+    const meterScore = scores['meter-podunga'] || scores['meter-haaki'];
+    if (meterScore) {
+        totalPoints += (meterScore.level * 100) + (meterScore.respect || 0);
     }
 
-    // Adjust Maadi: level * 100 + respect
-    if (scores['adjust-maadi']) {
-        totalPoints += (scores['adjust-maadi'].level * 100) + (scores['adjust-maadi'].respect || 0);
+    // Adjust Pannunga (Legacy: Adjust Maadi): level * 100 + respect
+    const adjustScore = scores['adjust-pannunga'] || scores['adjust-maadi'];
+    if (adjustScore) {
+        totalPoints += (adjustScore.level * 100) + (adjustScore.respect || 0);
     }
 
     // Determine Rank
@@ -123,19 +125,33 @@ export async function syncProgressToFirestore() {
 
     const progress = calculateProgress();
     const scores = getHighScores();
-    const completedLessons = localStorage.getItem('swalpa_completed_lessons');
-    const streak = localStorage.getItem('swalpa_streak');
+    const completedLessons = localStorage.getItem('konjam_completed_lessons');
+    const streak = localStorage.getItem('konjam_streak');
+    const lastVisit = localStorage.getItem('konjam_last_visit');
+    const activityLog = localStorage.getItem('konjam_activity_log');
+    const unlockedBadges = localStorage.getItem('konjam_unlocked_badges');
+    const rankIndex = localStorage.getItem('konjam_rank_index');
+    const showPhonetics = localStorage.getItem('konjam_show_phonetics');
+    const voiceDir = localStorage.getItem('konjam_voice_dir');
 
     try {
         await setDoc(doc(db, "users", user.uid), {
             totalPoints: progress.totalPoints,
             rankTitle: progress.rank.title,
+            rankIndex: rankIndex ? parseInt(rankIndex, 10) : 0,
             scores: scores,
             completedLessons: completedLessons ? JSON.parse(completedLessons) : [],
             streak: streak ? parseInt(streak, 10) : 1,
+            lastVisit: lastVisit || new Date().toISOString().split('T')[0],
+            activityLog: activityLog ? JSON.parse(activityLog) : {},
+            unlockedBadges: unlockedBadges ? JSON.parse(unlockedBadges) : [],
+            preferences: {
+                showPhonetics: showPhonetics === 'true',
+                voiceDir: voiceDir || 'audio_native_v4_male'
+            },
             lastSynced: new Date().toISOString()
         }, { merge: true });
-        console.log("Progress synced to Firestore");
+        console.log("[KONJAM] All useful data synced to Firestore");
     } catch (e) {
         console.error("Error syncing to Firestore:", e);
     }
@@ -151,20 +167,105 @@ export async function loadProgressFromFirestore() {
 
         if (docSnap.exists()) {
             const data = docSnap.data();
-            if (data.completedLessons) {
-                localStorage.setItem('swalpa_completed_lessons', JSON.stringify(data.completedLessons));
+
+            // 1. Completed Lessons (Union of local and cloud)
+            const localLessons = JSON.parse(localStorage.getItem('konjam_completed_lessons') || '[]');
+            const cloudLessons = data.completedLessons || [];
+            const mergedLessons = Array.from(new Set([...localLessons, ...cloudLessons]));
+            localStorage.setItem('konjam_completed_lessons', JSON.stringify(mergedLessons));
+
+            // 2. Streak Logic: Prevent overwriting a higher local streak unless cloud is even higher
+            const localStreak = parseInt(localStorage.getItem('konjam_streak') || '0', 10);
+            if (data.streak && data.streak >= localStreak) {
+                localStorage.setItem('konjam_streak', data.streak.toString());
+                if (data.lastVisit) {
+                    localStorage.setItem('konjam_last_visit', data.lastVisit);
+                }
+            } else if (data.lastVisit && !localStorage.getItem('konjam_last_visit')) {
+                // Only use cloud visit if local is missing
+                localStorage.setItem('konjam_last_visit', data.lastVisit);
             }
-            if (data.streak) {
-                localStorage.setItem('swalpa_streak', data.streak.toString());
+
+            // 3. High Scores (Take higher of local or cloud)
+            const localScores = getHighScores();
+            const cloudScores = data.scores || {};
+            const mergedScores = { ...localScores };
+
+            for (const [gameId, cloudVal] of Object.entries(cloudScores)) {
+                if (gameId === 'suffix-station') {
+                    mergedScores[gameId] = Math.max(localScores[gameId] || 0, cloudVal);
+                } else if (cloudVal && typeof cloudVal === 'object') {
+                    // Meter Podu or Adjust Maadi
+                    const localVal = localScores[gameId] || { level: 0, respect: 0 };
+                    if (cloudVal.level > localVal.level) {
+                        mergedScores[gameId] = cloudVal;
+                    } else if (cloudVal.level === localVal.level && cloudVal.respect > localVal.respect) {
+                        mergedScores[gameId] = cloudVal;
+                    }
+                }
             }
-            if (data.scores) {
-                localStorage.setItem('swalpa_high_scores', JSON.stringify(data.scores));
+            localStorage.setItem('konjam_high_scores', JSON.stringify(mergedScores));
+
+            // 4. Badges (Union)
+            const localBadges = JSON.parse(localStorage.getItem('konjam_unlocked_badges') || '[]');
+            const cloudBadges = data.unlockedBadges || [];
+            const mergedBadges = Array.from(new Set([...localBadges, ...cloudBadges]));
+            localStorage.setItem('konjam_unlocked_badges', JSON.stringify(mergedBadges));
+
+            // 5. Activity Log (Merge daily counts)
+            const localLog = JSON.parse(localStorage.getItem('konjam_activity_log') || '{}');
+            const cloudLog = data.activityLog || {};
+            const mergedLog = { ...localLog };
+            for (const [date, count] of Object.entries(cloudLog)) {
+                mergedLog[date] = Math.max(localLog[date] || 0, count);
             }
-            // Trigger a reload or UI update
+            localStorage.setItem('konjam_activity_log', JSON.stringify(mergedLog));
+
+            // 6. Rank Index & Preferences
+            if (data.rankIndex !== undefined) {
+                const localRank = parseInt(localStorage.getItem('konjam_rank_index') || '0', 10);
+                localStorage.setItem('konjam_rank_index', Math.max(localRank, data.rankIndex).toString());
+            }
+
+            if (data.preferences) {
+                if (data.preferences.showPhonetics !== undefined) {
+                    localStorage.setItem('konjam_show_phonetics', data.preferences.showPhonetics.toString());
+                }
+                if (data.preferences.voiceDir) {
+                    localStorage.setItem('konjam_voice_dir', data.preferences.voiceDir);
+                }
+            }
+
             return true;
         }
     } catch (e) {
         console.error("Error loading from Firestore:", e);
     }
     return false;
+}
+
+/**
+ * Force clears all local storage keys related to progress/user state.
+ * Used during logout to ensure a clean state for the next session.
+ */
+export function clearLocalProgress() {
+    const keysToRemove = [
+        'konjam_completed_lessons',
+        'konjam_rank_index',
+        'konjam_high_scores',
+        'konjam_streak',
+        'konjam_last_visit',
+        'konjam_activity_log',
+        'konjam_unlocked_badges',
+        'konjam_show_phonetics',
+        'konjam_voice_dir',
+        // Legacy keys (Swalpa branding)
+        'swalpa_completed_lessons',
+        'swalpa_high_scores',
+        'swalpa_streak',
+        'swalpa_rank_index'
+    ];
+
+    keysToRemove.forEach(key => localStorage.removeItem(key));
+    console.log("[KONJAM] Local progress cache cleared.");
 }

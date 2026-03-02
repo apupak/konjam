@@ -9,11 +9,11 @@ import argparse
 import subprocess
 from typing import List, Tuple
 
-# Attempt to load mapping for Kannada script
+# Attempt to load mapping for Tamil script
 try:
-    from kannada_mapping import KANNADA_MAPPING
+    from Tamil_mapping import Tamil_MAPPING
 except ImportError:
-    KANNADA_MAPPING = {}
+    Tamil_MAPPING = {}
 
 # Load API key from .env file
 def load_api_key():
@@ -57,11 +57,11 @@ def wrap_with_ssml(text: str, default_lang="en-IN") -> str:
         # Clean up key for mapping lookup
         safe_key = re.sub(r'[^a-zA-Z0-9_\-]', '_', phonetic_text).strip('_')
         
-        # Try to find the Kannada word in the mapping, otherwise use text with space normalization
-        kannada_word = KANNADA_MAPPING.get(safe_key, phonetic_text.replace('-', ' '))
+        # Try to find the Tamil word in the mapping, otherwise use text with space normalization
+        Tamil_word = Tamil_MAPPING.get(safe_key, phonetic_text.replace('-', ' '))
         
-        # Wrap in Kannada lang tag
-        return f"<lang xml:lang='kn-IN'>{kannada_word}</lang>"
+        # Wrap in Tamil lang tag
+        return f"<lang xml:lang='kn-IN'>{Tamil_word}</lang>"
 
     # First, handle phonetic tags
     processed_text = phonetic_pattern.sub(replace_phonetic, text)
@@ -102,7 +102,7 @@ def generate_podcast_audio(script_path: str, output_dir_name: str):
         voice_name = voices.get(speaker_key, "en-IN-Wavenet-A")
         
         # Default language for the speaker block
-        # Expert block should use kn-IN by default to ensure Chirp handles English loanwords with Kannada accent if needed
+        # Expert block should use kn-IN by default to ensure Chirp handles English loanwords with Tamil accent if needed
         lang_code = "kn-IN" if "kn-IN" in voice_name else "en-IN"
         
         # Format SSML
@@ -194,7 +194,7 @@ def stitch_podcast(output_dir: str, output_name: str):
         print(f"Failed to stitch podcast: {e}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Generate SWALPA Multi-Voice Podcast.')
+    parser = argparse.ArgumentParser(description='Generate Konjam Multi-Voice Podcast.')
     parser.add_argument('--script', default='research/podcast_script_sample.md', help='Path to markdown script')
     parser.add_argument('--output-dir', default='podcast_intro', help='Subdir in docs/assets/')
     args = parser.parse_args()

@@ -1,10 +1,10 @@
 /**
- * Audio Pronunciation Script for SWALPA
- * Finds all ⟨phonetic⟩ tags, converts them, and handles native Kannada audio playback.
+ * Audio Pronunciation Script for KONJAM
+ * Finds all ⟨phonetic⟩ tags, converts them, and handles native Tamil audio playback.
  */
 
 // Immediately apply hidden state to prevent flashing
-if (localStorage.getItem('swalpa_show_phonetics') !== 'true') {
+if (localStorage.getItem('konjam_show_phonetics') !== 'true') {
     document.documentElement.classList.add('hide-phonetics');
 }
 
@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!articleContent) return;
 
     // --- Voice Style Preference ---
-    const swalpaAudioVoiceKey = 'swalpa_voice_dir';
+    const konjamAudioVoiceKey = 'konjam_voice_dir';
     // Default to the new Chirp3 Male Voice
-    let currentVoiceDir = localStorage.getItem(swalpaAudioVoiceKey) || 'audio_native_v4_male';
+    let currentVoiceDir = localStorage.getItem(konjamAudioVoiceKey) || 'audio_native_v4_male';
     // --- End Voice Style Preference ---
     // We need to parse text nodes finding the pattern ⟨...⟩
     const pattern = /⟨([^⟩]+)⟩/g;
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // --- Theme-Aware Branding ---
     const updateBranding = () => {
         const isDark = document.body.getAttribute('data-md-color-scheme') === 'slate';
-        const themeColor = isDark ? 'yellow' : 'red';
+        const themeColor = isDark ? 'pink' : 'blue';
 
         let basePath = '/';
         const scriptTag = document.querySelector('script[src*="assets/js/audio.js"]');
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
 
-        console.log(`[SWALPA Branding] Applied ${themeColor} theme assets`);
+        console.log(`[KONJAM Branding] Applied ${themeColor} theme assets`);
     };
 
     // Listen for theme changes (MkDocs Material uses a mutation on body)
@@ -83,10 +83,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function showToast(message) {
-        let toast = document.querySelector('.swalpa-toast');
+        let toast = document.querySelector('.konjam-toast');
         if (!toast) {
             toast = document.createElement('div');
-            toast.className = 'swalpa-toast';
+            toast.className = 'konjam-toast';
             document.body.appendChild(toast);
         }
         toast.textContent = message;
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             const audioUrl = `${basePath}assets/${currentVoiceDir}/${safeFilename}.mp3`;
-            console.log(`[SWALPA Audio] Found: ${phoneticText}, URL: ${audioUrl}`);
+            console.log(`[KONJAM Audio] Found: ${phoneticText}, URL: ${audioUrl}`);
 
             // --- Preloading Strategy ---
             const preloadAudio = () => {
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     linter.preload = 'auto';
                     linter.src = audioUrl;
                     btn.dataset.preloaded = 'true';
-                    console.log(`[SWALPA Audio] Preloading: ${phoneticText}`);
+                    console.log(`[KONJAM Audio] Preloading: ${phoneticText}`);
                 }
             };
 
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 e.preventDefault();
                 e.stopPropagation();
 
-                console.log(`[SWALPA Audio] Playing: ${audioUrl}`);
+                console.log(`[KONJAM Audio] Playing: ${audioUrl}`);
 
                 if (currentPlayingButton) {
                     currentPlayingButton.classList.remove('audio-playing');
@@ -181,9 +181,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 audioElement.src = audioUrl;
                 audioElement.play().then(() => {
-                    console.log(`[SWALPA Audio] Playback started: ${audioUrl}`);
+                    console.log(`[KONJAM Audio] Playback started: ${audioUrl}`);
                 }).catch(err => {
-                    console.error(`[SWALPA Audio] Playback failed: ${audioUrl}`, err);
+                    console.error(`[KONJAM Audio] Playback failed: ${audioUrl}`, err);
                 });
 
                 btn.classList.add('audio-playing');
@@ -205,14 +205,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const mainContent = document.querySelector('.md-content__inner');
     const isLessonPage = /^\/(0[1-9]|10)_/.test(window.location.pathname);
 
-    if (mainContent && isLessonPage && !document.querySelector('.swalpa-phonetic-toggle-wrapper')) {
+    if (mainContent && isLessonPage && !document.querySelector('.konjam-phonetic-toggle-wrapper')) {
         const toggleWrapper = document.createElement('div');
-        toggleWrapper.className = 'swalpa-phonetic-toggle-wrapper subtle-top-toggle';
+        toggleWrapper.className = 'konjam-phonetic-toggle-wrapper subtle-top-toggle';
         toggleWrapper.innerHTML = `
-            <span class="swalpa-toggle-label">Phonetics & Audio</span>
-            <label class="swalpa-toggle-switch">
+            <span class="konjam-toggle-label">Phonetics & Audio</span>
+            <label class="konjam-toggle-switch">
                 <input type="checkbox" id="phonetic-toggle-checkbox">
-                <span class="swalpa-slider"></span>
+                <span class="konjam-slider"></span>
             </label>
         `;
         // Find the first h1 to insert after
@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", function () {
             mainContent.insertBefore(toggleWrapper, mainContent.firstChild);
         }
 
-        const showKey = 'swalpa_show_phonetics';
+        const showKey = 'konjam_show_phonetics';
         const checkbox = document.getElementById('phonetic-toggle-checkbox');
 
         // Initialize state (defaults to false/hidden)
@@ -237,11 +237,16 @@ document.addEventListener("DOMContentLoaded", function () {
         checkbox.addEventListener('change', (e) => {
             if (e.target.checked) {
                 localStorage.setItem(showKey, 'true');
-                document.body.classList.remove('hide-phonetics');
+                document.documentElement.classList.remove('hide-phonetics');
             } else {
                 localStorage.setItem(showKey, 'false');
-                document.body.classList.add('hide-phonetics');
+                document.documentElement.classList.add('hide-phonetics');
             }
+
+            // Sync preference to cloud immediately
+            import('/assets/js/progress.js').then(module => {
+                module.syncProgressToFirestore();
+            }).catch(err => console.log("[KONJAM] Cloud sync for phonetics delayed."));
         });
     }
 });

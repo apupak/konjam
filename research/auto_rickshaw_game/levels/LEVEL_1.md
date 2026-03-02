@@ -7,7 +7,7 @@
 *   **Weather**: [Random: Sunny/Drizzling]
 
 ## 🎴 Driver Selection
-Pick your driver. Each has a different "vibe" and will react differently to your Kannada.
+Pick your driver. Each has a different "vibe" and will react differently to your Tamil.
 
 ### 1. Guru (The Stoic)
 *   **Visual**: Older, wearing a clean khaki uniform, reading a newspaper.
@@ -33,7 +33,7 @@ Pick your driver. Each has a different "vibe" and will react differently to your
     *   `Effect (Guru)`: { Respect: +20, Patience: +10 } -> *"Banni saar, meter haakthini."*
     *   `Effect (Macha)`: { Respect: +5, Patience: -5 } -> *"Hogthini, standard 200 kodi."*
 *   **Player Choice B (Social/Banter)**: *"Oota aytha guru? Indiranagar Metro varge barthira?"* (Module 03/08)
-    *   `Effect (Anna)`: { Respect: +25, Patience: +20 } -> *"Aythu saar! Banni, Indiranagar thumba doora, swalpa adjust maadi."*
+    *   `Effect (Anna)`: { Respect: +25, Patience: +20 } -> *"Aythu saar! Banni, Indiranagar thumba doora, Konjam adjust maadi."*
     *   `Effect (Guru)`: { Respect: -10, Patience: -5 } -> *"Aythu. Hogutthe, meter plus 30 kodi."*
 *   **Player Choice C (Direct/Casual)**: *"Indiranagar? Meter haaki."* (Module 02/09)
     *   `Effect (Macha)`: { Respect: +15, Patience: +10 } -> *"Sari macha, banni."*

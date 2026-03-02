@@ -1,14 +1,14 @@
 While I cannot directly export the generated artifact file from your Studio tab into this chat box, I can reconstruct the complete contents of the quiz data into a single markdown blob for you right here. 
 
-This covers all the logic, questions, options, and correct answers derived directly from the sources regarding Kannada suffixes. You can copy and paste this entire block directly to your coding agent!
+This covers all the logic, questions, options, and correct answers derived directly from the sources regarding Tamil suffixes. You can copy and paste this entire block directly to your coding agent!
 
 ***
 
 ```markdown
-# Kannada Suffixes & Grammar Quiz Data 
+# Tamil Suffixes & Grammar Quiz Data 
 
 ## Section 1: Agglutination Logic (Spatial Suffixes)
-**Concept:** Kannada "glues" meanings onto the end of words using suffixes rather than separate prepositions. 
+**Concept:** Tamil "glues" meanings onto the end of words using suffixes rather than separate prepositions. 
 
 **Q1: How do you say "In the house"?**
 * Base Word: Mane (House)
@@ -66,7 +66,7 @@ This covers all the logic, questions, options, and correct answers derived direc
 
 
 ## Section 3: Pronoun Mirroring (Subject-Verb Agreement)
-**Concept:** Finite verbs in Kannada must precisely mirror the subject pronoun at the end of the word. Base action: 'Maadth-' (Will do).
+**Concept:** Finite verbs in Tamil must precisely mirror the subject pronoun at the end of the word. Base action: 'Maadth-' (Will do).
 
 **Q11: Translate: "I will do" (Pronoun: Naanu)**
 * Base: Naanu Maadth-
@@ -106,7 +106,7 @@ This covers all the logic, questions, options, and correct answers derived direc
 
 
 ## Section 4: The Kanglish Converter (Euphonic Suffix)
-**Concept:** Kannada easily integrates English nouns by appending a euphonic "-u" sound to the end of the word.
+**Concept:** Tamil easily integrates English nouns by appending a euphonic "-u" sound to the end of the word.
 
 **Q18: Convert "Bus" to conversational Kanglish.**
 * Options: [-a, -i, -u, -e]

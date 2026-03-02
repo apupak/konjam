@@ -1,14 +1,14 @@
 # Prompt for NotebookLM / Slide Generator
 
-Use the following prompt to generate slide content and visual descriptions that match the SWALPA brand aesthetic:
+Use the following prompt to generate slide content and visual descriptions that match the Konjam brand aesthetic:
 
 ***
 
 **Prompt for NotebookLM:**
 
-> "I am creating a slide deck that summarizes 10 practical Bengaluru Kannada lessons from the SWALPA curriculum. Please generate the content and visual descriptions for these slides. 
+> "I am creating a slide deck that summarizes 10 practical Chennai Tamil lessons from the Konjam curriculum. Please generate the content and visual descriptions for these slides. 
 > 
-> **For the visual design and art style of the slides, adhere strictly to the following 'SWALPA' brand guidelines:**
+> **For the visual design and art style of the slides, adhere strictly to the following 'Konjam' brand guidelines:**
 > 
 > **1. Color Palette (High Contrast & Modern):**
 > *   **Backgrounds:** Deep navy blue (#0f172a) or pure black (#000000) for a premium dark-mode feel.
@@ -26,8 +26,8 @@ Use the following prompt to generate slide content and visual descriptions that 
 > *   If displaying literal phonetic spellings or code-like rules, use a monospace font (like 'Roboto Mono') to distinguish it from conversational text.
 > 
 > **4. Imagery & Vibe:**
-> *   The vibe is 'Modern Bengaluru Tech-Meets-Street'. 
-> *   Include subtle background imagery or stylized vector art of Bangalore staples: Auto-rickshaws, metro pillars, rain, traffic lights, filter coffee tumblers, or night cityscapes. 
+> *   The vibe is 'Modern Chennai Tech-Meets-Street'. 
+> *   Include subtle background imagery or stylized vector art of Chennai staples: Auto-rickshaws, metro pillars, rain, traffic lights, filter coffee tumblers, or night cityscapes. 
 > *   Keep the imagery slightly dimmed or blurred so the yellow and white text pops clearly in the foreground.
 > 
-> **Task:** Please summarize the 10 lessons, providing the text for each slide AND a specific visual description (prompt) for the imagery/layout of that slide, strictly following the SWALPA aesthetic described above."
+> **Task:** Please summarize the 10 lessons, providing the text for each slide AND a specific visual description (prompt) for the imagery/layout of that slide, strictly following the Konjam aesthetic described above."

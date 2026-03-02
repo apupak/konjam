@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meter Haaki | SWALPA</title>
+    <title>Adjust Pannunga | KONJAM</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
     <meta name="theme-color" content="#FFD700">
@@ -14,29 +14,29 @@
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
         rel="stylesheet">
     <meta name="description"
-        content="Play Meter Haaki — an interactive Kannada language game set in Bangalore. Negotiate auto-rickshaw fares and navigate street scenarios in Kannada.">
-    <link rel="alternate" hreflang="en" href="https://swalpa.org/games/meter_haaki/" />
-    <link rel="alternate" hreflang="kn" href="https://swalpa.org/games/meter_haaki/" />
-    <link rel="canonical" href="https://swalpa.org/games/meter_haaki/" />
-    <meta property="og:title" content="Meter Haaki | SWALPA">
+        content="Play Adjust Pannunga — an interactive Tamil language generator. Negotiate rent, talk to vendors, and survive Chennai logistics.">
+    <link rel="alternate" hreflang="en" href="https://konjam.org/games/adjust_pannunga/" />
+    <link rel="alternate" hreflang="ta" href="https://konjam.org/games/adjust_pannunga/" />
+    <link rel="canonical" href="https://konjam.org/games/adjust_pannunga/" />
+    <meta property="og:title" content="Adjust Pannunga | KONJAM">
     <meta property="og:description"
-        content="An interactive Kannada language game. Negotiate auto-rickshaw fares, give directions, and survive Bangalore street life — all in Kannada.">
-    <meta property="og:url" content="https://swalpa.org/games/meter_haaki/">
+        content="An interactive Tamil language scenario generator. Negotiate rent, deal with TNEB, and handle everyday logistics.">
+    <meta property="og:url" content="https://konjam.org/games/adjust_pannunga/">
     <meta property="og:type" content="website">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "LearningResource",
-        "name": "Meter Haaki",
-        "description": "An interactive game to practice spoken Bangalore Kannada through real-life street scenarios.",
-        "url": "https://swalpa.org/games/meter_haaki/",
-        "inLanguage": "kn",
+        "name": "Adjust Pannunga",
+        "description": "An interactive scenario generator to practice spoken Chennai Tamil for everyday logistics.",
+        "url": "https://konjam.org/games/adjust_pannunga/",
+        "inLanguage": "ta",
         "educationalLevel": "Beginner",
         "learningResourceType": "Game",
         "provider": {
             "@type": "Organization",
-            "name": "SWALPA",
-            "url": "https://swalpa.org"
+            "name": "KONJAM",
+            "url": "https://konjam.org"
         }
     }
     </script>
@@ -70,15 +70,16 @@
             <main id="game-scene">
                 <!-- Level content will be injected here -->
                 <div class="scene-intro">
-                    <h1>Meter Haaki 🛺</h1>
-                    <p class="scenario-text">You are at Indiranagar Metro exit. Autos are waiting. Survive the
-                        negotiation, earn respect, and make it across Bangalore — all in Kannada.</p>
-                    <button id="start-btn" class="primary-btn">Hogona! (Let's go)</button>
+                    <h1>Adjust Pannunga 🤝</h1>
+                    <p class="scenario-text">Navigate landlords, street vendors, and neighbours. Use your social
+                        currency and 'Adjust Pannunga' skills to survive Chennai logistics.</p>
+                    <button id="start-btn" class="primary-btn">Start Pannunga! (Let's start)</button>
                 </div>
             </main>
 
             <footer>
                 <div id="game-controls">
+                    <button id="undo-btn" class="control-btn secondary" disabled>↩ Undo (3 left)</button>
                     <button id="restart-btn" class="control-btn secondary" onclick="location.reload()">&#8635;
                         Restart</button>
                 </div>

@@ -10,7 +10,7 @@
 
 **Expert**: Mhm.
 
-**Host**: It's 6:30 in the evening. The sun is setting through this haze of exhaust fumes and you are standing on the curb at Silk Board Junction in Bengaluru.
+**Host**: It's 6:30 in the evening. The sun is setting through this haze of exhaust fumes and you are standing on the curb at Silk Board Junction in Chennai.
 
 **Expert**: Oof, Silk Board. The Bermuda triangle of traffic. It's the place where time goes to die.
 
@@ -50,9 +50,9 @@
 
 **Expert**: Most language learners, they obsess over the body of the car, the shiny paint, the leather seats, all that. That's the vocabulary. Nouns, post office, hospital, library.
 
-**Host**: Right. Yeah, I buy a Learn Kannada in 30 days book and the first chapter is always a list of nouns I'm just never going to use. Like pineapple or umbrella.
+**Host**: Right. Yeah, I buy a Learn Tamil in 30 days book and the first chapter is always a list of nouns I'm just never going to use. Like pineapple or umbrella.
 
-**Expert**: Exactly. That's the paint. But here's the thing about Bengaluru. You can often get away with using English paint. You can say office. You can say tech park. You can say metro station.
+**Expert**: Exactly. That's the paint. But here's the thing about Chennai. You can often get away with using English paint. You can say office. You can say tech park. You can say metro station.
 
 **Host**: Everyone understands the nouns.
 
@@ -60,7 +60,7 @@
 
 **Host**: Ah.
 
-**Expert**: But the engine, the thing that makes the car start, stop, turn left, turn right, and actually function, that has to be Kannada.
+**Expert**: But the engine, the thing that makes the car start, stop, turn left, turn right, and actually function, that has to be Tamil.
 
 **Host**: That's the grammar.
 
@@ -70,7 +70,7 @@
 
 **Expert**: Precisely. We're stripping it all the way down to the bare metal. We're talking logistical tools for navigation, transaction, and connection.
 
-**Host**: I love that. But okay, before we start bolting any parts together, we have to talk about the raw material. There's a really serious warning in our source material, specifically from the Improving Kannada pronunciation document.
+**Host**: I love that. But okay, before we start bolting any parts together, we have to talk about the raw material. There's a really serious warning in our source material, specifically from the Improving Tamil pronunciation document.
 
 **Expert**: And we cannot skip this. This is the difference between being understood and just being stared at blankly.
 
@@ -80,7 +80,7 @@
 
 **Host**: Right. I think a lot of English speakers, myself included, have this really bad habit of just applying our flat sort of American or British vowels to Indian words and just hoping for the best.
 
-**Expert**: And in Kannada, that simply doesn't work. It's not just about having an accent. It's about meaning. If you mispronounce a sound, you might be saying a completely different word.
+**Expert**: And in Tamil, that simply doesn't work. It's not just about having an accent. It's about meaning. If you mispronounce a sound, you might be saying a completely different word.
 
 **Host**: So this is critical.
 
@@ -92,7 +92,7 @@
 
 **Host**: Okay. Tea. Dog. My tongue is tapping that little ridge right behind my top teeth.
 
-**Expert**: That's the alveolar ridge. It's forward. Now for Kannada retroflex sounds, we're talking about the L. You have to do yoga with your tongue.
+**Expert**: That's the alveolar ridge. It's forward. Now for Tamil retroflex sounds, we're talking about the L. You have to do yoga with your tongue.
 
 **Host**: Yoga with my tongue. Okay.
 
@@ -130,7 +130,7 @@
 
 **Expert**: Okay, I'm going to be practicing that tongue curl in my spare time. Next up is vowel length. Now this one seems easier, but the source says it's a trap.
 
-**Host**: It is a massive trap because English is very lazy about vowel length. In Kannada, length is what we call semantically contrastive.
+**Host**: It is a massive trap because English is very lazy about vowel length. In Tamil, length is what we call semantically contrastive.
 
 **Expert**: Which means the length changes the definition of the word.
 
@@ -164,7 +164,7 @@
 
 **Host**: King. Woah, yeah. A little puff.
 
-**Expert**: And that puff of air changes the meaning in Kannada. You have Ka and you have Kha. You have Ga and Gha. You need to punch those aspirated consonants. It's a physical act. Got it. Okay, so curl the tongue, watch the clock on the vowels, and punch the air. We're going to be using these phonetic respellings provided in the notes like OH-luh-guh-dey to keep ourselves honest.
+**Expert**: And that puff of air changes the meaning in Tamil. You have Ka and you have Kha. You have Ga and Gha. You need to punch those aspirated consonants. It's a physical act. Got it. Okay, so curl the tongue, watch the clock on the vowels, and punch the air. We're going to be using these phonetic respellings provided in the notes like OH-luh-guh-dey to keep ourselves honest.
 
 **Host**: Exactly. We aren't just reading today, we are drilling.
 
@@ -178,21 +178,21 @@
 
 **Expert**: Right. There are spaces in between.
 
-**Host**: Kannada doesn't do that. Kannada takes the root word, the main brick, which is Mane, house, and the suffix for in, which is -⟨alli⟩, and it snaps them together into a single solid block. Maneyalli.
+**Host**: Tamil doesn't do that. Tamil takes the root word, the main brick, which is Mane, house, and the suffix for in, which is -⟨alli⟩, and it snaps them together into a single solid block. Maneyalli.
 
 **Expert**: Maneyalli. One word. One solid unit. And here is why the Lego theory is your survival kit. You do not need to memorize a phrasebook with 10,000 sentences. That's a fool's errand. You just need a pocket full of Legos, the suffixes.
 
 **Host**: Because I can snap those suffixes onto anything.
 
-**Expert**: Anything. And this brings us to the ultimate Kanglish hack. Let's say you're back at that Silk Board Junction. You want to say in the auto, you panic. You forget the Kannada word for auto, though. Hopefully, you know it's just auto.
+**Expert**: Anything. And this brings us to the ultimate Kanglish hack. Let's say you're back at that Silk Board Junction. You want to say in the auto, you panic. You forget the Tamil word for auto, though. Hopefully, you know it's just auto.
 
 **Host**: Yes, definitely auto. Yeah.
 
-**Expert**: But let's say you want to say in the office. You don't know the Kannada word for office. You don't need to.
+**Expert**: But let's say you want to say in the office. You don't know the Tamil word for office. You don't need to.
 
 **Host**: Okay.
 
-**Expert**: You take the English brick office. You snap on the Kannada brick -nalli, which is just -⟨alli⟩ with a little smoothing connecting sound. ⟨Office-nalli⟩.
+**Expert**: You take the English brick office. You snap on the Tamil brick -nalli, which is just -⟨alli⟩ with a little smoothing connecting sound. ⟨Office-nalli⟩.
 
 **Host**: ⟨Office-nalli⟩.
 

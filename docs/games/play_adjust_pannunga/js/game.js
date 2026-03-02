@@ -100,7 +100,7 @@ function updateBackground() {
 }
 
 function saveGame() {
-    localStorage.setItem('adjust_maadi_state', JSON.stringify({
+    localStorage.setItem('adjust_pannunga_state', JSON.stringify({
         respect: state.respect,
         wallet: state.wallet,
         patience: state.patience,
@@ -110,7 +110,7 @@ function saveGame() {
 }
 
 function loadGame() {
-    const saved = localStorage.getItem('adjust_maadi_state');
+    const saved = localStorage.getItem('adjust_pannunga_state');
     if (saved) {
         const parsed = JSON.parse(saved);
         Object.assign(state, parsed);
@@ -261,7 +261,7 @@ function handleChoice(choice) {
         }
     }
 
-    // Adjust Maadi Logic
+    // Adjust Pannunga Logic
     if (choice.text.toLowerCase().includes("adjust maadi") && state.respect < 15) {
         state.respect = 25;
         state.patience = Math.min(100, state.patience + 10);
@@ -283,12 +283,12 @@ function showBarrierResponse() {
     const dialogueText = document.getElementById('dialogue-text');
     const choicesContainer = document.getElementById('choices-container');
 
-    dialogueText.innerText = "Kannada mathadi! English gothilla!";
+    dialogueText.innerText = "Tamil pesunga! English theriyadhu!";
     choicesContainer.innerHTML = '';
 
     const resetBtn = document.createElement('button');
     resetBtn.className = 'choice-btn';
-    resetBtn.innerText = "Swalpa adjust maadi (Try Again)";
+    resetBtn.innerText = "Konjam adjust pannunga (Try Again)";
     resetBtn.onclick = () => {
         state.respect = Math.max(10, state.respect - 5);
         state.patience = Math.max(10, state.patience - 10);
@@ -307,7 +307,7 @@ function renderLevelFailed(message) {
     scene.innerHTML = `
         <div class="scene-intro animate-fade-in">
             <h1>Activity Failed</h1>
-            <p class="scenario-text">${message || "Bangalore logistics are tough!"}</p>
+            <p class="scenario-text">${message || "Chennai logistics are tough!"}</p>
             <button id="retry-btn" class="primary-btn">Try Again</button>
         </div>
     `;
@@ -342,7 +342,7 @@ function renderLevelComplete() {
         <div class="scene-intro animate-fade-in">
             <h1 class="premium-text">Activity Survived!</h1>
             <div class="score-card">
-                <span class="label">BANGALORE RANK</span>
+                <span class="label">CHENNAI RANK</span>
                 <h2 class="rank-slang">${rank.title}</h2>
                 <p class="rank-desc">${rank.desc}</p>
                 <div class="score-grid">
@@ -359,8 +359,8 @@ function renderLevelComplete() {
             
             <div class="game-actions">
                 ${isLastLevel ?
-            `<h2 class="premium-text">Adjust-Maadi Specialist!</h2><p class='scenario-text'>You've mastered the logistics of Namma Ooru.</p>` :
-            `<button id="next-level-btn" class="primary-btn">Munde Hogona! (Next activity)</button>`
+            `<h2 class="premium-text">Adjust-Pannunga Specialist!</h2><p class='scenario-text'>You've mastered the logistics of Namma Chennai.</p>` :
+            `<button id="next-level-btn" class="primary-btn">Adutha activity polama! (Next activity)</button>`
         }
                 <button class="control-btn" style="margin-top: 20px; width: 100%; padding: 12px; background: #25D366; color: white;" id="whatsapp-share-btn">📲 Share on WhatsApp</button>
                 <button class="control-btn" style="margin-top: 10px; width: 100%; padding: 12px;" id="x-share-btn">𝕏 Share on X</button>
@@ -370,11 +370,11 @@ function renderLevelComplete() {
         </div>
     `;
 
-    saveHighScore('adjust-maadi', { level: state.level, respect: state.respect });
-    unlockBadge('adjust_maadi_master');
+    saveHighScore('adjust-pannunga', { level: state.level, respect: state.respect });
+    unlockBadge('adjust_pannunga_master');
 
     document.getElementById('restart-game-btn').onclick = () => {
-        localStorage.removeItem('adjust_maadi_state');
+        localStorage.removeItem('adjust_pannunga_state');
         location.reload();
     };
 
@@ -396,8 +396,8 @@ function startNextLevel() {
 }
 
 function shareResult(platform, rank, level) {
-    const text = `🤝 I just survived ${level} scenarios of Bangalore Logistics in the Adjust-Maadi game! \n\nMy Rank: ${rank}\n\nCan you handle the streets? Try it on SWALPA.org! #SWALPA #BangaloreKannada #AdjustMaadi`;
-    const url = "https://swalpa.org/games/adjust_maadi/";
+    const text = `🤝 I just survived ${level} scenarios of Chennai Logistics in the Adjust-Maadi game! \n\nMy Rank: ${rank}\n\nCan you handle the streets? Try it on KONJAM.org! #KONJAM #ChennaiTamil #AdjustPannunga`;
+    const url = "https://konjam.org/games/adjust_maadi/";
     const fullMessage = `${text} \n\n${url}`;
 
     if (platform === 'whatsapp') {
@@ -418,9 +418,9 @@ function shareResult(platform, rank, level) {
 
 const gameAudio = new Audio();
 window.playGameAudio = function (filename) {
-    const voiceDir = localStorage.getItem('swalpa_voice_dir') || 'audio_native_v4_male';
+    const voiceDir = localStorage.getItem('konjam_voice_dir') || 'audio_native_v4_male';
     gameAudio.src = `../../assets/${voiceDir}/${filename}.mp3`;
-    gameAudio.play().catch(e => console.log("Audio play missing:", filename));
+    gameAudio.play().catch(e => console.log("[KONJAM] Audio play missing:", filename));
 };
 
 window.addEventListener('load', init);

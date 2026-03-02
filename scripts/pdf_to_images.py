@@ -20,6 +20,6 @@ def convert_pdf_to_images(pdf_path, output_dir):
         print(f"Saved {output_path}")
 
 if __name__ == "__main__":
-    pdf_path = "/Users/apupak/Documents/swalpa-private/docs/assets/pdfs/slides.pdf"
-    output_dir = "/Users/apupak/Documents/swalpa-private/docs/assets/img/slides"
+    pdf_path = "/Users/apupak/Documents/Konjam-private/docs/assets/pdfs/slides.pdf"
+    output_dir = "/Users/apupak/Documents/Konjam-private/docs/assets/img/slides"
     convert_pdf_to_images(pdf_path, output_dir)

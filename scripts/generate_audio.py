@@ -11,9 +11,9 @@ import unicodedata
 
 import argparse
 try:
-    from kannada_mapping import KANNADA_MAPPING
+    from tamil_mapping import TAMIL_MAPPING
 except ImportError:
-    KANNADA_MAPPING = {}
+    TAMIL_MAPPING = {}
 
 # Load API key from .env file
 def load_api_key():
@@ -41,8 +41,8 @@ def generate_audio(mode='phonetic', custom_voice=None, custom_output_dir=None):
     
     if mode == 'native':
         audio_dir = os.path.join(docs_dir, 'assets', custom_output_dir or 'audio_native')
-        voice_name = custom_voice or "kn-IN-Wavenet-A"
-        lang_code = "kn-IN"
+        voice_name = custom_voice or "ta-IN-Wavenet-A"
+        lang_code = "ta-IN"
     else:
         audio_dir = os.path.join(docs_dir, 'assets', custom_output_dir or 'audio')
         voice_name = custom_voice or "en-IN-Wavenet-A"
@@ -85,18 +85,18 @@ def generate_audio(mode='phonetic', custom_voice=None, custom_output_dir=None):
             
             is_ssml = False
             if mode == 'native':
-                if safe_filename in KANNADA_MAPPING:
-                    word = KANNADA_MAPPING[safe_filename]
+                if safe_filename in TAMIL_MAPPING:
+                    word = TAMIL_MAPPING[safe_filename]
                 else:
                     raw_word = match.group(1).strip().split('\n')[-1]
                     word = re.sub(r'[*‘“’”]+', '', raw_word).strip()
-                    # Do not strip_accents on Kannada words because it strips vowel marks!
+                    # Do not strip_accents on Tamil words because it strips vowel marks!
                 
                 # If word is empty or just punctuation, fallback to phonetic
                 if not re.search(r'[a-zA-Z\u0C80-\u0CFF]', word):
                     word = phonetic_text.replace('-', ' ')
 
-                tts_text = f"<speak><lang xml:lang='kn-IN'>{word}</lang></speak>"
+                tts_text = f"<speak><lang xml:lang='ta-IN'>{word}</lang></speak>"
                 is_ssml = True
             else:
                 normalized = phonetic_text.lower()
@@ -169,9 +169,9 @@ def generate_audio(mode='phonetic', custom_voice=None, custom_output_dir=None):
     print(f"DONE: {success_count} assets generated in {audio_dir}")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Generate SWALPA audio.')
+    parser = argparse.ArgumentParser(description='Generate Konjam audio.')
     parser.add_argument('--mode', choices=['phonetic', 'native'], default='native', help='Audio generation mode')
-    parser.add_argument('--voice', help='Override voice name (e.g., kn-IN-Chirp3-HD-Puck)')
+    parser.add_argument('--voice', help='Override voice name (e.g., ta-IN-Chirp3-HD-Puck)')
     parser.add_argument('--output-dir', dest='output_dir', help='Override output directory within docs/assets (e.g., audio_native_v4_male)')
     args = parser.parse_args()
     generate_audio(mode=args.mode, custom_voice=args.voice, custom_output_dir=args.output_dir)

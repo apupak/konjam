@@ -1,6 +1,6 @@
 # Level 3: The Surge (Stormy Weather)
 
-**Scenario**: A sudden Bangalore downpour starts. The sky is dark, and the roads are flooded. The driver pulls over.
+**Scenario**: A sudden Chennai downpour starts. The sky is dark, and the roads are flooded. The driver pulls over.
 
 ## 🌍 Environment Modifier
 *   **Active**: `Weather: Rain`
@@ -10,7 +10,7 @@
 
 ### Turn 1: The Rain Demand
 *   **Driver**: *"Saar, thumba male barthide. Nilli-stini, illandre 200 kodi."* (Module 07/10)
-*   **Player Choice A (Sympathetic)**: *"Anna, thumba heavy male ide, gothu. Swalpa adjust maadi, 50 extra kodthini."* (Module 02/08/10)
+*   **Player Choice A (Sympathetic)**: *"Anna, thumba heavy male ide, gothu. Konjam adjust maadi, 50 extra kodthini."* (Module 02/08/10)
     *   `Effect (Anna)`: { Respect: +20, Success: Agree } -> *"Sari saar, banni."*
     *   `Effect (Guru)`: { Respect: +10, Price: Meter+70 } -> *"Sari, adre bega nillisi."*
 *   **Player Choice B (Aggressive)**: *"Why double? Meter haaki anna!"* (Module 09)

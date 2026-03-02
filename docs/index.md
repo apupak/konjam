@@ -36,11 +36,16 @@ Our goal is to provide a **phonetic-only, Chennai-functional** Tamil learning re
 We focus on maximizing your return on investment by teaching you high-frequency vocabulary and practical phrases that you can use immediately in your daily life in Namma Chennai.
 </div>
 
+<div class="phrase-card" markdown style="margin-top: 20px;">
+## 🤝 Sister Projects
+Learning a different language? Check out [**Swalpa**](https://www.swalpa.org/){: target="_blank" rel="noopener"}, an independent but related project for learning conversational **Kannada** for Bangalore!
+</div>
+
 ---
 
-<div id="swalpa-wotd-root"></div>
+<div id="konjam-wotd-root"></div>
 
-<div id="swalpa-progress-dashboard" style="margin: 20px 0; padding: 25px; background: rgba(30, 41, 59, 0.7); border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.1); color: #F8FAFC; text-align: center; backdrop-filter: blur(12px);">
+<div id="konjam-progress-dashboard" style="margin: 20px 0; padding: 25px; background: rgba(30, 41, 59, 0.7); border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.1); color: #F8FAFC; text-align: center; backdrop-filter: blur(12px);">
   <h2 style="margin-top: 0; color: #FFD700; font-family: 'Outfit', sans-serif;">🏆 Your Chennai Journey</h2>
   
   <div style="margin: 20px 0;">
@@ -63,7 +68,7 @@ We focus on maximizing your return on investment by teaching you high-frequency 
       <span id="best-rickshaw" style="font-size: 20px; font-weight: 800;">---</span>
     </div>
     <div>
-      <span style="font-size: 10px; text-transform: uppercase; color: #94A3B8; display: block; margin-bottom: 5px;">Adjust-Paani</span>
+      <span style="font-size: 10px; text-transform: uppercase; color: #94A3B8; display: block; margin-bottom: 5px;">Adjust Pannunga</span>
       <span id="best-adjust" style="font-size: 20px; font-weight: 800;">---</span>
     </div>
   </div>
@@ -84,8 +89,8 @@ We focus on maximizing your return on investment by teaching you high-frequency 
     document.getElementById('global-progress-text').innerText = progress.percentToNext + '% to next rank';
 
     document.getElementById('best-suffix').innerText = scores['suffix-station'] || '---';
-    document.getElementById('best-rickshaw').innerText = scores['meter-haaki'] ? scores['meter-haaki'].respect : '---';
-    document.getElementById('best-adjust').innerText = scores['adjust-maadi'] ? scores['adjust-maadi'].respect : '---';
+    document.getElementById('best-rickshaw').innerText = scores['meter-podunga'] ? scores['meter-podunga'].respect : '---';
+    document.getElementById('best-adjust').innerText = scores['adjust-pannunga'] ? scores['adjust-pannunga'].respect : '---';
   }
 
   window.addEventListener('load', updateDashboard);

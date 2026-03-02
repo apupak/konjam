@@ -40,22 +40,22 @@ export const LEVELS = {
                 text: "Dynamic",   // Will be dynamic in game logic
                 choices: [
                     {
-                        text: "⟨Namaskāra⟩ Anna, Indiranagar 12th Main banni.",
+                        text: "⟨Vanakkam⟩ Anna, Anna Nagar 12th Main banni.",
                         effect: { respect: 15 },
                         next: "fare_check"
                     },
                     {
-                        text: "Indiranagar. ⟨Meter hāki⟩.",
+                        text: "Anna Nagar. ⟨Meter podu⟩.",
                         effect: { respect: 5, patience: -10 },
                         next: "fare_check"
                     },
                     {
-                        text: "⟨Oota āytha⟩? Indiranagar banni.",
+                        text: "⟨Saaptacha⟩? Anna Nagar banni.",
                         effect: { respect: 25, patience: 10 },
                         next: "fare_check"
                     },
                     {
-                        text: "Go to Indiranagar. Move fast.",
+                        text: "Go to Anna Nagar. Move fast.",
                         isEnglish: true,
                         effect: { respect: -15, patience: -20, barrier: true },
                         next: "fare_check"
@@ -67,17 +67,17 @@ export const LEVELS = {
                 text: "Meter plus 20 kodi saar. Thumba traffic ide.",
                 choices: [
                     {
-                        text: "Sari anna, ⟨hogōṇa⟩.",
+                        text: "Sari anna, ⟨polama⟩.",
                         effect: { respect: 10, wallet: -20 },
                         next: "level_complete"
                     },
                     {
-                        text: "⟨Bēda⟩ guru, meter haaki.",
+                        text: "⟨Vendaam⟩ guru, meter haaki.",
                         effect: { respect: 15, patience: -10 },
                         next: "level_complete"
                     },
                     {
-                        text: "⟨Svalpa adjust māḍi⟩ anna, student naanu.",
+                        text: "⟨Konjam adjust pannunga⟩ anna, student naanu.",
                         effect: { respect: 20 },
                         next: "level_complete"
                     },
@@ -93,7 +93,7 @@ export const LEVELS = {
     },
     2: {
         title: "The Maze (Navigation)",
-        scenario: "Navigate the narrow gullies of Malleshwaram. Guided by your driver.",
+        scenario: "Navigate the narrow gullies of Mylapore. Guided by your driver.",
         background: "assets/level_2_gullies.png",
         dialogue: {
             engagement: {
@@ -101,17 +101,17 @@ export const LEVELS = {
                 text: "Saar, illi flyover work aagtide. Left-ah, right-ah?",
                 choices: [
                     {
-                        text: "Illi ⟨balagaḍe thagoḷi⟩, aamele nera ⟨hōgi⟩.",
+                        text: "Illi ⟨right edunga⟩, aamele nera ⟨ponga⟩.",
                         effect: { respect: 15, patience: 10 },
                         next: "shortcut_check"
                     },
                     {
-                        text: "⟨Left hōgi⟩... alla alla, ⟨right thagoḷi⟩!",
+                        text: "⟨Left ponga⟩... alla alla, ⟨right edunga⟩!",
                         effect: { respect: -5, patience: -20 },
                         next: "shortcut_check"
                     },
                     {
-                        text: "⟨Svalpa adjust māḍi⟩ anna, full confusion.",
+                        text: "⟨Konjam adjust pannunga⟩ anna, full confusion.",
                         effect: { respect: 10 },
                         next: "shortcut_check"
                     },
@@ -128,17 +128,17 @@ export const LEVELS = {
                 text: "Saar, shortcut thogolla? Time ulit-the.",
                 choices: [
                     {
-                        text: "Haudu, gully olgade ⟨hōgi⟩.",
+                        text: "Haudu, gully olgade ⟨ponga⟩.",
                         effect: { respect: 15, patience: 10 },
                         next: "destination_near"
                     },
                     {
-                        text: "⟨Bēda⟩, main road-alle ⟨hōgi⟩.",
+                        text: "⟨Vendaam⟩, main road-alle ⟨ponga⟩.",
                         effect: { respect: 5, patience: -10 },
                         next: "destination_near"
                     },
                     {
-                        text: "Nimage ⟨gottidre⟩ thagoli anna.",
+                        text: "Nimage ⟨therinja⟩ thagoli anna.",
                         effect: { respect: 20 },
                         next: "destination_near"
                     },
@@ -152,20 +152,20 @@ export const LEVELS = {
             },
             destination_near: {
                 speaker: "Driver",
-                text: "Destination banthu saar. Illi nillisti-ni.",
+                text: "Destination banthu saar. Illi niruthuren.",
                 choices: [
                     {
-                        text: "⟨Dhanyavāda⟩ anna. Illi ⟨nillisi⟩.",
+                        text: "⟨Nandri⟩ anna. Illi ⟨niruthunga⟩.",
                         effect: { respect: 15 },
                         next: "level_complete"
                     },
                     {
-                        text: "⟨Svalpa munde nillisi⟩.",
+                        text: "⟨Konjam munnadi niruthunga⟩.",
                         effect: { respect: 5 },
                         next: "level_complete"
                     },
                     {
-                        text: "Super anna, ⟨ārāmāgi iri⟩.",
+                        text: "Super anna, ⟨safe-ah irunga⟩.",
                         effect: { respect: 20 },
                         next: "level_complete"
                     },
@@ -181,21 +181,21 @@ export const LEVELS = {
     },
     3: {
         title: "The Surge (Stormy Weather)",
-        scenario: "A sudden Bangalore downpour starts. The driver pulls over.",
+        scenario: "A sudden Chennai monsoon starts. The driver pulls over.",
         background: "assets/level_3_rain.png",
         isRainy: true,
         dialogue: {
             engagement: {
                 speaker: "Driver",
-                text: "Saar, thumba ⟨male⟩ barthide. Nilli-stini, illandre 200 kodi.",
+                text: "Saar, thumba ⟨mazhai⟩ barthide. Niruthuren, illandre 200 kodi.",
                 choices: [
                     {
-                        text: "Anna, thumba heavy ⟨male⟩ ide. 50 extra kodthini, ⟨banni⟩.",
+                        text: "Anna, thumba heavy ⟨mazhai⟩ ide. 50 extra kodthini, ⟨vaanga⟩.",
                         effect: { respect: 20 },
                         next: "rain_negotiation"
                     },
                     {
-                        text: "Why double? ⟨Meter hāki⟩ anna!",
+                        text: "Why double? ⟨Meter podu⟩ anna!",
                         isEnglish: true,
                         effect: { respect: -10, patience: -30 },
                         next: "rain_negotiation"
@@ -206,7 +206,7 @@ export const LEVELS = {
                         next: "rain_negotiation"
                     },
                     {
-                        text: "⟨Devaru nimage oḷḷēdu māḍthāre⟩, banni.",
+                        text: "⟨Kadavul ungala nalla vechiruppar⟩, banni.",
                         effect: { respect: 30 },
                         next: "rain_negotiation"
                     }
@@ -217,16 +217,16 @@ export const LEVELS = {
                 text: "Dynamic",
                 choices: [
                     {
-                        text: "Sari anna, tumba kelsa ideya? ⟨Oota āytha⟩?",
+                        text: "Sari anna, tumba kelsa ideya? ⟨Saaptacha⟩?",
                         effect: { respect: 30, patience: 20 },
                         next: "level_complete"
                     },
                     {
-                        text: "Illi ⟨nillisi⟩, bere auto nodthini.",
+                        text: "Illi ⟨niruthunga⟩, bere auto nodthini.",
                         effect: { end: 'reset' }
                     },
                     {
-                        text: "⟨Dhanyavāda⟩ anna, help madidri.",
+                        text: "⟨Nandri⟩ anna, help madidri.",
                         effect: { respect: 15 },
                         next: "level_complete"
                     },
@@ -242,7 +242,7 @@ export const LEVELS = {
     },
     4: {
         title: "The Bottleneck (Traffic)",
-        scenario: "You are stuck in Silboard traffic. The driver is getting restless.",
+        scenario: "You are stuck in Tidel Park traffic. The driver is getting restless.",
         background: "assets/level_4_traffic.png",
         dialogue: {
             engagement: {
@@ -250,7 +250,7 @@ export const LEVELS = {
                 text: "Yen guru, thumba traffic ide. Mathe?",
                 choices: [
                     {
-                        text: "Sakkath traffic guru. ⟨Svalpa adjust māḍi⟩.",
+                        text: "Sakkath traffic guru. ⟨Konjam adjust pannunga⟩.",
                         effect: { respect: 20, patience: 10 },
                         next: "level_complete"
                     },
@@ -260,7 +260,7 @@ export const LEVELS = {
                         next: "level_complete"
                     },
                     {
-                        text: "⟨Oota āytha⟩? Traffic problem common.",
+                        text: "⟨Saaptacha⟩? Traffic problem common.",
                         effect: { respect: 15 },
                         next: "level_complete"
                     },
@@ -281,20 +281,20 @@ export const LEVELS = {
         dialogue: {
             engagement: {
                 speaker: "Driver",
-                text: "Saar, illi daari illa. 'No Entry'. U-turn thonbond ⟨banni⟩.",
+                text: "Saar, illi daari illa. 'No Entry'. U-turn thonbond ⟨vaanga⟩.",
                 choices: [
                     {
-                        text: "Sari anna, ⟨hōgi⟩.",
+                        text: "Sari anna, ⟨ponga⟩.",
                         effect: { respect: 15 },
                         next: "level_complete"
                     },
                     {
-                        text: "Alli ⟨nillisi⟩, nanu hog-theeni.",
+                        text: "Alli ⟨niruthunga⟩, nanu hog-theeni.",
                         effect: { respect: 5, patience: -10 },
                         next: "level_complete"
                     },
                     {
-                        text: "⟨Munde hōgi⟩, bere daari ide.",
+                        text: "⟨Nera ponga⟩, bere daari ide.",
                         effect: { respect: 10 },
                         next: "level_complete"
                     },
@@ -318,7 +318,7 @@ export const LEVELS = {
                 text: "Banthu saar. 150 aaguthe.",
                 choices: [
                     {
-                        text: "Sari anna, hattu rupayi extra kodi, change ⟨bēḍa⟩.",
+                        text: "Sari anna, hattu rupayi extra kodi, change ⟨vendaam⟩.",
                         effect: { wallet: -160, respect: 25 },
                         next: "level_complete"
                     },
@@ -328,7 +328,7 @@ export const LEVELS = {
                         next: "level_complete"
                     },
                     {
-                        text: "⟨Dhanyavāda⟩ anna. Change thagoli.",
+                        text: "⟨Nandri⟩ anna. Change thagoli.",
                         effect: { respect: 15 },
                         next: "level_complete"
                     },
@@ -343,7 +343,7 @@ export const LEVELS = {
         }
     },
     7: {
-        title: "The Electronic City Flyover Limbo",
+        title: "The Kathipara Flyover Limbo",
         scenario: "Stranded on the high-speed flyover. The engine has failed. Shankar Anna looks worried.",
         background: "assets/level_7_flyover.png",
         dialogue: {
@@ -358,17 +358,17 @@ export const LEVELS = {
                         next: "refund_negotiation"
                     },
                     {
-                        text: "Anna, ⟨yēnāythu⟩? Engine problem-aa?",
+                        text: "Anna, ⟨Enna aachu⟩? Engine problem-aa?",
                         effect: { respect: 15, patience: 10 },
                         next: "refund_negotiation"
                     },
                     {
-                        text: "Auto stop aythu? ⟨Help bēkā⟩?",
+                        text: "Auto stop aythu? ⟨Help venuma⟩?",
                         effect: { respect: 5, patience: 5 },
                         next: "refund_negotiation"
                     },
                     {
-                        text: "Ayyo! Shankar Nag avru ididre sari madthidru!",
+                        text: "Ayyo! Rajinikanth avru ididre sari madthidru!",
                         effect: { respect: 30, patience: 20 },
                         next: "refund_negotiation"
                     }
@@ -385,12 +385,12 @@ export const LEVELS = {
                         next: "level_complete"
                     },
                     {
-                        text: "Anna, ⟨svalpa nyāya māthāḍi⟩. Half fare thagoli.",
+                        text: "Anna, ⟨nyayama pesunga⟩. Half fare thagoli.",
                         effect: { respect: 20, wallet: -75 },
                         next: "level_complete"
                     },
                     {
-                        text: "Full fare ⟨bēḍa⟩. Discount kodi please.",
+                        text: "Full fare ⟨vendaam⟩. Discount kodi please.",
                         effect: { respect: 5, wallet: -100 },
                         next: "level_complete"
                     },
@@ -405,7 +405,7 @@ export const LEVELS = {
     },
     8: {
         title: "The Terminal (Majestic Chaos)",
-        scenario: "Majestic Bus Stand at 6:30 PM. Rain is starting. You need to go to Sarjapur.",
+        scenario: "CMBT (Koyambedu) at 6:30 PM. Rain is starting. You need to go to OMR.",
         background: "assets/level_8_majestic.png",
         isHighStress: true,
         dialogue: {
@@ -414,23 +414,23 @@ export const LEVELS = {
                 text: "(Leaning against the auto, ignoring everyone)",
                 choices: [
                     {
-                        text: "Are you free? Sarjapur ⟨banni⟩. Meter haaki.",
+                        text: "Are you free? OMR ⟨vaanga⟩. Meter haaki.",
                         isEnglish: true,
                         effect: { respect: -20, patience: -15 },
                         next: "surcharge_negotiation"
                     },
                     {
-                        text: "⟨Namaskāra⟩ Anna, Sarjapur bartira? Urgent ide.",
+                        text: "⟨Vanakkam⟩ Anna, OMR bartira? Urgent ide.",
                         effect: { respect: 20, patience: 15 },
                         next: "surcharge_negotiation"
                     },
                     {
-                        text: "Sarjapur-aa? ⟨Meter hāki⟩ madi banni.",
+                        text: "OMR-aa? ⟨Meter podu⟩ madi banni.",
                         effect: { respect: 5, patience: 5 },
                         next: "surcharge_negotiation"
                     },
                     {
-                        text: "Sarjapur? One-and-half... bartira?",
+                        text: "OMR? One-and-half... bartira?",
                         effect: { respect: 25, patience: 20, wallet: -50 },
                         next: "surcharge_negotiation"
                     }
@@ -447,17 +447,17 @@ export const LEVELS = {
                         next: "level_complete"
                     },
                     {
-                        text: "Anna, nanu student. One-forty-ge ⟨adjust māḍi⟩.",
+                        text: "Anna, nanu student. One-forty-ge ⟨adjust pannunga⟩.",
                         effect: { respect: 25, wallet: -140 },
                         next: "level_complete"
                     },
                     {
-                        text: "One-fifty koddthini. ⟨Banni hogona⟩.",
+                        text: "One-fifty koddthini. ⟨Vaanga polam⟩.",
                         effect: { respect: 10, wallet: -150 },
                         next: "level_complete"
                     },
                     {
-                        text: "Anna, extra 30 koddthini. ⟨Hogōṇa⟩.",
+                        text: "Anna, extra 30 koddthini. ⟨Polam⟩.",
                         effect: { respect: 20, wallet: -180 },
                         next: "level_complete"
                     }
@@ -467,13 +467,13 @@ export const LEVELS = {
     },
     9: {
         title: "The High-Stakes Monsoon",
-        scenario: "Midnight. Indira Nagar. Heavy rain. You need Aster CMI Hospital immediately.",
+        scenario: "Midnight. Indira Nagar. Heavy rain. You need Apollo Hospital immediately.",
         background: "assets/level_9_emergency.png",
         isRainy: true,
         dialogue: {
             engagement: {
                 speaker: "Gowda",
-                text: "Thumbā ⟨male⟩ barthide. Manege hogabeku.",
+                text: "Thumbā ⟨mazhai⟩ barthide. Manege hogabeku.",
                 choices: [
                     {
                         text: "Please stop! Emergency! I'll pay double!",
@@ -482,12 +482,12 @@ export const LEVELS = {
                         next: "humanity_check"
                     },
                     {
-                        text: "Anna, dayavittu ⟨nillisi⟩. Hospital-ge ⟨hogabēku⟩.",
+                        text: "Anna, dayavittu ⟨niruthunga⟩. Hospital-ge ⟨poganum⟩.",
                         effect: { respect: 30, patience: 20 },
                         next: "humanity_check"
                     },
                     {
-                        text: "Emergency hospital. ⟨Bega hogōṇa⟩ please.",
+                        text: "Emergency hospital. ⟨Seekiram ponga⟩ please.",
                         effect: { respect: 10, patience: 5 },
                         next: "humanity_check"
                     },
@@ -503,7 +503,7 @@ export const LEVELS = {
                 text: "(Arrival at Hospital) Meter says 120. ⟨Banni⟩ saar.",
                 choices: [
                     {
-                        text: "Here is 240 as promised. ⟨Dhanyavāda⟩.",
+                        text: "Here is 240 as promised. ⟨Nandri⟩.",
                         isEnglish: true,
                         effect: { respect: -10, wallet: -240 },
                         next: "level_complete"
@@ -519,7 +519,7 @@ export const LEVELS = {
                         next: "level_complete"
                     },
                     {
-                        text: "Anna, Shankar Nag thara help madidri. ⟨Dhanyavāda⟩.",
+                        text: "Anna, Rajinikanth thara help madidri. ⟨Nandri⟩.",
                         effect: { respect: 50, wallet: -120 },
                         next: "level_complete"
                     }
@@ -530,8 +530,8 @@ export const LEVELS = {
 };
 
 export const RANKS = [
-    { threshold: 400, title: "Outer Ring Roadie", desc: "You survived, but the drivers think you're a clueless 'it-park' bot. Speak more Kannada!" },
-    { threshold: 700, title: "Sakkath Student", desc: "Solid effort! You're navigating the gullies with emerging confidence." },
-    { threshold: 1000, title: "A True Macha", desc: "Boss! Your 'Adjust Maadi' game is strong. Drivers respect the swagger." },
-    { threshold: Infinity, title: "Legendary Vishwa-Guru", desc: "Namma Ooru Legend! You speak more Kannada than the local traffic police." }
+    { threshold: 400, title: "OMR IT Guy", desc: "You survived, but the drivers think you're a clueless 'it-park' bot. Speak more Tamil!" },
+    { threshold: 700, title: "Semma Student", desc: "Solid effort! You're navigating the gullies with emerging confidence." },
+    { threshold: 1000, title: "A True Thala", desc: "Boss! Your 'Adjust Maadi' game is strong. Drivers respect the swagger." },
+    { threshold: Infinity, title: "Legendary Chennai-Vasi", desc: "Namma Chennai Legend! You speak more Tamil than the local traffic police." }
 ];

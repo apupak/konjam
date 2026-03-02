@@ -1,22 +1,22 @@
 /**
- * SWALPA Share Feature Library 
+ * KONJAM Share Feature Library 
  * Spawns a custom Share Modal with explicit platform options (WhatsApp, X, Copy)
  */
 
 window.triggerShare = function (text, url = '') {
     const fullMessage = url ? `${text}\n\n${url}` : text;
     // Fallback URL if none provided, extract from text if possible or default to homepage
-    const shareUrl = url || "https://swalpa.org";
+    const shareUrl = url || "https://konjam.org";
 
     showShareModal(fullMessage, shareUrl);
 };
 
 function showShareModal(text, url) {
-    let modal = document.getElementById('swalpa-share-modal-overlay');
+    let modal = document.getElementById('konjam-share-modal-overlay');
     if (!modal) {
         // Create the Overlay
         modal = document.createElement('div');
-        modal.id = 'swalpa-share-modal-overlay';
+        modal.id = 'konjam-share-modal-overlay';
         modal.style.cssText = `
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
@@ -33,7 +33,7 @@ function showShareModal(text, url) {
 
         // Create the Modal Container
         const container = document.createElement('div');
-        container.id = 'swalpa-share-modal-container';
+        container.id = 'konjam-share-modal-container';
         container.style.cssText = `
             background: linear-gradient(180deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.98));
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -162,14 +162,14 @@ function showShareModal(text, url) {
     // Force reflow
     void modal.offsetWidth;
     modal.style.opacity = '1';
-    document.getElementById('swalpa-share-modal-container').style.transform = 'translateY(0)';
+    document.getElementById('konjam-share-modal-container').style.transform = 'translateY(0)';
 }
 
 function closeShareModal() {
-    const modal = document.getElementById('swalpa-share-modal-overlay');
+    const modal = document.getElementById('konjam-share-modal-overlay');
     if (modal) {
         modal.style.opacity = '0';
-        document.getElementById('swalpa-share-modal-container').style.transform = 'translateY(30px)';
+        document.getElementById('konjam-share-modal-container').style.transform = 'translateY(30px)';
         modal.style.pointerEvents = 'none';
     }
 }
@@ -178,7 +178,7 @@ function closeShareModal() {
  * Triggers native share for the user profile, capturing their rank, streak, and badges.
  */
 window.triggerProfileShare = function (rankStr, streak, badgesArr) {
-    let msg = `🏆 I'm exploring Namma Bengaluru with SWALPA!\n\n`;
+    let msg = `🏆 I'm exploring Namma Chennai with KONJAM!\n\n`;
     if (rankStr) {
         msg += `Rank: ${rankStr}\n`;
     }
@@ -189,13 +189,13 @@ window.triggerProfileShare = function (rankStr, streak, badgesArr) {
         msg += `Badges Unlocked: ${badgesArr.map(b => b.emoji + ' ' + b.title).join(', ')}\n`;
     }
 
-    window.triggerShare(msg, "https://swalpa.org/profile");
+    window.triggerShare(msg, "https://konjam.org/profile");
 };
 
 // Auto-hydrate static share widgets on Lesson Pages with an inline preview box
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.swalpa-share-widget').forEach(widget => {
-        const btn = widget.querySelector('.swalpa-share-button');
+    document.querySelectorAll('.konjam-share-widget').forEach(widget => {
+        const btn = widget.querySelector('.konjam-share-button');
         if (btn && !widget.querySelector('.share-preview-box')) {
             const onclickAttr = btn.getAttribute('onclick');
             if (!onclickAttr) return;

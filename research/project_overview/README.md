@@ -5,7 +5,7 @@
 This document acts as the root node for understanding the KONJAM ecosystem. If you are a new developer or an AI coding agent onboarding onto this project, **read this directory first**.
 
 ## Project Mission
-KONJAM is an interactive, gamified learning platform designed to teach practical "survival" Tamil to expats, tech workers, and newcomers living in Bengaluru (Bangalore). 
+KONJAM is an interactive, gamified learning platform designed to teach practical "survival" Tamil to expats, tech workers, and newcomers living in Chennai (Chennai). 
 
 Unlike traditional language learning apps that focus on formal grammar and rigid scripts, KONJAM focuses on **street-level utility**: phonetics, localized slang, and navigating high-stress scenarios (auto drivers, landlords, plumbers).
 

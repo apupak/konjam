@@ -1,5 +1,5 @@
 /**
- * SWALPA Badge tracking and Toast Notification logic.
+ * KONJAM Badge tracking and Toast Notification logic.
  */
 
 const BADGE_DEFINITIONS = {
@@ -50,7 +50,7 @@ const BADGE_DEFINITIONS = {
     }
 };
 
-const STORAGE_KEY = 'swalpa_unlocked_badges';
+const STORAGE_KEY = 'konjam_unlocked_badges';
 
 function getUnlockedBadges() {
     const raw = localStorage.getItem(STORAGE_KEY);
@@ -80,7 +80,7 @@ function unlockBadge(badgeId) {
 
     unlocked.push(badgeId);
     saveUnlockedBadges(unlocked);
-    if (window.swalpaLogActivity) window.swalpaLogActivity(3);
+    if (window.konjamLogActivity) window.konjamLogActivity(3);
     showBadgeToast(badgeId);
 }
 
@@ -88,16 +88,16 @@ function showBadgeToast(badgeId) {
     const badge = BADGE_DEFINITIONS[badgeId];
     if (!badge) return;
 
-    let toast = document.getElementById('swalpa-badge-toast');
+    let toast = document.getElementById('konjam-badge-toast');
     if (!toast) {
         toast = document.createElement('div');
-        toast.id = 'swalpa-badge-toast';
+        toast.id = 'konjam-badge-toast';
         toast.style.cssText = `
             position: fixed;
             bottom: 24px;
             right: 24px;
-            background: linear-gradient(135deg, #FFD200, #CE1126);
-            color: white;
+            background: linear-gradient(135deg, var(--konjam-blue), var(--konjam-pink));
+            color: #1E293B;
             padding: 16px 24px;
             border-radius: 12px;
             font-family: 'Outfit', sans-serif;

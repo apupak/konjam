@@ -1,92 +1,64 @@
 ---
 hide:
   - toc
-image: assets/img/social/og_lesson_09.jpg
-description: Tamil directions, traffic navigation, and conflict phrases for Chennai. Learn how to give auto-rickshaw directions, handle negotiations, and navigate disputes.
+image: assets/img/social/og_lesson_08.jpg
+description: Essential Tamil for navigating Chennai's streets. Learn how to negotiate with auto-rickshaws, command directions, and safely de-escalate conflicts.
 ---
 # 08. Travel, Directions, and Conflict
 
-Navigating Chennai traffic requires clear, authoritative directions. The core spatial markers you learned previously (*inga* ⟨IN-gah⟩, *anga* ⟨UN-gah⟩) are combined with these directional commands to form the "Auto-Rickshaw Protocol". Handling interactions on the street, including negotiations and minor conflicts, is also crucial.
+Navigating Chennai involves managing auto-rickshaws, traversing dense urban streets, and possessing the linguistic tools to de-escalate road disputes or manage mechanical failures.
 
 ## 1. The Auto-Rickshaw Protocol
-Before boarding, always establish the destination and the pricing model.
 
-* **Destination Check:** Always ask before boarding: *"[Location] varuveengala?"* ⟨VAH-roo-VEEN-guh-lah⟩ (Will you come to [Location]?).
-* **Pricing Demand:** Establish the rate: *"Meter podu"* ⟨MEE-ter POH-doo⟩ (Put the meter down) or *"Evlo aagum?"* ⟨YEV-loh AAH-gum⟩ (How much will it be?).
-* **Refusing Surge Pricing:** *"Adhellam venam"* ⟨a-dhay-LAAM VAY-naam⟩ (I don't want all that / No need).
+Before boarding an auto-rickshaw, specific negotiations are required to avoid exploitation. The protocol involves establishing the destination and fare upfront.
 
-## 2. Navigating the Streets (Directions)
-Use these terms with the respectful imperative verbs like *Ponga* ⟨POHN-gah⟩ (Go) or *Yedunga* ⟨YAY-doon-gah⟩ (Take) or *Niruthunga* ⟨NEE-roo-THOON-gah⟩ (Stop).
+1.  **Destination check:** "[Location] வருவீங்களா?" ⟨[Location] vuh-roo-VEENG-guh-lah?⟩ *(Will you come to [Location]?)*
+2.  **Demanding the meter:** "மீட்டர் ேபாடு" ⟨MEE-ter POH-doo⟩ *(Put the meter down)*.
+3.  **Asking the estimate:** "எவ்வளவு ஆகும்?" ⟨yev-vuh-luh-VOO AAH-goom?⟩ *(How much will it be?)*
+4.  **Refusing surge pricing:** If quoted an absurd rate, say "அெதல்லாம் ேவணாம்" ⟨a-dhay-LAAM VAY-naam⟩ *(I don't want all that / No need)*.
 
-| Tamil | English Meaning | Context / Usage |
-| :--- | :--- | :--- |
-| **Nera** ⟨NAY-rah⟩ | Straight | *"Nera ponga"* (Go straight). |
-| **Left-la** ⟨LEFT-lah⟩ | Left Side | Chennai heavily mixes English directions. *"Left-la yedunga"* (Take a left). |
-| **Right-la** ⟨RIGHT-lah⟩ | Right Side | *"Right-la yedunga"* (Take a right). |
-| **Munnadi** ⟨MOON-naa-dee⟩ | Forward / Ahead | *"Konjam ⟨KOHN-jum⟩ munnadi niruthunga"* (Stop a little ahead). |
-| **Pinnadi** ⟨PIN-naa-dee⟩ | Behind / Back | Indicates the rear or reversing direction. *"Pinnadi vaanga ⟨VAAN-gah⟩"* (Come back/reverse). |
-| **Inga** ⟨IN-gah⟩ | Here | *"Ingaye niruthunga"* (Stop right here). |
-| **Anga** ⟨UN-gah⟩ | There | *"Anga niruthunga"* (Stop there). |
-| **Vegama ponga** ⟨VAY-gah-maa POHN-gah⟩ | Go fast | *"Late aagudhu ⟨AAH-goo-dhoo⟩, vegama ponga"* (It's getting late, go fast). |
-| **Medhuva ponga** ⟨MAY-dhoo-vaa POHN-gah⟩ | Go slow | Useful for rough roads or navigating narrow gullies. |
+### Realistic Dialogue Example (Auto Negotiation)
 
-## 3. Distance and Space
+*   **You:** அண்ணா, அண்ணாநகர் வருவீங்களா? ⟨UN-naa, Anna Nagar vuh-roo-VEENG-guh-lah?⟩ *(Brother, will you come to Anna Nagar?)*
+*   **Driver:** இருநூறு ரூபா குடுங்க. ⟨ee-roo-NOO-roo ROO-baa koo-doong-gah.⟩ *(Give two hundred rupees.)*
+*   **You:** ெராம்ப ஜாஸ்தி. மீட்டர் ேபாடுங்க. ⟨ROM-bah JAAS-tee. MEE-ter poh-doong-gah.⟩ *(Too much. Put the meter.)*
+*   **Driver:** மீட்டர் ரிப்ேபர் சார். நூத்தி அம்பது குடுங்க. ⟨MEE-ter REPAIR saar. NOO-thee um-buh-dhoo koo-doong-gah.⟩ *(Meter is broken sir. Give one hundred and fifty.)*
+*   **You:** சரி, ேபாங்க. ⟨SUH-ree, POH-ngah.⟩ *(Okay, go.)*
 
-| Tamil | English Meaning | Context / Usage |
-| :--- | :--- | :--- |
-| **Pakkathula** ⟨PUK-kah-thoo-lah⟩ | Near | *"Pakkathula dhaan irukku"* (It is right near). |
-| **Dhoorama** ⟨DHOO-rah-maa⟩ | Far | *"Romba ⟨ROHM-bah⟩ dhooram"* (Very far). |
-| **Ulla** ⟨OOL-lah⟩ | Inside | Useful for directing delivery personnel to leave items inside a gate. |
-| **Veliya** ⟨VAY-lee-yah⟩ | Outside | Used to instruct drivers or guests to wait externally. |
-| **Vazhi illa** ⟨VAH-zhee ILL-lah⟩ | Dead End | Literally: Road is not there / No road ahead. |
+## 2. Navigating Space and Speed
 
-## 4. Traffic and Road Rage
+Directional commands rely on spatial markers paired with the verb *Ponga* (Go) or *Yedunga* (Take).
 
-| Tamil | English Meaning | Context / Usage |
-| :--- | :--- | :--- |
-| **Paathu ponga** ⟨PAA-thoo POHN-gah⟩ | Go carefully | Used when someone is driving carelessly. |
-| **Vazhi vidunga** ⟨VAH-zhee VIH-doon-gah⟩ | Leave way | Asking for space to pass. |
-| **Signal-la niruthunga** ⟨signal-lah NEE-roo-THOON-gah⟩ | Stop at the signal | Auto/Cab instruction. |
-| **Evlo fine?** ⟨YEV-loh fine⟩ | How much fine? | Interaction with traffic police. |
-| **Licence irukku** ⟨licence IH-roo-koo⟩ | I have a licence | Showing documentation. |
-| **Parking enga irukku?** ⟨parking YEN-gah IH-roo-koo⟩ | Where is parking? | Finding a spot. |
+*   **பக்கத்துல** ⟨PUK-kuh-thoo-lah⟩ - Near
+*   **தூரமா** ⟨DHOO-ruh-mah⟩ - Far
+*   **உள்ள / ெவளிய** ⟨OOL-lah / VAY-lee-yah⟩ - Inside / Outside
+*   **வழி இல்ல** ⟨vuh-zhee ILL-lah⟩ - Dead end *(Literally: "Road is not there")*
 
-## 5. Conflict De-escalation
-The goal here is to soothe tension rather than amplify it.
+## 3. Conflict De-escalation and Defense
 
-| Tamil | English Meaning | Context / Usage |
-| :--- | :--- | :--- |
-| **Summa irunga** ⟨SOOM-maa IH-roon-gah⟩ | Be quiet / Just be | *"Saar, summa irunga."* (Sir, just be quiet). |
-| **Adhigama pesaathinga** ⟨uh-DHEE-guh-maa PAY-saa-theen-gah⟩ | Don't talk too much | Used to stop an argument from stretching. |
-| **Paravala** ⟨PAH-rah-vaa-la⟩ | No problem / It's okay | Ideal for resolving minor bumps or mistakes. |
-| **En thappu illa** ⟨YEN THUP-poo ILL-lah⟩ | Not my mistake | Firmly defending yourself. |
-| **Emathureenga** ⟨YAY-maa-thoo-reen-gah⟩ | Cheating | *"Idhu yemaathuradhu."* (This is cheating). |
+Traffic in an urban metropolis inevitably leads to friction. Knowing how to immediately suppress an argument or calmly assert oneself is vital for safety.
 
-## 6. Medical Emergencies
-If you need to quickly communicate distress to an auto driver, pharmacist, or bystander, these phrases are universally understood.
+*   **சும்மா இருங்க** ⟨SOOM-maa ee-ROONG-gah⟩ - Be quiet / Just be. 
+    *   *Used to forcefully halt someone's complaining.*
+*   **அதிகமா ேபசாதீங்க** ⟨uh-dhee-guh-MAA pay-SAA-theeng-gah⟩ - Don't talk too much. 
+    *   *Used to stop an argument.*
+*   **பரவால** ⟨PAH-ruh-vaa-lah⟩ - No problem / It's okay. 
+    *   *Essential for brushing off minor scrapes or bumps.*
+*   **என் தப்பு இல்ல** ⟨YEN thup-POO ill-lah⟩ - It is not my mistake.
+*   **ஏமாத்துறீங்க** ⟨YAY-maa-thoo-reeng-gah⟩ - You are cheating me. 
+    *   *Used to call out a scam or an unfair vendor.*
 
-| Tamil | English Meaning | Context / Usage |
-| :--- | :--- | :--- |
-| **Vegama hospital-ku ponga** ⟨VAY-gah-maa hospital-KOO POHN-gah⟩ | Go to the hospital fast | Instructing an auto or cab driver. |
-| **Thalai vali** ⟨THAH-lai VAH-lee⟩ | Head ache | General distress (*Thalai* = Head, *Vali* = Pain). |
-| **Kaachal** ⟨KAAH-chul⟩ | Fever | Asking for basic medicine at a pharmacy. |
-| **Ratham varudhu** ⟨RAH-thum VAH-roo-dhoo⟩ | Bleeding is happening | Accidental emergency (*Ratham* = Blood). |
-| **Doctor enga irukaanga?** ⟨doctor YEN-gah ih-ROO-kaan-gah⟩ | Where is the doctor? | Finding help in a clinic. |
+## 4. Repairs and Breakdowns
 
-## 7. Home and Vehicle Repairs
+If a vehicle or household appliance fails, these diagnostic phrases are used:
 
-| Tamil | English Meaning | Context / Usage |
-| :--- | :--- | :--- |
-| **Puncture aayiduchu** ⟨puncture AAH-yee-doo-choo⟩ | It got punctured | Tyre trouble. |
-| **Thanni olugudhu** ⟨THUN-nee OH-loo-goo-dhoo⟩ | Water is leaking | Plumbing issue. |
-| **Pipe block aayiduchu** ⟨pipe block AAH-yee-doo-choo⟩ | Pipe got blocked | Drain issue. |
-| **Light eriyala** ⟨light YEH-ree-yah-lah⟩ | Light is not burning | Electrical issue. |
-| **Fan odala** ⟨fan OH-duh-lah⟩ | Fan not running | Broken appliance. |
-| **Switch work aagala** ⟨switch work AAH-guh-lah⟩ | Switch not working| Broken switch. |
-| **Evlo aagum?** ⟨YEV-loh AAH-gum⟩ | How much will it be?| Asking for an estimate before work begins. |
+*   **பஞ்சர் ஆயிடுச்சு** ⟨PUN-chur aay-ee-doo-choo⟩ - It got punctured (flat tire).
+*   **தண்ணி ஒழுகுது** ⟨THUN-nee oh-loo-goo-dhoo⟩ - Water is leaking.
+*   **ஒர்க் ஆகல** ⟨WORK aa-guh-lah⟩ - Not working. 
+    *   *Universal Tanglish phrase for a broken machine or appliance.*
 
-<div class="swalpa-share-widget">
-    <button class="swalpa-share-button" onclick="window.triggerShare('Meter podu! (Put the meter!). Surviving auto rides in Chennai with Konjam: https://konjam.org/08_travel_and_conflict')">
+<div class="konjam-share-widget">
+    <button class="konjam-share-button" onclick="window.triggerShare('Never get scammed by an auto driver in Chennai again! Learn to negotiate securely on Konjam: https://konjam.org/08_travel_and_conflict')">
         <span class="share-icon">📤</span> Share
     </button>
 </div>

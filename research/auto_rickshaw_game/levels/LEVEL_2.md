@@ -15,13 +15,13 @@
 *   **Player Choice A (Right/Precise)**: *"Illi balagade thagonli, aamele nera hogi."* (Module 09)
     *   `Effect (Guru)`: { Respect: +15, Progress: +30% } -> *"Sari saar, neat-agi heli-deeri."*
     *   `Effect (Macha)`: { Respect: +10, Progress: +40% } -> *"Super macha, fast-agi hogona."*
-*   **Player Choice B (Indecisive)**: *"Left hogi... alla alla, right thogoli! Swalpa adjust maadi."* (Module 02/08)
-    *   `Effect (All)`: { Patience: -20, Respect: -5 } -> *"Saar, swalpa clear-agi heli."*
+*   **Player Choice B (Indecisive)**: *"Left hogi... alla alla, right thogoli! Konjam adjust maadi."* (Module 02/08)
+    *   `Effect (All)`: { Patience: -20, Respect: -5 } -> *"Saar, Konjam clear-agi heli."*
 
 ### Turn 2: The "Hurry" Environment (Random Trigger)
 *   **Condition**: If `Path A` is chosen and `Patience < 50`.
 *   **Driver**: *"Tumba jaasthi time aagtide saar. Illi nillisti-ni?"* (Module 07/09)
-*   **Player Choice A (Encouraging)**: *"Bēda anna, swalpa munde hogi. Alli park hatra nillisi."* (Module 09)
+*   **Player Choice A (Encouraging)**: *"Bēda anna, Konjam munde hogi. Alli park hatra nillisi."* (Module 09)
     *   `Effect (Anna)`: { Respect: +10, Patience: +15 }
 *   **Player Choice B (Bribe/Urgent)**: *"Bega hogi anna, innu hattu rupayi extra kodthini."* (Module 05/09)
     *   `Effect (Macha)`: { Respect: +20, Progress: +50% }

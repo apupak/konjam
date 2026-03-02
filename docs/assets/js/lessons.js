@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const showKey = 'swalpa_completed_lessons';
+    const showKey = 'konjam_completed_lessons';
 
     // Helper to get array of completed lesson IDs
     function getCompletedLessons() {
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!document.getElementById('lesson-finish-toggle-wrapper')) {
             const toggleWrapper = document.createElement('div');
             toggleWrapper.id = 'lesson-finish-toggle-wrapper';
-            toggleWrapper.className = 'swalpa-phonetic-toggle-wrapper subtle-top-toggle';
+            toggleWrapper.className = 'konjam-phonetic-toggle-wrapper subtle-top-toggle';
             // Custom styling for bottom placement
             toggleWrapper.style.marginTop = '40px';
             toggleWrapper.style.paddingTop = '20px';
@@ -52,15 +52,15 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleWrapper.style.maxWidth = '100%';
 
             toggleWrapper.innerHTML = `
-                <span class="swalpa-toggle-label" style="font-weight: 700;">✅ Mark Lesson as Finished</span>
-                <label class="swalpa-toggle-switch">
+                <span class="konjam-toggle-label" style="font-weight: 700;">✅ Mark Lesson as Finished</span>
+                <label class="konjam-toggle-switch">
                     <input type="checkbox" id="lesson-finish-toggle-checkbox">
-                    <span class="swalpa-slider"></span>
+                    <span class="konjam-slider"></span>
                 </label>
                 <span style="font-size: 12px; color: #94A3B8; margin-left: auto;">Awards 100 Respect Points</span>
             `;
 
-            const shareWidget = mainContent.querySelector('.swalpa-share-widget');
+            const shareWidget = mainContent.querySelector('.konjam-share-widget');
             if (shareWidget) {
                 mainContent.insertBefore(toggleWrapper, shareWidget);
             } else {
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (e.target.checked) {
                     if (!currentArr.includes(currentLessonId)) {
                         currentArr.push(currentLessonId);
-                        if (window.swalpaLogActivity) window.swalpaLogActivity(2);
+                        if (window.konjamLogActivity) window.konjamLogActivity(2);
                     }
                 } else {
                     currentArr = currentArr.filter(id => id !== currentLessonId);

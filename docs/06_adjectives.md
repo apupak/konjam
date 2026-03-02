@@ -1,54 +1,71 @@
 ---
 hide:
   - toc
-image: assets/img/social/og_lesson_07.jpg
-description: Tamil adjectives and descriptors for Chennai daily life. Learn how to describe size, quality, colour, and feeling — with phonetic pronunciation guides.
+image: assets/img/social/og_lesson_06.jpg
+description: Understand how to describe objects, food, and feelings in Tamil. Learn the essential adjectives, colors, and the unique Dative Case for expressing internal states.
 ---
-# 06. Adjectives & Descriptors
+# 06. Adjectives, Descriptors, and States
 
-In Tamil, descriptive adjectives generally precede the noun they modify, maintaining the exact same syntactic order as English and Hindi (e.g., *Periya veedu* ⟨pay-REE-yuh VEE-doo⟩ = Big house = *Bada ghar*). 
-
-This lesson covers high-frequency opposites and essential descriptors for size, quality, and taste.
+In Tamil, adjectives do not change form based on the gender or plurality of the noun they describe. Syntactically, the adjective directly precedes the noun, identical to English structure (e.g., Big House = *Periya veedu*).
 
 ## 1. Opposites and General Descriptors
-These adjectives are crucial for evaluating objects, making purchases, or describing the environment.
 
-| Tamil | English Meaning | Context / Notes |
-| :--- | :--- | :--- |
-| **Nalla** ⟨NUL-lah⟩ | Good / Nice | A universally useful adjective. Before a noun (e.g., *Nalla paiyan*). |
-| **Nalla irukku** ⟨NUL-lah ee-ROOK-koo⟩ | It is good | Used to describe food, weather, health, or objects. |
-| **Mosa(m)** ⟨MOH-sum⟩ | Bad | Used to describe poor quality or negative situations. |
-| **Periya** ⟨pay-REE-yuh⟩ | Big | Always precedes the noun (e.g., *Periya car*). |
-| **Chinna** ⟨CHIN-nah⟩ | Small | Essential for determining portion size or items. |
-| **Sooda** ⟨SOO-dah⟩ | Hot | Used for objects, and food (e.g., *Soodana kaapi* - Hot coffee). |
-| **Kulira / Jil-nu** ⟨koo-LEE-ruh / JILL-noo⟩ | Cold | Used for liquids or weather ("Jil-nu irukku"). |
-| **Pudusu** ⟨POO-doo-soo⟩ | New | Used for new objects or places (e.g., *Pudusu car*). |
-| **Pazhasu** ⟨PUH-zhuh-soo⟩ | Old | Used for old things. Note the proto-Dravidian 'zh' retroflex. |
-| **Vegama** ⟨VAY-guh-mah⟩ | Fast | Very useful to urge auto/cab drivers to speed up (*Vegama ponga*). |
-| **Medhuva** ⟨MAY-dhoo-vah⟩ | Slow / Softly | Extremely important when asking someone to drive carefully or speak slower. |
-| **Jaasthi / Romba** ⟨JAAS-tee / ROM-bah⟩ | More / Too much | Essential for bargaining (*Jaasthi aachu* - It has become too much). |
-| **Kammi** ⟨KUM-mee⟩ | Less | Used to negotiate prices (*Konjam kammi pannunga* - Make it a little less). |
-| **Sari** ⟨SUH-ree⟩ | Correct / Okay | Used constantly as an agreement particle to confirm instructions or a price. |
-| **Thappu** ⟨THUP-poo⟩ | Wrong | Used to point out an error. |
-| **Suththam** ⟨SOOT-thum⟩ | Clean | Sanskrit root (*Swachh*) |
-| **Azhukku** ⟨UH-zhook-koo⟩ | Dirty | Used to complain about hygiene. |
+These descriptors are essential for evaluating quality, environment, and making purchases.
 
-## 2. Sensory Experiences (Taste)
-The five primary tastes. These are simple adjectives that can be used directly with nouns or with the verb *irukku* ⟨ee-ROOK-koo⟩ (it is).
+| Tamil Adjective | Phonetic Guide | English Meaning | Usage Example |
+| :--- | :--- | :--- | :--- |
+| **நல்ல / ேமாசம்** | ⟨NUL-lah⟩ / ⟨MOH-sum⟩ | Good / Bad | நல்ல ைபயன் (Good boy) |
+| **ெபரிய / சின்ன** | ⟨pay-REE-yuh⟩ / ⟨CHIN-nah⟩ | Big / Small | சின்ன வண்டி (Small vehicle) |
+| **புதுசு / பழசு** | ⟨POO-doo-soo⟩ / ⟨PUH-zhuh-soo⟩ | New / Old | புது துணி (New clothes) |
+| **சூடா / ஜில்-னு** | ⟨SOO-dah⟩ / ⟨JILL-noo⟩ | Hot / Cold | சூடா காபி (Hot coffee) |
+| **ேவகமா / ெமதுவா** | ⟨VAY-guh-mah⟩ / ⟨MAY-dhoo-vah⟩ | Fast / Slow | ேவகமா ேபாங்க (Go fast) |
+| **ஜாஸ்தி / கம்மி** | ⟨JAAS-tee⟩ / ⟨KUM-mee⟩ | More(Too much) / Less | ெகாஞ்சம் கம்மி பண்ணுங்க (Reduce a little) |
+| **சுத்தம் / அழுக்கு** | ⟨SOOT-thum⟩ / ⟨UH-zhook-koo⟩ | Clean / Dirty | ரூம் சுத்தம் பண்ணுங்க (Clean the room) |
+| **சரி / தப்பு** | ⟨SUH-ree⟩ / ⟨THUP-poo⟩ | Correct(Okay)/ Wrong | இது தப்பு (This is wrong) |
 
-| Tamil | English Meaning | Example / Context |
-| :--- | :--- | :--- |
-| **Inippu** ⟨ee-NIP-poo⟩ | Sweet | "Coffee romba ⟨ROM-bah⟩ **inippa** irukku." (Coffee is very sweet). |
-| **Kaaram** ⟨KAA-rum⟩ | Spicy / Hot | "Oota ⟨OO-tah⟩ konjam ⟨KON-jum⟩ **kaaram** venum ⟨VEH-noom⟩." (I want the food a little spicy). |
-| **Pulippu** ⟨poo-LIP-poo⟩ | Sour | "Thayir ⟨THUH-yeer⟩ **pulippa** irukku." (The curd has become sour). |
-| **Kasappu** ⟨kuh-SUP-poo⟩ | Bitter | Used for bitter gourd or medicines. |
-| **Uppu** ⟨OOP-poo⟩ | Salt / Salty | (Also the noun for salt). |
-| **Rusi** ⟨ROO-see⟩ | Tasty / Delicious | "Saappadu romba **rusiya** irundhuchu ⟨ee-ROON-dhoo-choo⟩." (Food was very tasty). |
+## 2. Colors
 
-*Note: Complex internal states and physical ailments (like hunger, pain, anger) are typically expressed using the "Experiencer Dative Paradigm" (e.g., 'Enakku ⟨eh-nuh-KOO⟩ vali ⟨VUH-lee⟩ irukku' - To me, there is pain).*
+Understanding basic color terminology is helpful for descriptions and shopping.
 
-<div class="swalpa-share-widget">
-    <button class="swalpa-share-button" onclick="window.triggerShare('Semma! (It\\'s awesome!) Describing Chennai on Konjam: https://konjam.org/06_adjectives')">
+*   **கருப்பு** ⟨kuh-ROOP-poo⟩ - Black
+*   **ெவள்ைள** ⟨VEL-lai⟩ - White
+*   **சிவப்பு** ⟨sih-VUP-poo⟩ - Red
+*   **பச்ைச** ⟨PUCH-chai⟩ - Green
+*   **மஞ்சள்** ⟨MUN-jul⟩ - Yellow
+*   **நீலம்** ⟨NEE-lum⟩ - Blue
+
+## 3. Sensory Experiences (Taste)
+
+The primary tastes are often paired with the verb **இருக்கு** ⟨ee-ROOK-koo⟩ (it is) to describe food.
+
+*   **இனிப்பு** ⟨ee-NIP-poo⟩ - Sweet
+*   **காரம்** ⟨KAA-rum⟩ - Spicy / Hot
+*   **புளிப்பு** ⟨poo-LIP-poo⟩ - Sour (used for curd/yogurt)
+*   **கசப்பு** ⟨kuh-SUP-poo⟩ - Bitter (used for medicine)
+*   **உப்பு** ⟨OOP-poo⟩ - Salty (also the noun for salt)
+*   **ருசி** ⟨ROO-see⟩ - Tasty / Delicious
+
+## 4. The Experiencer Dative Paradigm (Feelings & States)
+
+A critical rule of Tamil grammar is how physical and internal states are expressed. States like hunger, pain, anger, or even cognitive states like knowing and liking, are not expressed as adjectives describing the person's state of being (e.g., "I am pained" or "I am hungry"). 
+
+Instead, Tamil uses the **Dative Case** (meaning "to me"), placing the feeling or concept as an object that exists unto the person.
+
+*   **எனக்கு வலி இருக்கு** ⟨eh-nuh-KOO vuh-lee ee-ROOK-koo⟩ 
+    *   *Literally:* "To me, pain is there" 
+    *   *Meaning:* I am in pain.
+*   **எனக்கு பசிக்குது** ⟨eh-nuh-KOO puh-SEE-koo-dhoo⟩ 
+    *   *Literally:* "To me, hunger happens" 
+    *   *Meaning:* I am hungry.
+*   **எனக்கு பிடிக்கும்** ⟨eh-nuh-KOO pih-DIH-koom⟩ 
+    *   *Literally:* "To me, it is pleasing" 
+    *   *Meaning:* I like it.
+*   **எனக்கு ெதரியும்** ⟨eh-nuh-KOO they-ree-YOOM⟩ 
+    *   *Literally:* "To me, it is known" 
+    *   *Meaning:* I know.
+
+<div class="konjam-share-widget">
+    <button class="konjam-share-button" onclick="window.triggerShare('You don\\'t say \'I am hungry\' in Tamil. You say \'Hunger happens to me\'. Learn why on Konjam: https://konjam.org/06_adjectives')">
         <span class="share-icon">📤</span> Share
     </button>
 </div>

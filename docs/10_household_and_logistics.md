@@ -1,94 +1,95 @@
 ---
 hide:
   - toc
-image: assets/img/social/og_lesson_04.jpg
-description: Tamil vocabulary for home management, groceries, domestic help, and personal services in Chennai. Covers cleaning instructions, salon visits, tailors, and more.
+image: assets/img/social/og_lesson_10.jpg
+description: Master the Tamil vocabulary needed for managing a household in Chennai, from renting an apartment to instructing domestic help and shopping for groceries.
 ---
-# 10. Household, Groceries, and Logistics
+# 10. Household Management and Groceries
 
-A core lexicon is required to manage the home, instruct domestic help, rent accommodation, and navigate grocery shopping effectively.
+The domestic ecosystem requires a robust vocabulary to instruct domestic help, manage housing contracts, and identify kitchen ingredients for local markets.
 
 ## 1. Renting and Administration
 
-| Tamil | English Meaning | Spoken Hindi Parallel | Context / Usage |
-| :--- | :--- | :--- | :--- |
-| **Vaadagai** ⟨VAA-duh-guy⟩ | Rent | Kiraya | *"Vaadagai evlo?"* (How much rent?) |
-| **Advance** ⟨ud-VAANCE⟩ | Advance / Deposit | Deposit | *"Advance pathu maasam."* (10 months advance). |
-| **Agreement** | Agreement | Karar | *"Agreement podunga."* (Make the agreement). |
-| **Gaali** ⟨GAA-lee⟩ | Empty / Vacate | Khali | *"Veedu ⟨VEE-doo⟩ gaaliya irukka?"* (Is the house available/empty?) |
-| **Current** | Electricity | Bijli | *"Current poyiduchu ⟨POH-yee-doo-choo⟩."* (Power is gone). |
-| **Kanakku** ⟨KUH-nuh-koo⟩ | Account | Khaata | *"Kanakku ezudhunga."* (Write the account/tab). |
-| **Kaiyezhuthu** ⟨KAI-yez-hoo-thoo⟩ | Signature | Hastakshar | *"Inga ⟨IN-gah⟩ kaiyezhuthu podunga."* (Sign here). |
-| **Kaasu / Panam** ⟨KAA-soo / PUH-num⟩ | Money | Paisa | *"Kaasu kudunga ⟨koo-DOON-gah⟩."* (Give money). |
+The rental market has specific terms, many of which mirror spoken Hindi equivalents, facilitating Pan-Indian communication.
 
-## 2. Household Chores and Domestic Management
-Directing domestic help requires specific vocabulary, particularly distinguishing between different types of washing and cleaning.
+*   **வாடைக** ⟨VAA-duh-gai⟩ - Rent. 
+    *   *"வாடைக எவ்ேளா?" (How much is the rent?)*
+*   **அட்வான்ஸ்** ⟨ADVANCE⟩ - Security deposit. 
+    *   *Often negotiated as "pathu maasam" or 10 months' worth.*
+*   **அக்ரிெமன்ட்** ⟨AGREEMENT⟩ - Contract.
+*   **காலி** ⟨GAA-lee⟩ - Empty / Vacate. 
+    *   *"வீடு காலியா இருக்கா?" (Is the house empty/available?)*
+*   **கணக்கு** ⟨kuh-NUK-koo⟩ - Account / Tab. 
+    *   *Used at local grocery stores to keep a running bill.*
+*   **ைகெயழுத்து** ⟨KAI-yez-hoot-thoo⟩ - Signature.
 
-| Tamil | English Meaning | Context / Usage |
+## 2. Directing Domestic Help (Housekeeping)
+
+Instructing domestic staff requires precise action verbs. Notably, Tamil distinguishes between the types of washing performed.
+
+*   **குப்ைப கூட்டுங்க** ⟨KOOP-pai KOO-toong-gah⟩ - Sweep the floor *(Literally: gather the trash)*.
+*   **ெதாைடயுங்க** ⟨THOH-dai-yoong-gah⟩ - Wipe / Mop the floor.
+*   **பாத்திரம் கழுவுங்க** ⟨PAA-thih-rum kuh-ZHOO-voong-gah⟩ - Wash the vessels. 
+    *   *Note: Kazhuvunga is strictly used for hard objects like dishes or cars.*
+*   **துணி ெதாைவயுங்க** ⟨THOO-nee thoh-VAI-yoong-gah⟩ - Wash the clothes. 
+    *   *Note: Thovaiyunga is specifically reserved for washing fabrics.*
+*   **குப்ைப ேபாடுங்க** ⟨KOOP-pai POH-doong-gah⟩ - Throw away the trash.
+
+## 3. The Kitchen and Local Markets (Groceries)
+
+To shop at local wet markets or direct a cook, knowing the Tamil names for staples and produce (*Kaaikari* & *Pazham*) is essential.
+
+### Core Staples
+
+| Tamil Word | Phonetic Guide | English Meaning |
 | :--- | :--- | :--- |
-| **Kuppai kootunga** ⟨KOOP-pye KOO-toon-gah⟩ | Sweep the floor | *Kuppai* (trash) + *kootunga* (sweep). |
-| **Thodaiyunga** ⟨THOH-dai-yoon-gah⟩ | Wipe the floor | Floor mopping command. |
-| **Paathram kazhuvunga** ⟨PAA-thrum kuh-ZHOO-voon-gah⟩ | Wash vessels | *Paathram* (vessels) + *kazhuvunga* (wash objects). |
-| **Thuni thovaiyunga** ⟨THOO-nee thoh-VAI-yoon-gah⟩ | Wash clothes | *Thuni* (clothes) + *thovaiyunga* (wash fabrics). |
-| **Kuppai podunga** ⟨KOOP-pye POH-doon-gah⟩ | Throw trash | *Kuppai* (trash) + *podunga* (put/throw). |
-| **Kadhavu thiranga** ⟨KAH-dhuh-voo thih-RUN-gah⟩ | Open door | *Kadhavu* (door) + *thiranga* (open). |
+| **அரிசி** | ⟨UH-ree-see⟩ | Raw Rice |
+| **சாதம்** | ⟨SAA-dhum⟩ | Cooked Rice |
+| **பால்** | ⟨PAAL⟩ | Milk |
+| **தயிர்** | ⟨THUH-yeer⟩ | Curd / Yogurt |
+| **உப்பு** | ⟨OOP-poo⟩ | Salt |
+| **சக்கைர** | ⟨SUK-kuh-rai⟩ | Sugar |
+| **மாவு** | ⟨MAA-voo⟩ | Flour |
+| **பருப்பு** | ⟨PUH-roop-poo⟩ | Pulses / Lentils |
+| **எண்ெணய்** | ⟨YEN-nai⟩ | Oil |
+| **தண்ணி** | ⟨THUN-nee⟩ | Water |
 
-## 3. Personal Services (Salon & Tailor)
+### Vegetables (Kaaikari) & Fruits (Pazham)
 
-| Tamil | English Meaning | Context / Usage |
+| Tamil Word | Phonetic Guide | English Meaning |
 | :--- | :--- | :--- |
-| **Mudi** ⟨MOO-dee⟩ | Hair | *"Mudi romba ⟨ROHM-bah⟩ irukku."* (Hair is too long/much). |
-| **Thaadi** ⟨THAA-dee⟩ | Beard | *"Thaadi edunga ⟨EH-doon-gah⟩."* (Remove beard / Shave). |
-| **Kuttaiya** ⟨KOOT-tai-yah⟩ | Short / Small | *"Kuttaiya vettunga."* (Cut it short). |
-| **Alavu** ⟨uh-LUH-voo⟩ | Measurement | *"Alavu edunga ⟨EH-doon-gah⟩."* (Take measurement). |
+| **ெவங்காயம்** | ⟨veng-GAA-yum⟩ | Onion |
+| **பூண்டு** | ⟨POON-doo⟩ | Garlic |
+| **இஞ்சி** | ⟨IN-jee⟩ | Ginger |
+| **ெகாத்தமல்லி** | ⟨koh-THUM-mul-lee⟩ | Coriander |
+| **கருேவப்பிைல** | ⟨kuh-ROO-vayp-pih-lai⟩ | Curry leaves |
+| **மிளகாய்** | ⟨MIH-luh-gaay⟩ | Chilli |
+| **உருைள கிழங்கு**| ⟨OO-roo-lai kih-ZHUNG-goo⟩ | Potato |
+| **தக்காளி** | ⟨thuk-KAA-lee⟩ | Tomato |
+| **ேதங்காய்** | ⟨THAYNG-gaay⟩ | Coconut |
+| **ெவள்ளரிக்காய்** | ⟨vel-LUH-ree-kaay⟩ | Cucumber |
+| **சுைரக்காய்** | ⟨soo-RAI-kaay⟩ | Bottle Gourd |
+| **மாம்பழம்** | ⟨MAAM-puh-zhum⟩ | Mango |
+| **எலுமிச்ைச** | ⟨yeh-LOO-mih-chai⟩ | Lemon |
 
-## 4. The Kitchen and Groceries
-Essential vocabulary for the local market or instructing a cook.
+### Kitchen Utensils
+*   **கத்தி** ⟨KUT-thee⟩ - Knife
+*   **தட்டு** ⟨THUT-too⟩ - Plate
 
-### Staples
+## 4. Nature and Animals
 
-*   **Arisi** ⟨ah-RIH-see⟩ (Rice - Raw)
-*   **Saadham** ⟨SAA-dhum⟩ (Rice - Cooked)
-*   **Paal** ⟨PAAL⟩ (Milk)
-*   **Thayir** ⟨THUH-yeer⟩ (Curd/Yogurt)
-*   **Uppu** ⟨oop-POO⟩ (Salt)
-*   **Sakkara** ⟨SUK-kuh-rah⟩ (Sugar)
-*   **Ennai** ⟨YEN-nai⟩ (Oil)
-*   **Thanni** ⟨THUN-nee⟩ (Water)
+Basic environmental vocabulary aids in general description around your house and neighborhood.
 
-### Vegetables and Fruits (Kaaikari ⟨kaah-KAA-ree⟩ & Pazham ⟨PUH-zhum⟩)
+*   **நாய்** ⟨NAAY⟩ - Dog
+*   **பூைன** ⟨POO-nai⟩ - Cat
+*   **மாடு** ⟨MAA-doo⟩ - Cow
+*   **பறைவ** ⟨PUH-ruh-vai⟩ - Bird
+*   **மரம்** ⟨MUH-rum⟩ - Tree
+*   **மைழ** ⟨MUH-zhai⟩ - Rain
+*   **ெவயில் / சூரியன்** ⟨VAY-yeel / SOO-ree-yun⟩ - Sunlight / Sun
 
-| Tamil | English Meaning |
-| :--- | :--- |
-| **Vengayam** ⟨ven-GAA-yum⟩ | Onion |
-| **Poondu** ⟨POON-doo⟩ | Garlic |
-| **Inji** ⟨IN-jee⟩ | Ginger |
-| **Kothamalli** ⟨koh-THUM-mul-lee⟩ | Coriander |
-| **Karuveppilai** ⟨KUH-roo-VAY-pil-lai⟩ | Curry leaves |
-| **Milagai** ⟨Mih-luh-KAI⟩ | Chilli |
-| **Urulai Kizhangu** ⟨oo-ROO-lai kih-ZHUN-goo⟩ | Potato |
-| **Thengai** ⟨THENG-guy⟩ | Coconut |
-| **Maampazham** ⟨MAAM-puh-zhum⟩ | Mango |
-| **Yelumichai** ⟨yeh-LOO-mih-chai⟩ | Lemon |
-| **Vellari-kai** ⟨VEL-luh-ree-kai⟩ | Cucumber |
-| **Thakkali** | Tomato |
-
-## 5. Nature and Animals
-
-| Tamil | English Meaning |
-| :--- | :--- |
-| **Naay** ⟨NAAY⟩ | Dog |
-| **Poonai** ⟨POO-nai⟩ | Cat |
-| **Maadu** ⟨MAA-doo⟩ | Cow |
-| **Paravai** ⟨PAA-ruh-vai⟩ | Bird |
-| **Maram** ⟨muh-RUM⟩ | Tree |
-| **Mazhai** ⟨MUH-zhai⟩ | Rain |
-| **Veyil / Sooriyan** ⟨VAY-yil / SOOR-ih-yun⟩ | Sunlight / Sun |
-| **Nila** ⟨NIH-laa⟩ | Moon |
-| **Nadhi** ⟨NUH-dhee⟩ | River |
-
-<div class="swalpa-share-widget">
-    <button class="swalpa-share-button" onclick="window.triggerShare('Thanni varala (Water is not coming). Essential logistical Tamil at Konjam: https://konjam.org/10_household_and_logistics')">
+<div class="konjam-share-widget">
+    <button class="konjam-share-button" onclick="window.triggerShare('Need to tell your maid to sweep the floor or ask for the rent in Chennai? Learn household management Tamil on Konjam: https://konjam.org/10_household_and_logistics')">
         <span class="share-icon">📤</span> Share
     </button>
 </div>

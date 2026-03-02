@@ -2,7 +2,7 @@
 
 Welcome to your Chennai progress dashboard! As you complete lessons and navigate street scenarios in the games, you will earn Respect Points (**RP**), rank up, and unlock exclusive badges.
 
-<div id="swalpa-profile-root">
+<div id="konjam-profile-root">
     <div style="text-align: center; padding: 40px; color: var(--md-default-fg-color--light);">
         <i>Initializing your Chennai profile...</i>
     </div>
@@ -10,7 +10,7 @@ Welcome to your Chennai progress dashboard! As you complete lessons and navigate
 
 <script type="module">
     import { auth, provider, signInWithPopup, signInWithRedirect, signOut, onAuthStateChanged, doc, getDoc, setDoc } from '/assets/js/firebase-config.js';
-    import { calculateProgress, loadProgressFromFirestore, syncProgressToFirestore } from '/assets/js/progress.js';
+    import { calculateProgress, loadProgressFromFirestore, syncProgressToFirestore, clearLocalProgress } from '/assets/js/progress.js';
     import { getActivityLog } from '/assets/js/activity.js';
 
     console.log("Profile module loaded. Auth state check starting...");
@@ -23,6 +23,16 @@ Welcome to your Chennai progress dashboard! As you complete lessons and navigate
                 await new Promise(r => setTimeout(r, 500));
                 const loaded = await loadProgressFromFirestore();
                 console.log("Cloud data check complete. Loaded successfully:", loaded);
+                
+                // If this is the first time we've fetched cloud data in this session, 
+                // reload so site-wide UI (phonetics, lessons) reflects the fresh state.
+                if (loaded && !sessionStorage.getItem('konjam_session_synced')) {
+                    sessionStorage.setItem('konjam_session_synced', 'true');
+                    console.log("First sync of session: Reloading for UI consistency...");
+                    window.location.reload();
+                    return; // Stop execution here
+                }
+                
                 await syncProgressToFirestore();
                 console.log("Local state synced to cloud.");
             } catch (err) {
@@ -33,7 +43,7 @@ Welcome to your Chennai progress dashboard! As you complete lessons and navigate
             await renderProfile(user);
         } catch (renderErr) {
             console.error("Critical rendering error in Profile:", renderErr);
-            const root = document.getElementById('swalpa-profile-root');
+            const root = document.getElementById('konjam-profile-root');
             if (root) root.innerHTML = `<div style="padding:20px; color:#FFB6C1;">Error rendering profile. Please <a href="." style="color:inherit; text-decoration:underline;">refresh</a>.</div>`;
         }
     });
@@ -52,7 +62,7 @@ Welcome to your Chennai progress dashboard! As you complete lessons and navigate
         const activityLog = getActivityLog();
         const unlockedBadges = window.getUnlockedBadges ? window.getUnlockedBadges() : [];
         const badgeDefs = window.BADGE_DEFINITIONS || {};
-        const currentStreak = window.localStorage.getItem('swalpa_streak') || 1;
+        const currentStreak = window.localStorage.getItem('konjam_streak') || 1;
 
         let authHtml = "";
         if (user) {
@@ -76,8 +86,8 @@ Welcome to your Chennai progress dashboard! As you complete lessons and navigate
         }
 
         let html = authHtml + `
-            <div class="swalpa-profile-card">
-                <div class="swalpa-profile-rank-header">
+            <div class="konjam-profile-card">
+                <div class="konjam-profile-rank-header">
                     <div class="sp-emoji">${progress.rank.title.split(' ')[0]}</div>
                     <div class="sp-details">
                         <h2>${progress.rank.title.split(' ').slice(1).join(' ')}</h2>
@@ -88,17 +98,17 @@ Welcome to your Chennai progress dashboard! As you complete lessons and navigate
                         </div>
                     </div>
                 </div>
-                <div class="swalpa-profile-progress-bar">
+                <div class="konjam-profile-progress-bar">
                     <div class="sp-fill" style="width: ${progress.percentToNext}%"></div>
                 </div>
-                <div class="swalpa-profile-progress-text">
+                <div class="konjam-profile-progress-text">
                     ${progress.nextRank ? `<b>${progress.percentToNext}%</b> progress to ${progress.nextRank.title}` : 'Maximum Rank Achieved! You are a true Chennaite.'}
                 </div>
             </div>
             
             <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05);">
                 <h3 style="margin-top: 0; margin-bottom: 12px; font-family: Outfit, sans-serif; font-size: 16px; color: var(--md-default-fg-color--light);">Consistency (Last 90 Days)</h3>
-                <div class="swalpa-heatmap-container">
+                <div class="konjam-heatmap-container">
                     <div class="heatmap-grid">
         `;
         
@@ -126,13 +136,13 @@ Welcome to your Chennai progress dashboard! As you complete lessons and navigate
             </div>
             
             <div style="text-align: center; margin-top: 25px;">
-                <button class="swalpa-share-button profile-share-btn" id="profile-share-btn">
+                <button class="konjam-share-button profile-share-btn" id="profile-share-btn">
                     <span class="share-icon">📤</span> Share My Progress
                 </button>
             </div>
             
             <h2 style="margin-top: 40px; margin-bottom: 20px;">🏆 Achiever Badges</h2>
-            <div class="swalpa-badge-grid">
+            <div class="konjam-badge-grid">
         `;
 
         for (const [badgeId, badge] of Object.entries(badgeDefs)) {
@@ -140,7 +150,7 @@ Welcome to your Chennai progress dashboard! As you complete lessons and navigate
             const statusClass = isUnlocked ? 'unlocked' : 'locked';
             const displayEmoji = isUnlocked ? badge.emoji : '🔒';
             html += `
-                <div class="swalpa-badge ${statusClass}">
+                <div class="konjam-badge ${statusClass}">
                     <div class="badge-icon">${displayEmoji}</div>
                     <div class="badge-title">${badge.title}</div>
                     <div class="badge-desc">${badge.description}</div>
@@ -149,15 +159,19 @@ Welcome to your Chennai progress dashboard! As you complete lessons and navigate
         }
 
         html += `</div>`;
-        const root = getSafeElement('swalpa-profile-root');
+        const root = getSafeElement('konjam-profile-root');
         if (root) root.innerHTML = html;
 
         // Attaching Listeners
         if (user) {
             const logoutBtn = getSafeElement('firebase-logout-btn');
-            if (logoutBtn) logoutBtn.addEventListener('click', () => {
-                console.log("Logout clicked.");
-                signOut(auth);
+            if (logoutBtn) logoutBtn.addEventListener('click', async () => {
+                console.log("Logout clicked. Performing final sync...");
+                await syncProgressToFirestore();
+                clearLocalProgress();
+                signOut(auth).then(() => {
+                    window.location.reload();
+                });
             });
         } else {
             const loginBtn = getSafeElement('firebase-login-btn');
@@ -167,6 +181,10 @@ Welcome to your Chennai progress dashboard! As you complete lessons and navigate
                     try {
                         const res = await signInWithPopup(auth, provider);
                         console.log("Popup login success:", res.user.displayName);
+                        // Fetch progress immediately so it's in localStorage before reload
+                        await loadProgressFromFirestore();
+                        sessionStorage.setItem('konjam_session_synced', 'true');
+                        window.location.reload();
                     } catch (err) {
                         console.error("Firebase Login Error:", err);
                         alert("Login failed. Possible solutions:\n1. Use 'localhost' instead of IP address.\n2. Enable third-party cookies.\n\nError: " + err.message);

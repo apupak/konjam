@@ -7,15 +7,15 @@ export const NPCS = {
     'Elaneer Anna': {
         name: 'Elaneer Anna',
         modifiers: { respect: 1.1, patience: 1.2 },
-        description: 'Friendly street vendor, appreciates polite Kannada.'
+        description: 'Friendly street vendor, appreciates polite Tamil.'
     },
     'Plumber Kumar': {
         name: 'Plumber Kumar',
         modifiers: { respect: 0.9, patience: 1.0 },
         description: 'No-nonsense technician. Hates being questioned.'
     },
-    'Lineman Mahadeva': {
-        name: 'Lineman Mahadeva',
+    'Lineman Murugan': {
+        name: 'Lineman Murugan',
         modifiers: { respect: 1.2, patience: 0.8 },
         description: 'Works for the state. Respects seniority and patience.'
     }
@@ -30,10 +30,10 @@ export const LEVELS = {
         dialogue: {
             engagement: {
                 speaker: "Reddy Uncle (Landlord)",
-                text: "Nodappa, rent 15% in-crease mad-idini from next month.",
+                text: "Paarpa, rent 15% in-crease panniruken from next month.",
                 choices: [
                     {
-                        text: "Uncle, ⟨svalpa adjust māḍi⟩. 15% is too much.",
+                        text: "Uncle, ⟨konjam adjust pannunga⟩. 15% is too much.",
                         effect: { respect: 20 },
                         next: "rent_negotiation"
                     },
@@ -44,7 +44,7 @@ export const LEVELS = {
                         next: "rent_negotiation"
                     },
                     {
-                        text: "Uncle, 10% ⟨māḍōṇa⟩? Nanu obbane idini.",
+                        text: "Uncle, 10% ⟨pannalama⟩? Naan oruthan dhaan iruken.",
                         effect: { respect: 30, patience: 10 },
                         next: "rent_negotiation"
                     },
@@ -58,15 +58,15 @@ export const LEVELS = {
             },
             rent_negotiation: {
                 speaker: "Reddy Uncle (Landlord)",
-                text: "Yen madodu thamma? Maintenance jasti agide. Society charge bere.",
+                text: "Enna panrathu thambi? Maintenance jasthi aagiduchu. Society charge vera.",
                 choices: [
                     {
-                        text: "Sari uncle. Next month 10% jaasti ⟨koḍthīni⟩.",
+                        text: "Sari uncle. Next month 10% extra ⟨kudukkuren⟩.",
                         effect: { respect: 20, wallet: -50 },
                         next: "level_complete"
                     },
                     {
-                        text: "Uncle, ⟨oḷḷēdu māḍthāre⟩, 8% madi.",
+                        text: "Uncle, ⟨nallathu nadakkum⟩, 8% pannunga.",
                         effect: { respect: 35, wallet: -20 },
                         next: "level_complete"
                     },
@@ -76,7 +76,7 @@ export const LEVELS = {
                         effect: { respect: -40, patience: -50, end: 'failed' }
                     },
                     {
-                        text: "Sari uncle. ⟨Bāḍige⟩ transfer madthini.",
+                        text: "Sari uncle. ⟨Vaadagai⟩ transfer panren.",
                         effect: { respect: 10, wallet: -100 },
                         next: "level_complete"
                     }
@@ -91,10 +91,10 @@ export const LEVELS = {
         dialogue: {
             engagement: {
                 speaker: "Elaneer Anna",
-                text: "Ondu yeradu 60 rupayi saar. Sweet ide.",
+                text: "Onnu rendu 60 ruba sir. Sweet-ah irukku.",
                 choices: [
                     {
-                        text: "Anna, 60 thumba ⟨jāsti⟩. 50 ⟨tagoḷi⟩.",
+                        text: "Anna, 60 romba ⟨jasthi⟩. 50 ⟨eduthukkonga⟩.",
                         effect: { respect: 20, patience: 10 },
                         next: "vendor_negotiation"
                     },
@@ -105,7 +105,7 @@ export const LEVELS = {
                         next: "vendor_negotiation"
                     },
                     {
-                        text: "Sweet ⟨ideya⟩? ⟨Enu bele⟩ anna, sakhath bisi ide.",
+                        text: "Sweet-ah ⟨irukka⟩? ⟨Enna vilai⟩ anna, semma veyil.",
                         effect: { respect: 25 },
                         next: "vendor_negotiation"
                     },
@@ -119,10 +119,10 @@ export const LEVELS = {
             },
             vendor_negotiation: {
                 speaker: "Elaneer Anna",
-                text: "No saar. Wholesale market-nalli rate 50 ide. Margin itt-idini.",
+                text: "Illa sir. Wholesale market-la rate 50 irukku. Margin vechiruken.",
                 choices: [
                     {
-                        text: "Sari, yeradu kodi. 100 rupayi ⟨kodthini⟩.",
+                        text: "Sari, rendu kudunga. 100 ruba ⟨kudukkuren⟩.",
                         effect: { respect: 30, wallet: -100 },
                         next: "level_complete"
                     },
@@ -133,12 +133,12 @@ export const LEVELS = {
                         next: "level_complete"
                     },
                     {
-                        text: "Anna ⟨svalpa adjust māḍi⟩, daily customer naanu.",
+                        text: "Anna ⟨konjam adjust pannunga⟩, daily customer naanu.",
                         effect: { respect: 15, wallet: -55 },
                         next: "level_complete"
                     },
                     {
-                        text: "Sari Anna, 60 kodi. ⟨Kaṭ madi⟩.",
+                        text: "Sari Anna, 60 kudunga. ⟨Cut pannunga⟩.",
                         effect: { respect: 10, wallet: -60 },
                         next: "level_complete"
                     }
@@ -154,7 +154,7 @@ export const LEVELS = {
         dialogue: {
             engagement: {
                 speaker: "Plumber Kumar",
-                text: "Pipe full damage aagide saar. 1500 aagutte.",
+                text: "Pipe full damage aayiduchu sir. 1500 aagum.",
                 choices: [
                     {
                         text: "Are you crazy? It's just a small leak!",
@@ -163,12 +163,12 @@ export const LEVELS = {
                         next: "plumber_negotiation"
                     },
                     {
-                        text: "Kumar, ⟨svalpa nōḍi māḍi⟩. 1500 thumba ⟨jāsti⟩.",
+                        text: "Kumar, ⟨konjam paathu pannunga⟩. 1500 romba ⟨jasthi⟩.",
                         effect: { respect: 20, patience: 10 },
                         next: "plumber_negotiation"
                     },
                     {
-                        text: "Valve ⟨beka⟩? Just seal madi saku.",
+                        text: "Valve ⟨venuma⟩? Just seal panna pothum.",
                         effect: { respect: 10 },
                         next: "plumber_negotiation"
                     },
@@ -182,10 +182,10 @@ export const LEVELS = {
             },
             plumber_negotiation: {
                 speaker: "Plumber Kumar",
-                text: "Parts-ge 800 aaguthe. Service charge 700. Material cost.",
+                text: "Parts-kku 800 aagum. Service charge 700. Material cost.",
                 choices: [
                     {
-                        text: "Sari Kumar, ⟨chennāgi māḍi⟩. 1200 ⟨kodthini⟩.",
+                        text: "Sari Kumar, ⟨nalla pannunga⟩. 1200 ⟨kudukkuren⟩.",
                         effect: { respect: 25, wallet: -120 },
                         next: "level_complete"
                     },
@@ -196,12 +196,12 @@ export const LEVELS = {
                         next: "level_complete"
                     },
                     {
-                        text: "Kumar ⟨adjust māḍi⟩, last time 500 togond-idri.",
+                        text: "Kumar ⟨adjust pannunga⟩, last time 500 vangininga.",
                         effect: { respect: 15, wallet: -100 },
                         next: "level_complete"
                     },
                     {
-                        text: "Sari ⟨māḍi⟩, but gaaranti kodabeku.",
+                        text: "Sari ⟨pannunga⟩, but guarantee kudukkanum.",
                         effect: { respect: 10, wallet: -150 },
                         next: "level_complete"
                     }
@@ -210,14 +210,14 @@ export const LEVELS = {
         }
     },
     4: {
-        title: "The BESCOM Power Cut",
-        scenario: "Power has been out for 4 hours. You see a BESCOM lineman near the transformer.",
+        title: "The TNEB Power Cut",
+        scenario: "Power has been out for 4 hours. You see a TNEB lineman near the transformer.",
         background: "../../assets/img/scenes/transformer.jpg",
         isHighStress: true,
         dialogue: {
             engagement: {
-                speaker: "Lineman Mahadeva",
-                text: "Enappa? Line fault ide. Innu 3 hours baralla.",
+                speaker: "Lineman Murugan",
+                text: "Ennapa? Line fault irukku. Innum 3 hours varathu.",
                 choices: [
                     {
                         text: "3 hours? I have WFH! Turn it on!",
@@ -226,28 +226,28 @@ export const LEVELS = {
                         next: "bescom_response"
                     },
                     {
-                        text: "Anna, ⟨yēnāythu⟩? Cable problem-aa?",
+                        text: "Anna, ⟨enna aachu⟩? Cable problem-aa?",
                         effect: { respect: 20, patience: 10 },
                         next: "bescom_response"
                     },
                     {
-                        text: "Current ⟨yāvāga baruthe⟩ anna? WFH ide.",
+                        text: "Current ⟨eppo varum⟩ anna? WFH irukku.",
                         effect: { respect: 15 },
                         next: "bescom_response"
                     },
                     {
-                        text: "Anna ⟨svalpa bēga māḍi⟩. Inverter down aagide.",
+                        text: "Anna ⟨konjam seekiram pannunga⟩. Inverter down aayiduchu.",
                         effect: { respect: 25, patience: 5 },
                         next: "bescom_response"
                     }
                 ]
             },
             bescom_response: {
-                speaker: "Lineman Mahadeva",
-                text: "Tree branch biddide cable mele. Kelsa mad-tha idivi.",
+                speaker: "Lineman Murugan",
+                text: "Tree branch vizhundhuduchu cable mela. Vela paathutu irukkom.",
                 choices: [
                     {
-                        text: "Sari anna, ⟨ārāmāgi māḍi⟩. Safety first.",
+                        text: "Sari anna, ⟨safe-ah pannunga⟩. Safety first.",
                         effect: { respect: 40, patience: 30 },
                         next: "level_complete"
                     },
@@ -257,12 +257,12 @@ export const LEVELS = {
                         effect: { respect: -40, patience: -50, end: 'failed' }
                     },
                     {
-                        text: "Anna ⟨help māḍana⟩? Light beku.",
+                        text: "Anna ⟨help pannava⟩? Light venum.",
                         effect: { respect: 20, patience: 10 },
                         next: "level_complete"
                     },
                     {
-                        text: "Coffee thagolthira anna? ⟨Thumba kelsa ide⟩ nimage.",
+                        text: "Coffee kudikiringala anna? ⟨Romba vela irukku⟩ ungalukku.",
                         effect: { respect: 50, patience: 40, wallet: -10 },
                         next: "level_complete"
                     }
@@ -274,7 +274,7 @@ export const LEVELS = {
 
 export const RANKS = [
     { threshold: 200, title: "Fresh Off the Boat", desc: "You survived, but your wallet took a beating. Start using 'Adjust Maadi'!" },
-    { threshold: 400, title: "Sakkath Student", desc: "Solid effort! You're navigating vendors and landlords with emerging confidence." },
-    { threshold: 600, title: "A True Macha", desc: "Boss! Your 'Adjust Maadi' game is strong. Everyone respects the swagger." },
-    { threshold: Infinity, title: "Local Legend", desc: "Namma Ooru Legend! You handle Bangalore logistics better than the locals." }
+    { threshold: 400, title: "Semma Student", desc: "Solid effort! You're navigating vendors and landlords with emerging confidence." },
+    { threshold: 600, title: "A True Thala", desc: "Boss! Your 'Adjust Maadi' game is strong. Everyone respects the swagger." },
+    { threshold: Infinity, title: "Local Legend", desc: "Namma Chennai Legend! You handle Chennai logistics better than the locals." }
 ];

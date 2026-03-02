@@ -32,7 +32,7 @@ def create_og_image(title, subtitle, output_path, lesson_num):
     draw.rectangle([(0, 15), (W, 30)], fill=(34, 197, 94)) # Green
     
     # Brand Text (Top Left)
-    draw.text((80, 80), "SWALPA.ORG", font=brand_font, fill=(148, 163, 184))
+    draw.text((80, 80), "Konjam.ORG", font=brand_font, fill=(148, 163, 184))
     
     # Wrapping title text
     margin = 80
@@ -74,11 +74,11 @@ def main():
                     title = line.replace('# ', '').strip()
                     break
                     
-        subtitle = "Kannada for Bengaluru Survial & Everyday Logistics"
+        subtitle = "Tamil for Chennai Survial & Everyday Logistics"
         if lesson_id == "12":
             subtitle = "Sleek presentation slides for quick review"
         elif lesson_id == "00":
-            subtitle = "Welcome to the SWALPA Ecosystem"
+            subtitle = "Welcome to the Konjam Ecosystem"
         
         output_name = f"og_lesson_{lesson_id}.jpg"
         

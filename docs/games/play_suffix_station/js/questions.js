@@ -23,9 +23,9 @@ export const QUESTIONS = [
         target: 'In the house',
         base: 'Veedu',
         displayBase: 'Veedu',
-        options: ['-la', '-kku', '-ularundhu', '-olage', '-gal'],
+        options: ['-la', '-kku', '-lerundhu', '-kulla', '-gal'],
         correct: ['-la'],
-        result: 'Veeduyalli',
+        result: 'Veettula',
         category: 'Spatial Suffixes',
         hint: '-la = "In" (like Hindi "mein")'
     },
@@ -34,9 +34,9 @@ export const QUESTIONS = [
         target: 'To the house',
         base: 'Veedu',
         displayBase: 'Veedu',
-        options: ['-la', '-kku', '-ularundhu', '-olage', '-gal'],
+        options: ['-la', '-kku', '-lerundhu', '-kulla', '-gal'],
         correct: ['-kku'],
-        result: 'Veeduge',
+        result: 'Veettukku',
         category: 'Spatial Suffixes',
         hint: '-kku = "To" (like Hindi "ko")'
     },
@@ -45,31 +45,31 @@ export const QUESTIONS = [
         target: 'From the house',
         base: 'Veedu',
         displayBase: 'Veedu',
-        options: ['-la', '-kku', '-ularundhu', '-olage', '-gal'],
-        correct: ['-ularundhu'],
-        result: 'Veeduyinda',
+        options: ['-la', '-kku', '-lerundhu', '-kulla', '-gal'],
+        correct: ['-lerundhu'],
+        result: 'Veettulerundhu',
         category: 'Spatial Suffixes',
-        hint: '-ularundhu = "From" (like Hindi "se")'
+        hint: '-lerundhu = "From" (like Hindi "se")'
     },
     {
         type: 'spatial',
         target: 'Inside the house',
         base: 'Veedu',
         displayBase: 'Veedu',
-        options: ['-la', '-kku', '-ukkulle', '-gal'],
-        correct: ['-ukkulle'],
-        result: 'Veettukkulle',
+        options: ['-la', '-kku', '-kulla', '-gal'],
+        correct: ['-kulla'],
+        result: 'Veettukulla',
         category: 'Spatial Suffixes',
-        hint: '-olage = "Inside" (like Hindi "ke andar")'
+        hint: '-kulla = "Inside" (like Hindi "ke andar")'
     },
     {
         type: 'spatial',
         target: 'In the houses (Plural)',
         base: 'Veedu',
         displayBase: 'Veedu',
-        options: ['-la', '-kku', '-ularundhu', '-gal'],
+        options: ['-la', '-kku', '-lerundhu', '-gal'],
         correct: ['-gal', '-la'],
-        result: 'Veedugalalli',
+        result: 'Veedugalla',
         category: 'Spatial Suffixes',
         hint: '-gal = Plural marker, then add -la for "in"'
     },
@@ -82,9 +82,9 @@ export const QUESTIONS = [
         target: 'In the office',
         base: 'Office',
         displayBase: 'Office',
-        options: ['-la', '-kku', '-ularundhu', '-gal'],
+        options: ['-la', '-kku', '-lerundhu', '-gal'],
         correct: ['-la'],
-        result: 'Officealli',
+        result: 'Officela',
         category: 'Spatial Suffixes',
         hint: '-la = "In" — works with any noun!'
     },
@@ -93,9 +93,9 @@ export const QUESTIONS = [
         target: 'To the office',
         base: 'Office',
         displayBase: 'Office',
-        options: ['-la', '-kku', '-ularundhu', '-gal'],
+        options: ['-la', '-kku', '-lerundhu', '-gal'],
         correct: ['-kku'],
-        result: 'Officege',
+        result: 'Officekku',
         category: 'Spatial Suffixes',
         hint: '-kku = "To" — the directional suffix'
     },
@@ -104,11 +104,11 @@ export const QUESTIONS = [
         target: 'From the office',
         base: 'Office',
         displayBase: 'Office',
-        options: ['-la', '-kku', '-ularundhu', '-gal'],
-        correct: ['-ularundhu'],
-        result: 'Officenda',
+        options: ['-la', '-kku', '-lerundhu', '-gal'],
+        correct: ['-lerundhu'],
+        result: 'Officelerundhu',
         category: 'Spatial Suffixes',
-        hint: '-ularundhu = "From" — origin marker'
+        hint: '-lerundhu = "From" — origin marker'
     },
 
     // ═══════════════════════════════════════════════
@@ -119,20 +119,20 @@ export const QUESTIONS = [
         target: 'From the village',
         base: 'Ooru',
         displayBase: 'Ooru',
-        options: ['-la', '-kku', '-ularundhu', '-olage'],
-        correct: ['-ularundhu'],
-        result: 'Ooruinda',
+        options: ['-la', '-kku', '-lerundhu', '-gal'],
+        correct: ['-lerundhu'],
+        result: 'Oorulerundhu',
         category: 'Spatial Suffixes',
-        hint: '-ularundhu = "From" — origin marker'
+        hint: '-lerundhu = "From" — origin marker'
     },
     {
         type: 'spatial',
         target: 'To the village',
         base: 'Ooru',
         displayBase: 'Ooru',
-        options: ['-la', '-kku', '-ularundhu', '-olage'],
+        options: ['-la', '-kku', '-lerundhu', '-gal'],
         correct: ['-kku'],
-        result: 'Ooruge',
+        result: 'Oorukku',
         category: 'Spatial Suffixes',
         hint: '-kku = "To" — direction towards'
     },
@@ -141,9 +141,9 @@ export const QUESTIONS = [
         target: 'In the village',
         base: 'Ooru',
         displayBase: 'Ooru',
-        options: ['-la', '-kku', '-ularundhu', '-olage'],
+        options: ['-la', '-kku', '-lerundhu', '-gal'],
         correct: ['-la'],
-        result: 'Oorualli',
+        result: 'Oorula',
         category: 'Spatial Suffixes',
         hint: '-la = "In" — locative suffix'
     },
@@ -156,9 +156,9 @@ export const QUESTIONS = [
         target: 'In the shop',
         base: 'Kadai',
         displayBase: 'Kadai',
-        options: ['-la', '-kku', '-ularundhu', '-gal'],
+        options: ['-la', '-kku', '-ukku', '-gal'],
         correct: ['-la'],
-        result: 'Kadaialli',
+        result: 'Kadaila',
         category: 'Spatial Suffixes',
         hint: '-la = "In" — locative suffix for any place'
     },
@@ -167,9 +167,9 @@ export const QUESTIONS = [
         target: 'To the shop',
         base: 'Kadai',
         displayBase: 'Kadai',
-        options: ['-la', '-kku', '-ularundhu', '-gal'],
+        options: ['-la', '-kku', '-ukku', '-gal'],
         correct: ['-kku'],
-        result: 'Kadaige',
+        result: 'Kadaikku',
         category: 'Spatial Suffixes',
         hint: '-kku = "To" — going towards the shop'
     },
@@ -178,9 +178,9 @@ export const QUESTIONS = [
         target: 'To the shops (Plural)',
         base: 'Kadai',
         displayBase: 'Kadai',
-        options: ['-la', '-kku', '-ularundhu', '-gal'],
-        correct: ['-gal', '-kku'],
-        result: 'Kadaigalge',
+        options: ['-la', '-kku', '-ukku', '-gal'],
+        correct: ['-gal', '-ukku'],
+        result: 'Kadaigalukku',
         category: 'Spatial Suffixes',
         hint: '-gal = Plural, then -kku = "To"'
     },
@@ -193,7 +193,7 @@ export const QUESTIONS = [
         target: 'Come (Polite)',
         base: 'Vaa',
         displayBase: 'Vaa',
-        options: ['-nga', '-nga', '-nga', '-ngasi'],
+        options: ['-nga', '-kku', '-la', '-gal'],
         correct: ['-nga'],
         result: 'Vaanga',
         category: 'Respect Filter',
@@ -204,9 +204,9 @@ export const QUESTIONS = [
         target: 'Go (Polite)',
         base: 'Po',
         displayBase: 'Po',
-        options: ['-nga', '-nga', '-nga', '-ngasi'],
+        options: ['-nga', '-kku', '-la', '-gal'],
         correct: ['-nga'],
-        result: 'Po',
+        result: 'Ponga',
         category: 'Respect Filter',
         hint: 'Po → Po (Polite "Go")'
     },
@@ -215,7 +215,7 @@ export const QUESTIONS = [
         target: 'Give (Polite)',
         base: 'Kudu',
         displayBase: 'Kudu',
-        options: ['-nga', '-nga', '-nga', '-ngasi'],
+        options: ['-nga', '-kku', '-la', '-gal'],
         correct: ['-nga'],
         result: 'Kudunga',
         category: 'Respect Filter',
@@ -226,8 +226,8 @@ export const QUESTIONS = [
         target: 'Stop (Polite)',
         base: 'Nillu',
         displayBase: 'Nillu',
-        options: ['-nga', '-nga', '-nga', '-ngasi'],
-        correct: ['-ngasi'],
+        options: ['-nga', '-kku', '-la', '-gal'],
+        correct: ['-nga'],
         result: 'Nillunga',
         category: 'Respect Filter',
         hint: 'Nillu → Nillunga (Polite "Stop")'
@@ -237,7 +237,7 @@ export const QUESTIONS = [
         target: 'Do (Polite)',
         base: 'Pannu',
         displayBase: 'Pannu',
-        options: ['-nga', '-nga', '-nga', '-ngasi'],
+        options: ['-nga', '-kku', '-la', '-gal'],
         correct: ['-nga'],
         result: 'Pannunga',
         category: 'Respect Filter',
@@ -248,7 +248,7 @@ export const QUESTIONS = [
         target: 'See (Polite)',
         base: 'Paaru',
         displayBase: 'Paaru',
-        options: ['-nga', '-nga', '-nga', '-ngasi'],
+        options: ['-nga', '-kku', '-la', '-gal'],
         correct: ['-nga'],
         result: 'Paarunga',
         category: 'Respect Filter',
@@ -259,7 +259,7 @@ export const QUESTIONS = [
         target: 'Tell (Polite)',
         base: 'Sollu',
         displayBase: 'Sollu',
-        options: ['-nga', '-nga', '-nga', '-nga'],
+        options: ['-en', '-om', '-nga', '-gal'],
         correct: ['-nga'],
         result: 'Sollunga',
         category: 'Respect Filter',
@@ -270,7 +270,7 @@ export const QUESTIONS = [
         target: 'Ask (Polite)',
         base: 'Kelu',
         displayBase: 'Kelu',
-        options: ['-nga', '-nga', '-nga', '-nga'],
+        options: ['-en', '-om', '-nga', '-gal'],
         correct: ['-nga'],
         result: 'Kelunga',
         category: 'Respect Filter',
@@ -281,7 +281,7 @@ export const QUESTIONS = [
         target: 'Eat (Polite)',
         base: 'Saappidu',
         displayBase: 'Saappidu',
-        options: ['-nga', '-nga', '-nga', '-nga'],
+        options: ['-en', '-om', '-nga', '-gal'],
         correct: ['-nga'],
         result: 'Saappidunga',
         category: 'Respect Filter',
@@ -292,7 +292,7 @@ export const QUESTIONS = [
         target: 'Send (Polite)',
         base: 'Anuppu',
         displayBase: 'Anuppu',
-        options: ['-nga', '-nga', '-nga', '-nga'],
+        options: ['-en', '-om', '-nga', '-gal'],
         correct: ['-nga'],
         result: 'Anuppunga',
         category: 'Respect Filter',
@@ -384,7 +384,7 @@ export const QUESTIONS = [
     // SECTION 7: Pronoun Mirroring — Pov- (Will Go)
     // ═══════════════════════════════════════════════
     {
-        type: 'pronoun_hogu',
+        type: 'pronoun_pogu',
         target: 'I will go',
         base: 'Pov',
         displayBase: 'Naan Pov-',
@@ -395,7 +395,7 @@ export const QUESTIONS = [
         hint: 'Naan (I) → -en. Root: Po (to go)'
     },
     {
-        type: 'pronoun_hogu',
+        type: 'pronoun_pogu',
         target: 'She will go',
         base: 'Pov',
         displayBase: 'Ava Pov-',
@@ -406,7 +406,7 @@ export const QUESTIONS = [
         hint: 'Ava (She) → -aal. Root: Po (to go)'
     },
     {
-        type: 'pronoun_hogu',
+        type: 'pronoun_pogu',
         target: 'They will go',
         base: 'Pov',
         displayBase: 'Avanga Pov-',
@@ -417,7 +417,7 @@ export const QUESTIONS = [
         hint: 'Avanga (They) → -aanga. Root: Po (to go)'
     },
     {
-        type: 'pronoun_hogu',
+        type: 'pronoun_pogu',
         target: 'We will go',
         base: 'Pov',
         displayBase: 'Naama Pov-',
@@ -432,7 +432,7 @@ export const QUESTIONS = [
     // SECTION 8: Pronoun Mirroring — Varuv- (Will Come)
     // ═══════════════════════════════════════════════
     {
-        type: 'pronoun_baru',
+        type: 'pronoun_varu',
         target: 'I will come',
         base: 'Varuv',
         displayBase: 'Naan Varuv-',
@@ -440,10 +440,10 @@ export const QUESTIONS = [
         correct: ['-en'],
         result: 'Varuven',
         category: 'Pronoun Mirroring',
-        hint: 'Naan (I) → -en. Root: Baru (to come)'
+        hint: 'Naan (I) → -en. Root: Varu (to come)'
     },
     {
-        type: 'pronoun_baru',
+        type: 'pronoun_varu',
         target: 'We will come',
         base: 'Varuv',
         displayBase: 'Naama Varuv-',
@@ -451,10 +451,10 @@ export const QUESTIONS = [
         correct: ['-om'],
         result: 'Varuvom',
         category: 'Pronoun Mirroring',
-        hint: 'Naama (We) → -om. Root: Baru (to come)'
+        hint: 'Naama (We) → -om. Root: Varu (to come)'
     },
     {
-        type: 'pronoun_baru',
+        type: 'pronoun_varu',
         target: 'He will come',
         base: 'Varuv',
         displayBase: 'Avan Varuv-',
@@ -462,10 +462,10 @@ export const QUESTIONS = [
         correct: ['-aan'],
         result: 'Varuvaan',
         category: 'Pronoun Mirroring',
-        hint: 'Avan (He) → -aan. Root: Baru (to come)'
+        hint: 'Avan (He) → -aan. Root: Varu (to come)'
     },
     {
-        type: 'pronoun_baru',
+        type: 'pronoun_varu',
         target: 'They will come',
         base: 'Varuv',
         displayBase: 'Avanga Varuv-',
@@ -473,7 +473,7 @@ export const QUESTIONS = [
         correct: ['-aanga'],
         result: 'Varuvaanga',
         category: 'Pronoun Mirroring',
-        hint: 'Avanga (They) → -aanga. Root: Baru (to come)'
+        hint: 'Avanga (They) → -aanga. Root: Varu (to come)'
     },
 
     // ═══════════════════════════════════════════════
@@ -484,22 +484,22 @@ export const QUESTIONS = [
         target: "Apoorva's house",
         base: 'Apoorva',
         displayBase: 'Apoorva-voda Veedu',
-        options: ['-voda', '-kku', '-la', '-ularundhu'],
-        correct: ['-voda'],
-        result: 'Apoorva-voda',
+        options: ['-oda', '-kku', '-la', '-lerundhu'],
+        correct: ['-oda'],
+        result: 'Apoorva-oda',
         category: 'Genitive Suffix',
-        hint: '-voda = "Of" / possessive. "Apoorva-voda Veedu" = Apoorva\'s house'
+        hint: '-oda = "Of" / possessive. "Apoorva-voda Veedu" = Apoorva\'s house'
     },
     {
         type: 'spatial',
         target: "Driver's auto",
         base: 'Driver',
         displayBase: 'Driver-oda Auto',
-        options: ['-voda', '-kku', '-la', '-ularundhu'],
-        correct: ['-voda'],
+        options: ['-oda', '-kku', '-la', '-lerundhu'],
+        correct: ['-oda'],
         result: 'Driver-oda',
         category: 'Genitive Suffix',
-        hint: '-voda = Possessive suffix. Works with any noun!'
+        hint: '-oda = Possessive suffix. Works with any noun!'
     },
 
     // ═══════════════════════════════════════════════
@@ -547,7 +547,7 @@ export const QUESTIONS = [
         correct: ['-u'],
         result: 'Car-u',
         category: 'Tanglish Converter',
-        hint: 'Car-u — Bengaluru runs on these!'
+        hint: 'Car-u — Chennai runs on these!'
     },
     {
         type: 'tanglish',
@@ -569,7 +569,7 @@ export const QUESTIONS = [
         correct: ['-u'],
         result: 'Coffee-u',
         category: 'Tanglish Converter',
-        hint: 'Coffee-u — The fuel of Bengaluru!'
+        hint: 'Coffee-u — The fuel of Chennai!'
     },
     {
         type: 'tanglish',

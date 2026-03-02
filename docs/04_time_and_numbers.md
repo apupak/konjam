@@ -1,89 +1,89 @@
 ---
 hide:
   - toc
-image: assets/img/social/og_lesson_05.jpg
-description: Learn Tamil numbers, time expressions, and calendar vocabulary for Chennai. Master counting 1–10 to unlock the full numerical system, phonetically transcribed.
+image: assets/img/social/og_lesson_04.jpg
+description: Master Tamil numbers, fractions, telling time, and scheduling in Chennai. This lesson covers the essential numeric logic for bargaining and getting around.
 ---
 # 04. Time, Numbers & Calendar
 
-Mastering the numbers 1 through 10 unlocks the logic for the entire numerical system. 
+Navigating local markets, paying exact auto-rickshaw fares, and coordinating schedules rely entirely on the numerical logic of Tamil. Understanding the agglutinative nature of Tamil numbers allows for rapid comprehension of prices and times.
 
-## 1. Core Numerical Logic
-Learning the base numbers allows you to manage fares, quantities, and addresses. 
+## 1. Core Numerical Logic (0-100)
 
-*   **0:** Poojiyam ⟨POO-jee-yum⟩
-*   **1:** Onnu ⟨ON-noo⟩
-*   **2:** Rendu ⟨REN-doo⟩
-*   **3:** Moonu ⟨MOO-noo⟩
-*   **4:** Naalu ⟨NAA-loo⟩
-*   **5:** Anju ⟨UN-joo⟩
-*   **6:** Aaru ⟨AA-roo⟩
-*   **7:** Yezhu ⟨YAY-zhoo⟩
-*   **8:** Ettu ⟨ET-too⟩
-*   **9:** Ombodhu ⟨OM-buh-dhoo⟩
-*   **10:** Paththu ⟨PUT-too⟩
+The entire numerical system is constructed upon these foundational base numbers.
 
-### The 'Teens' and Multiples of Ten
+| Number | Tamil Script | Phonetic Guide | | Number | Tamil Script | Phonetic Guide |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **0** | பூஜ்ஜியம் | ⟨POO-jee-yum⟩ | | **11** | பதிெனான் னு | ⟨pu-dhin-ON-noo⟩ |
+| **1** | ஒன்னு | ⟨ON-noo⟩ | | **12** | பனிெரண்டு | ⟨pun-NIH-ren-doo⟩ |
+| **2** | ெரண்டு | ⟨REN-doo⟩ | | **20** | இருபது | ⟨ee-ROO-vuh-dhoo⟩ |
+| **3** | மூனு | ⟨MOO-noo⟩ | | **30** | முப்பது | ⟨MOOP-puh-dhoo⟩ |
+| **4** | நாலு | ⟨NAA-loo⟩ | | **40** | நாப்பது | ⟨NAAP-puh-dhoo⟩ |
+| **5** | அஞ்சு | ⟨UN-joo⟩ | | **50** | அம்பது | ⟨UM-buh-dhoo⟩ |
+| **6** | ஆறு | ⟨AA-roo⟩ | | **60** | அறுபது | ⟨UH-roo-vuh-dhoo⟩ |
+| **7** | ஏழு | ⟨YAY-zhoo⟩ | | **70** | எழுபது | ⟨yeh-ZHOO-vuh-dhoo⟩ |
+| **8** | எட்டு | ⟨ET-too⟩ | | **80** | எண்பது | ⟨YEN-buh-dhoo⟩ |
+| **9** | ஒம்ேபாது | ⟨OM-buh-dhoo⟩ | | **90** | ெதாண்ணூ று | ⟨thon-NOO-roo⟩ |
+| **10** | பத்து | ⟨PUT-too⟩ | | **100** | நூறு | ⟨NOO-roo⟩ |
 
-*   **11:** Pathin-onnu ⟨pu-dhin-ON-noo⟩ (Paththu + Onnu).
-*   **12:** Pannerendu ⟨pun-NIH-ren-doo⟩
-*   **20:** Iruvathu ⟨ee-ROO-vuh-dhoo⟩ 
-*   **30:** Muppathu ⟨MOOP-puh-dhoo⟩
-*   **40:** Naappathu ⟨NAAP-puh-dhoo⟩
-*   **50:** Ambathu ⟨UM-buh-dhoo⟩ 
-*   **60:** Aruvathu ⟨UH-roo-vuh-dhoo⟩ 
-*   **100:** Nooru ⟨NOO-roo⟩. Vital for larger transactions and rent discussions.
-*   **1000:** Aayiram ⟨AA-yee-rum⟩.
-*   **Lakh:** Latcham ⟨LUT-chum⟩.
+**Note on combination:**
+Numbers compound logically. For instance, 21 is இருபத்து ஒன்னு ⟨ee-ROO-vuh-thoo ON-noo⟩ (Twenty-one). For larger transactions, 1,000 is **ஆயிரம்** ⟨AA-yee-rum⟩, and 100,000 is **லட்சம்** ⟨LUT-chum⟩ (Lakh).
 
 ## 2. Fractions and Measurements
-Essential for buying vegetables or telling precise time.
 
-*   **Ara** ⟨UH-rah⟩ **(Half):** 
-    *   *Usage:* "Ara mani neram ⟨MUH-nee NAY-rum⟩" (Half an hour).
-*   **Kaal** ⟨KAAL⟩ **(Quarter):** 
-    *   *Usage:* "Moonu kaal ⟨MOO-noo KAAL⟩" (3:15 / Three and a quarter).
-*   **Muk-kaal** ⟨MOOK-KAAL⟩ **(3/4th):** 
-    *   *Usage:* "Moonu muk-kaal ⟨MOO-noo MOOK-KAAL⟩" (3:45).
+When buying vegetables, groceries, or telling precise time, fractions are mandatory.
+
+*   **அைர** ⟨UH-rah⟩ - Half (1/2). 
+    *   *Example:* Ara kilo ⟨UH-rah KEE-lo⟩ (Half a kilo).
+*   **கால்** ⟨KAAL⟩ - Quarter (1/4).
+*   **முக்கால்** ⟨MOOK-kaal⟩ - Three-quarters (3/4).
 
 ## 3. Time and Scheduling Logistics
-These nouns and adverbs allow you to coordinate meetings and set expectations.
 
-*   **Neram** ⟨NAY-rum⟩ **(Time):** Noun used to ask duration or exact clock time.
-    *   *Usage:* "Neram enna ⟨EN-nah⟩?" (What is the time?)
-*   **Mani** ⟨MUH-nee⟩ **(Hour / Bell):** 
-    *   *Usage:* "Oru ⟨OH-roo⟩ mani" (1 o'clock).
-*   **Nimisham** ⟨NEE-mee-shum⟩ **(Minute):** 
-    *   *Usage:* "Paththu ⟨PUT-too⟩ nimisham" (10 minutes).
-*   **Ippo** ⟨IP-poh⟩ **(Now):** Temporal adverb indicating the present moment.
-    *   *Usage:* "Ippo vaanga ⟨VAA-ngah⟩" (Come right now).
-*   **Aprom** ⟨up-PROM⟩ **(Later):** Extremely common in delaying tactics or scheduling.
-    *   *Usage:* "Aprom vaanga" (Come later).
+Tamil uses specific nouns to differentiate between absolute time and duration, ensuring clear communication for scheduling.
+
+*   **ேநரம்** ⟨NAY-rum⟩ - Time / Duration. 
+    *   "ேநரம் என்ன?" ⟨NAY-rum YEN-nah⟩ *(What is the time?)*.
+*   **மணி** ⟨MUH-nee⟩ - Hour / O'clock. 
+    *   "ஒரு மணி" ⟨OH-roo MUH-nee⟩ *(One o'clock)*. 
+    *   "மூனு மணி பத்து நிமிஷம்" ⟨MOO-noo MUH-nee PUT-too NEE-mee-shum⟩ *(3:10)*.
+*   **நிமிஷம்** ⟨NEE-mee-shum⟩ - Minute. 
+    *   "பத்து நிமிஷம்" ⟨PUT-too NEE-mee-shum⟩ *(Ten minutes)*.
+*   **இப்ேபா** ⟨IP-poh⟩ - Now. 
+    *   "இப்ேபா வாங்க" ⟨IP-poh VAA-ngah⟩ *(Come now)*.
+*   **அப்புறம்** ⟨up-PROM⟩ - Later. 
+    *   "அப்புறம் வாங்க" ⟨up-PROM VAA-ngah⟩ *(Come later)*.
+
+## 4. The Daily Calendar and Weekdays
+
+Understanding the days of the week and relative time markers is essential for professional and social planning.
+
+### Time of Day & Relative Days
+
+| Time/Day | Tamil Script | Phonetic Guide | Example Context |
+| :--- | :--- | :--- | :--- |
+| **Morning** | காைல | ⟨KAA-lai⟩ | காைல 8 மணி (Morning 8 AM) |
+| **Afternoon**| மதியம் | ⟨MUD-hee-yum⟩ | மதியம் சாப்பாடு (Afternoon lunch) |
+| **Evening** | சாயங்காலம்| ⟨SAA-yun-gaa-lum⟩| சாயங்காலம் மீட்டிங் (Evening meeting)|
+| **Night** | ராத்திரி | ⟨RAAH-thee-ree⟩| ராத்திரி பயணம் (Night travel) |
+| **Today** | இன்ைனக்கு | ⟨IN-nai-koo⟩ | இன்ைனக்கு லீவ் (Today is a holiday) |
+| **Tomorrow** | நாைளக்கு | ⟨NAA-lai-koo⟩ | நாைளக்கு பார்க்கலாம் (Let's see tomorrow) |
+| **Yesterday**| ேநத்து | ⟨NAY-thoo⟩ | ேநத்து வந்ேதன் (I came yesterday) |
 
 ### Days of the Week
 
-*   Sunday: Gnayiru ⟨GNAA-yee-roo⟩
-*   Monday: Thingal ⟨THIN-gul⟩
-*   Tuesday: Sevvai ⟨SEV-vaay⟩
-*   Wednesday: Budhan ⟨BOO-dhun⟩
-<!-- disableFinding("Guru") -->
-*   Thursday: Viyaazhan ⟨vee-YAA-zhun⟩
-*   Friday: Velli ⟨VEL-lee⟩
-*   Saturday: Sani ⟨SUH-nee⟩
+| Day | Tamil Script | Phonetic Guide |
+| :--- | :--- | :--- |
+| **Sunday** | ஞாயிறு | ⟨GNAA-yee-roo⟩ |
+| **Monday** | திங்கள் | ⟨THIN-gul⟩ |
+| **Tuesday** | ெசவ்வாய் | ⟨SEV-vaay⟩ |
+| **Wednesday**| புதன் | ⟨POO-dhun⟩ |
+| **Thursday** | வியாழன் | ⟨vee-YAA-zhun⟩ |
+| **Friday** | ெவள்ளி | ⟨VEL-lee⟩ |
+| **Saturday** | சனி | ⟨SAH-nee⟩ |
 
-### The Daily Calendar
-
-*   **Kaalai** ⟨KAA-lai⟩ **(Morning):** "Kaalaila 8 mani" (Morning 8 AM).
-*   **Madhiyam** ⟨MUD-hee-yum⟩ **(Afternoon):** "Madhiyam saappadu ⟨SAAP-paa-doo⟩" (Afternoon lunch).
-*   **Saayangaalam** ⟨SAA-yun-gaa-lum⟩ **(Evening):** "Saayangaalam tea" (Evening tea).
-*   **Rathiri** ⟨RAAH-thee-ree⟩ **(Night):** "Rathiri saappadu" (Dinner).
-*   **Innaikku** ⟨IN-nai-koo⟩ **(Today):** "Innaikku leave ⟨LEAVE⟩ irukku" (Today is a holiday).
-*   **Naalaikku** ⟨NAA-lai-koo⟩ **(Tomorrow):** "Naalaikku paakkalaam ⟨PAAK-kuh-laam⟩" (Let's meet tomorrow).
-*   **Neththu** ⟨NAY-thoo⟩ **(Yesterday):** "Neththu vandhaanga ⟨VUN-dhaan-gah⟩" (Came yesterday).
-*   **Naalaannaikku** ⟨NAA-laan-nai-koo⟩ **(Day after tomorrow):** "Naalaannaikku vaanga" (Come the day after).
-
-<div class="swalpa-share-widget">
-    <button class="swalpa-share-button" onclick="window.triggerShare('Evvalavu aachu? (How much?) Mastering rickshaw negotiations with Konjam. https://konjam.org/04_time_and_numbers')">
+<div class="konjam-share-widget">
+    <button class="konjam-share-button" onclick="window.triggerShare('Never get confused by auto fares or meeting times in Chennai! Master Tamil numbers and time on Konjam: https://konjam.org/04_time_and_numbers')">
         <span class="share-icon">📤</span> Share
     </button>
 </div>

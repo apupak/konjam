@@ -99,7 +99,7 @@ function updateBackground() {
 }
 
 function saveGame() {
-    localStorage.setItem('meter_haaki_state', JSON.stringify({
+    localStorage.setItem('meter_podu_state', JSON.stringify({
         respect: state.respect,
         wallet: state.wallet,
         patience: state.patience,
@@ -110,7 +110,7 @@ function saveGame() {
 }
 
 function loadGame() {
-    const saved = localStorage.getItem('meter_haaki_state');
+    const saved = localStorage.getItem('meter_podu_state');
     if (saved) {
         const parsed = JSON.parse(saved);
         Object.assign(state, parsed);
@@ -194,12 +194,12 @@ function showDialogue(stepKey) {
     let text = step.text;
     if (text === "Dynamic") {
         if (stepKey === 'start_negotiation') {
-            if (state.activeDriver === 'Guru') text = "Vanakkam saar. Indiranagar hog-thee-ra?";
-            else if (state.activeDriver === 'Thala') text = "Enna thala, ellige?";
-            else text = "Vaanga saar, ellige poganum?";
+            if (state.activeDriver === 'Guru') text = "Vanakkam sir. T-Nagar poringala?";
+            else if (state.activeDriver === 'Thala') text = "Enna thala, enga poganum?";
+            else text = "Vaanga sir, enga poganum?";
         } else if (stepKey === 'rain_negotiation') {
-            if (state.respect > 40) text = "Sari saar, ⟨banni hogōṇa⟩.";
-            else text = "Bēda saar, thumba risk ide. Double kodi.";
+            if (state.respect > 40) text = "Sari saar, ⟨vaanga pogalam⟩.";
+            else text = "Vendaam sir, romba risk. Double kudunga.";
         }
     }
 
@@ -287,7 +287,7 @@ function handleChoice(choice) {
         }
 
         if (choice.effect.end === 'reset') {
-            localStorage.removeItem('meter_haaki_state');
+            localStorage.removeItem('meter_podu_state');
             location.reload();
             return;
         }
@@ -334,7 +334,7 @@ function showBarrierResponse(choice) {
     const dialogueText = document.getElementById('dialogue-text');
     const choicesContainer = document.getElementById('choices-container');
 
-    dialogueText.innerText = "Tamil mathadi! English gothilla!";
+    dialogueText.innerText = "Tamil pesunga! English theriyadhu!";
     choicesContainer.innerHTML = '';
 
     const resetBtn = document.createElement('button');
@@ -412,7 +412,7 @@ function renderLevelComplete() {
             <div class="game-actions">
                 ${isLastLevel ?
             `<h2 class="premium-text">Vishwa-Guru Status!</h2><p class='scenario-text'>You have mastered the Auto-Rickshaw Protocol.</p>` :
-            `<button id="next-level-btn" class="primary-btn">Hogona! (Next Level)</button>`
+            `<button id="next-level-btn" class="primary-btn">Po! (Next Level)</button>`
         }
                 <button class="control-btn" style="margin-top: 20px; width: 100%; padding: 12px; background: #25D366; color: white;" id="whatsapp-share-btn">📲 Share on WhatsApp</button>
                 <button class="control-btn" style="margin-top: 10px; width: 100%; padding: 12px;" id="x-share-btn">𝕏 Share on X</button>
@@ -422,11 +422,11 @@ function renderLevelComplete() {
         </div>
     `;
 
-    saveHighScore('meter-haaki', { level: state.level, respect: state.respect });
-    unlockBadge('meter_haaki_pro');
+    saveHighScore('meter-podu', { level: state.level, respect: state.respect });
+    unlockBadge('meter_podu_pro');
 
     document.getElementById('restart-game-btn').onclick = () => {
-        localStorage.removeItem('meter_haaki_state');
+        localStorage.removeItem('meter_podu_state');
         location.reload();
     };
 
@@ -448,8 +448,8 @@ function startNextLevel() {
 }
 
 function shareResult(platform, rank, level) {
-    const text = `🛺 I just survived ${level} levels of Namma Bengaluru Traffic in the Meter-Haaki game! \n\nMy Rank: ${rank}\n\nCan you negotiate like a pro? Try it on SWALPA.org! #SWALPA #ChennaiTraffic #MeterHaaki`;
-    const url = "https://swalpa.org/games/auto-rickshaw/";
+    const text = `🛺 I just survived ${level} levels of Namma Chennai Traffic in the Meter-Podu game! \n\nMy Rank: ${rank}\n\nCan you negotiate like a pro? Try it on KONJAM.org! #KONJAM #ChennaiTraffic #MeterHaaki`;
+    const url = "https://konjam.org/games/auto-rickshaw/";
     const fullMessage = `${text} \n\n${url}`;
 
     if (platform === 'whatsapp') {
@@ -471,9 +471,9 @@ function shareResult(platform, rank, level) {
 // Global Audio Helper (linked from game.js for internal use)
 const gameAudio = new Audio();
 window.playGameAudio = function (filename) {
-    const voiceDir = localStorage.getItem('swalpa_voice_dir') || 'audio_native_v4_male';
+    const voiceDir = localStorage.getItem('konjam_voice_dir') || 'audio_native_v4_male';
     gameAudio.src = `../../assets/${voiceDir}/${filename}.mp3`;
-    gameAudio.play().catch(e => console.log("Audio play failed:", filename));
+    gameAudio.play().catch(e => console.log("[KONJAM] Audio play failed:", filename));
 };
 
 // Start the game on load

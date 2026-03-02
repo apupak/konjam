@@ -10,7 +10,7 @@
 
 **Expert**: Mhm.
 
-**Host**: It's 6:30 in the evening. The sun is setting through this haze of exhaust fumes and you are standing on the curb at Silk Board Junction in Bengaluru.
+**Host**: It's 6:30 in the evening. The sun is setting through this haze of exhaust fumes and you are standing on the curb at Silk Board Junction in Chennai.
 
 **Expert**: Oof, Silk Board. The Bermuda triangle of traffic. It's the place where time goes to die.
 
@@ -50,9 +50,9 @@
 
 **Expert**: Most language learners, they obsess over the body of the car, the shiny paint, the leather seats, all that. That's the vocabulary. Nouns, post office, hospital, library.
 
-**Host**: Right. Yeah, I buy a Learn Kannada in 30 days book and the first chapter is always a list of nouns I'm just never going to use. Like pineapple or umbrella.
+**Host**: Right. Yeah, I buy a Learn Tamil in 30 days book and the first chapter is always a list of nouns I'm just never going to use. Like pineapple or umbrella.
 
-**Expert**: Exactly. That's the paint. But here's the thing about Bengaluru. You can often get away with using English paint. You can say office. You can say tech park. You can say metro station.
+**Expert**: Exactly. That's the paint. But here's the thing about Chennai. You can often get away with using English paint. You can say office. You can say tech park. You can say metro station.
 
 **Host**: Everyone understands the nouns.
 
@@ -60,7 +60,7 @@
 
 **Host**: Ah.
 
-**Expert**: But the engine, the thing that makes the car start, stop, turn left, turn right, and actually function, that has to be Kannada.
+**Expert**: But the engine, the thing that makes the car start, stop, turn left, turn right, and actually function, that has to be Tamil.
 
 **Host**: That's the grammar.
 
@@ -70,7 +70,7 @@
 
 **Expert**: Precisely. We're stripping it all the way down to the bare metal. We're talking logistical tools for navigation, transaction, and connection.
 
-**Host**: I love that. But okay, before we start bolting any parts together, we have to talk about the raw material. There's a really serious warning in our source material, specifically from the Improving Kannada pronunciation document.
+**Host**: I love that. But okay, before we start bolting any parts together, we have to talk about the raw material. There's a really serious warning in our source material, specifically from the Improving Tamil pronunciation document.
 
 **Expert**: And we cannot skip this. This is the difference between being understood and just being stared at blankly.
 
@@ -80,7 +80,7 @@
 
 **Host**: Right. I think a lot of English speakers, myself included, have this really bad habit of just applying our flat sort of American or British vowels to Indian words and just hoping for the best.
 
-**Expert**: And in Kannada, that simply doesn't work. It's not just about having an accent. It's about meaning. If you mispronounce a sound, you might be saying a completely different word.
+**Expert**: And in Tamil, that simply doesn't work. It's not just about having an accent. It's about meaning. If you mispronounce a sound, you might be saying a completely different word.
 
 **Host**: So this is critical.
 
@@ -92,7 +92,7 @@
 
 **Host**: Okay. Tea. Dog. My tongue is tapping that little ridge right behind my top teeth.
 
-**Expert**: That's the alveolar ridge. It's forward. Now for Kannada retroflex sounds, we're talking about the L. You have to do yoga with your tongue.
+**Expert**: That's the alveolar ridge. It's forward. Now for Tamil retroflex sounds, we're talking about the L. You have to do yoga with your tongue.
 
 **Host**: Yoga with my tongue. Okay.
 
@@ -130,7 +130,7 @@
 
 **Expert**: Okay, I'm going to be practicing that tongue curl in my spare time. Next up is vowel length. Now this one seems easier, but the source says it's a trap.
 
-**Host**: It is a massive trap because English is very lazy about vowel length. In Kannada, length is what we call semantically contrastive.
+**Host**: It is a massive trap because English is very lazy about vowel length. In Tamil, length is what we call semantically contrastive.
 
 **Expert**: Which means the length changes the definition of the word.
 
@@ -164,7 +164,7 @@
 
 **Host**: King. Woah, yeah. A little puff.
 
-**Expert**: And that puff of air changes the meaning in Kannada. You have Ka and you have Kha. You have Ga and Gha. You need to punch those aspirated consonants. It's a physical act. Got it. Okay, so curl the tongue, watch the clock on the vowels, and punch the air. We're going to be using these phonetic respellings provided in the notes like OH-luh-guh-dey to keep ourselves honest.
+**Expert**: And that puff of air changes the meaning in Tamil. You have Ka and you have Kha. You have Ga and Gha. You need to punch those aspirated consonants. It's a physical act. Got it. Okay, so curl the tongue, watch the clock on the vowels, and punch the air. We're going to be using these phonetic respellings provided in the notes like OH-luh-guh-dey to keep ourselves honest.
 
 **Host**: Exactly. We aren't just reading today, we are drilling.
 
@@ -178,21 +178,21 @@
 
 **Expert**: Right. There are spaces in between.
 
-**Host**: Kannada doesn't do that. Kannada takes the root word, the main brick, which is Mane, house, and the suffix for in, which is -⟨alli⟩, and it snaps them together into a single solid block. Maneyalli.
+**Host**: Tamil doesn't do that. Tamil takes the root word, the main brick, which is Mane, house, and the suffix for in, which is -⟨alli⟩, and it snaps them together into a single solid block. Maneyalli.
 
 **Expert**: Maneyalli. One word. One solid unit. And here is why the Lego theory is your survival kit. You do not need to memorize a phrasebook with 10,000 sentences. That's a fool's errand. You just need a pocket full of Legos, the suffixes.
 
 **Host**: Because I can snap those suffixes onto anything.
 
-**Expert**: Anything. And this brings us to the ultimate Kanglish hack. Let's say you're back at that Silk Board Junction. You want to say in the auto, you panic. You forget the Kannada word for auto, though. Hopefully, you know it's just auto.
+**Expert**: Anything. And this brings us to the ultimate Kanglish hack. Let's say you're back at that Silk Board Junction. You want to say in the auto, you panic. You forget the Tamil word for auto, though. Hopefully, you know it's just auto.
 
 **Host**: Yes, definitely auto. Yeah.
 
-**Expert**: But let's say you want to say in the office. You don't know the Kannada word for office. You don't need to.
+**Expert**: But let's say you want to say in the office. You don't know the Tamil word for office. You don't need to.
 
 **Host**: Okay.
 
-**Expert**: You take the English brick office. You snap on the Kannada brick -nalli, which is just -⟨alli⟩ with a little smoothing connecting sound. ⟨Office-nalli⟩.
+**Expert**: You take the English brick office. You snap on the Tamil brick -nalli, which is just -⟨alli⟩ with a little smoothing connecting sound. ⟨Office-nalli⟩.
 
 **Host**: ⟨Office-nalli⟩.
 
@@ -204,7 +204,7 @@
 
 **Host**: Yeah?
 
-**Expert**: You are using the Kannada engine, the grammar, even if the car body is English.
+**Expert**: You are using the Tamil engine, the grammar, even if the car body is English.
 
 **Host**: That takes so much pressure off. I don't need a dictionary, I just need the suffixes. I just need the Lego bricks.
 
@@ -216,15 +216,15 @@
 
 **Host**: So explain the shift. What happened?
 
-**Expert**: Okay, so Kannada is a Dravidian language and it's related to Tamil, Telugu, Malayalam. About a thousand years ago, somewhere between the 10th and 14th centuries, a massive phonetic shift happened in the Kannada language.
+**Expert**: Okay, so Tamil is a Dravidian language and it's related to Tamil, Telugu, Malayalam. About a thousand years ago, somewhere between the 10th and 14th centuries, a massive phonetic shift happened in the Tamil language.
 
 **Host**: Okay.
 
-**Expert**: Almost every single word that started with the letter P in Proto-Dravidian shifted to start with the letter H in Kannada.
+**Expert**: Almost every single word that started with the letter P in Proto-Dravidian shifted to start with the letter H in Tamil.
 
 **Host**: So if I know a little Tamil or even just some general South Indian root words, I can just swap the letter.
 
-**Expert**: You can literally just swap the letter. Let's play a game. I'll give you the old or the Tamil root starting with P, you apply the shift and give me the modern Kannada word.
+**Expert**: You can literally just swap the letter. Let's play a game. I'll give you the old or the Tamil root starting with P, you apply the shift and give me the modern Tamil word.
 
 **Host**: All right, I'm ready. Let's do it.
 
@@ -260,7 +260,7 @@
 
 **Host**: One size fits all.
 
-**Expert**: Kannada has a very strict hierarchy. There is ⟨Neenu⟩ and there is ⟨Neevu⟩.
+**Expert**: Tamil has a very strict hierarchy. There is ⟨Neenu⟩ and there is ⟨Neevu⟩.
 
 **Host**: And ⟨Neenu⟩ is the singular informal one.
 
@@ -324,9 +324,9 @@
 
 **Host**: Okay.
 
-**Expert**: This is my absolute favorite piece of efficiency in the Kannada language. English is so clumsy with questions. Is the meter there? Will you put the meter on? We're rearranging words, changing the tone. It's a lot of work.
+**Expert**: This is my absolute favorite piece of efficiency in the Tamil language. English is so clumsy with questions. Is the meter there? Will you put the meter on? We're rearranging words, changing the tone. It's a lot of work.
 
-**Host**: So what does Kannada do?
+**Host**: So what does Tamil do?
 
 **Expert**: It just stretches the tail. You simply add an -a sound to the end of the final word in the statement.
 
@@ -352,7 +352,7 @@
 
 **Host**: Is it correct? Wait, Sariya. I hear that all the time in the office.
 
-**Expert**: It is the most common phrase in corporate Bengaluru. Is this data Sariya? You are applying the Kannada engine to English words. You've been hearing it all along.
+**Expert**: It is the most common phrase in corporate Chennai. Is this data Sariya? You are applying the Tamil engine to English words. You've been hearing it all along.
 
 **Host**: Mind-blown. Okay. So I get in, I point at the meter and I ask meter ⟨Ideya⟩. He nods. We're moving. But now, oh no, he's about to miss the turn.
 
@@ -450,7 +450,7 @@
 
 **Host**: Right. Subject verb object. I learned that in third grade.
 
-**Expert**: Kannada sees the world completely differently. Needs, feelings, desires, knowledge, these are not things you do, these are things that happen to you. You are the experiencer, not the agent.
+**Expert**: Tamil sees the world completely differently. Needs, feelings, desires, knowledge, these are not things you do, these are things that happen to you. You are the experiencer, not the agent.
 
 **Host**: So I don't say I want coffee.
 
@@ -458,7 +458,7 @@
 
 **Host**: To me, that's the dative case.
 
-**Expert**: Yes, and to me in Kannada is Nanage, pronounced nuh-nuh-GEY.
+**Expert**: Yes, and to me in Tamil is Nanage, pronounced nuh-nuh-GEY.
 
 **Host**: Nuh-nuh-GEY.
 
@@ -484,7 +484,7 @@
 
 **Expert**: The numbers are absolutely non-negotiable. If you don't know the numbers, you will overpay, period. It's a guarantee.
 
-**Host**: Okay, let's drill the base one through 10. The source says, if you know these 10, you can basically unlock all the others. I'm going to say the number, you give me the Kannada and I'll try to repeat the pronunciation correctly.
+**Host**: Okay, let's drill the base one through 10. The source says, if you know these 10, you can basically unlock all the others. I'm going to say the number, you give me the Tamil and I'll try to repeat the pronunciation correctly.
 
 **Expert**: Let's do it. Fire away.
 
@@ -614,9 +614,9 @@
 
 **Host**: I shrug. I say, very good quality, madam. Best quality.
 
-**Expert**: Now, I need to make my counter offer. I need to say, reduce a little. So, a little is ⟨Swalpa⟩, reduce is ⟨Kami maadi⟩. So, ⟨Swalpa⟩ ⟨Kami maadi⟩. ⟨Swalpa⟩ is the most important word in that phrase, pronounced SWAL-pah. It softens everything. If you just say ⟨Kami maadi⟩, it's a harsh demand. ⟨Swalpa⟩ ⟨Kami maadi⟩ is a polite negotiation.
+**Expert**: Now, I need to make my counter offer. I need to say, reduce a little. So, a little is ⟨Konjam⟩, reduce is ⟨Kami maadi⟩. So, ⟨Konjam⟩ ⟨Kami maadi⟩. ⟨Konjam⟩ is the most important word in that phrase, pronounced SWAL-pah. It softens everything. If you just say ⟨Kami maadi⟩, it's a harsh demand. ⟨Konjam⟩ ⟨Kami maadi⟩ is a polite negotiation.
 
-**Host**: ⟨Swalpa⟩ ⟨Kami maadi⟩.
+**Host**: ⟨Konjam⟩ ⟨Kami maadi⟩.
 
 **Expert**: I look at the scarf. I look at you. I sigh. Okay. 90. Tombathu.
 
@@ -646,7 +646,7 @@
 
 **Host**: I really am. Okay, we have survived the traffic. We have successfully bought our groceries without getting ripped off. Now, we finally get to relax. We're moving to section four, scenario three, coffee with friends.
 
-**Expert**: The whole vibe changes here completely. We aren't commanding drivers or negotiating prices anymore. We're connecting. And we have to start with the ultimate Bengaluru icebreaker.
+**Expert**: The whole vibe changes here completely. We aren't commanding drivers or negotiating prices anymore. We're connecting. And we have to start with the ultimate Chennai icebreaker.
 
 **Host**: This isn't just a simple how are you, is it?
 
@@ -716,7 +716,7 @@
 
 **Expert**: Exactly. That's the classic I'm 5 minutes away lie. ⟨Barthini⟩.
 
-**Host**: Finally, we can't be in Bengaluru without talking about Kanglish and the street slang. This is the flavor text from our notes.
+**Host**: Finally, we can't be in Chennai without talking about Kanglish and the street slang. This is the flavor text from our notes.
 
 **Expert**: This is the real flavor text. The ⟨Maadi⟩ hack is the ultimate survival tool. ⟨Maadi⟩ just means do.
 
@@ -726,11 +726,11 @@
 
 **Host**: So, call ⟨Maadi⟩. Check ⟨Maadi⟩.
 
-**Expert**: Adjust ⟨Maadi⟩. ⟨Swalpa⟩ adjust ⟨Maadi⟩. Please adjust a little. This is the official motto of the city.
+**Expert**: Adjust ⟨Maadi⟩. ⟨Konjam⟩ adjust ⟨Maadi⟩. Please adjust a little. This is the official motto of the city.
 
 **Host**: I believe it.
 
-**Expert**: You're on a crowded bus. There's no seat. You look at someone and say, ⟨Swalpa⟩ adjust ⟨Maadi⟩, and they'll squish over.
+**Expert**: You're on a crowded bus. There's no seat. You look at someone and say, ⟨Konjam⟩ adjust ⟨Maadi⟩, and they'll squish over.
 
 **Host**: Okay, what about how we address people? I hear the word Guru all the time.
 
@@ -782,7 +782,7 @@
 
 **Host**: Yeah, there's a definite catch, a glottal stop.
 
-**Expert**: Languages hate hiccups. They want to be smooth. They want to flow. So, to prevent that hiccup, Kannada inserts a glide sound between the vowels.
+**Expert**: Languages hate hiccups. They want to be smooth. They want to flow. So, to prevent that hiccup, Tamil inserts a glide sound between the vowels.
 
 **Host**: A glide.
 
@@ -830,7 +830,7 @@
 
 **Host**: And step three.
 
-**Expert**: Step three. Glue the correct Kannada suffix onto your root word.
+**Expert**: Step three. Glue the correct Tamil suffix onto your root word.
 
 **Host**: ⟨Office-nalli⟩. Driver, Nanage coffee ⟨Bēku⟩.
 
@@ -856,7 +856,7 @@
 
 **Expert**: You did. It was there all along.
 
-**Host**: All right, here is your final call to action. We're calling it the imperative challenge. The next time you are in an auto or an Uber or even just in a shop in Bengaluru, do not use English for the basic directional commands.
+**Host**: All right, here is your final call to action. We're calling it the imperative challenge. The next time you are in an auto or an Uber or even just in a shop in Chennai, do not use English for the basic directional commands.
 
 **Expert**: Just try one.
 

@@ -1,12 +1,12 @@
 # Achievements & Profile System: Retrospective
 
 **Date:** February 28, 2026
-**Feature Focus:** Gamifying Bangalore Kannada Learning (Achievements, Badges, Profile Dashboard)
+**Feature Focus:** Gamifying Chennai Tamil Learning (Achievements, Badges, Profile Dashboard)
 
 ---
 
 ## 1. Architectural Overview & Context
-The SWALPA platform was designed to move beyond traditional textbook learning by simulating the "streets of Bangalore." While the three core minigames (`Meter Haaki`, `Adjust Maadi`, `Suffix Station`) provided excellent situational practice, there was no persistent progression to tie the user's journey together across multiple sessions. 
+The Konjam platform was designed to move beyond traditional textbook learning by simulating the "streets of Chennai." While the three core minigames (`Meter Haaki`, `Adjust Maadi`, `Suffix Station`) provided excellent situational practice, there was no persistent progression to tie the user's journey together across multiple sessions. 
 
 We introduced a **Profile Dashboard** and an **Achievements (Badges) System** to build long-term retention hooks.
 
@@ -49,8 +49,8 @@ window.addEventListener('blur', () => {
 ```
 This acts as a socio-technical proxy: if the user clicks into the comments section, they are engaging with the community, satisfying the intent behind the badge.
 
-## 3. Socio-Linguistic Impact (The "Bangalore Flavor")
-The aesthetic and linguistic choices for the badges intentionally lean into expat/tech-worker tropes in Bangalore.
+## 3. Socio-Linguistic Impact (The "Chennai Flavor")
+The aesthetic and linguistic choices for the badges intentionally lean into expat/tech-worker tropes in Chennai.
 
 *   **Filter Coffee First (☕):** A nod to the standard start of any day in South India. (Awarded on the first lesson).
 *   **Local Insider (🕶️):** Rewards diving into the street slang module, past the formal vocabulary.
@@ -59,5 +59,5 @@ The aesthetic and linguistic choices for the badges intentionally lean into expa
 By replacing generic "Level 1" language with cultural inside jokes, the progression feels like an integration into the city, not just an academic exercise. 
 
 ## 4. Recommendations for Next Iterations
-*   **Server-Side Syncing:** Currently, `swalpa_unlocked_badges` lives entirely in `localStorage`. If the user clears their cache or switches to mobile, their badges are lost. Implementing a simple backend (e.g., Firebase or a serverless KV store) tied to GitHub auth would make this persistent.
+*   **Server-Side Syncing:** Currently, `Konjam_unlocked_badges` lives entirely in `localStorage`. If the user clears their cache or switches to mobile, their badges are lost. Implementing a simple backend (e.g., Firebase or a serverless KV store) tied to GitHub auth would make this persistent.
 *   **Social Export:** Add a button prominently on the Profile page to "Export Progress Image." We could use a canvas renderer to snapshot their rank and badges into an image they can easily drop into an office Slack channel or group chat.
