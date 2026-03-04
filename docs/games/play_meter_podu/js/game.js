@@ -1,6 +1,13 @@
 import { DRIVERS, LEVELS, RANKS } from './data.js';
 import { saveHighScore } from '../../../assets/js/scores.js';
-import { unlockBadge } from '../../../assets/js/badges.js';
+// unlockBadge is accessed globally via window.parent or window
+const unlockBadge = (badgeId) => {
+    if (window.parent && window.parent.unlockBadge) {
+        window.parent.unlockBadge(badgeId);
+    } else if (window.unlockBadge) {
+        window.unlockBadge(badgeId);
+    }
+};
 
 const state = {
     respect: 25,

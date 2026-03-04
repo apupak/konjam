@@ -231,16 +231,22 @@ document.addEventListener("DOMContentLoaded", function () {
         checkbox.checked = isShown;
 
         if (!isShown) {
+            document.documentElement.classList.add('hide-phonetics');
             document.body.classList.add('hide-phonetics');
+        } else {
+            document.documentElement.classList.remove('hide-phonetics');
+            document.body.classList.remove('hide-phonetics');
         }
 
         checkbox.addEventListener('change', (e) => {
             if (e.target.checked) {
                 localStorage.setItem(showKey, 'true');
                 document.documentElement.classList.remove('hide-phonetics');
+                document.body.classList.remove('hide-phonetics');
             } else {
                 localStorage.setItem(showKey, 'false');
                 document.documentElement.classList.add('hide-phonetics');
+                document.body.classList.add('hide-phonetics');
             }
 
             // Sync preference to cloud immediately
