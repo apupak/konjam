@@ -223,17 +223,17 @@ export const LEVELS = {
                         text: "3 hours? I have WFH! Turn it on!",
                         isEnglish: true,
                         effect: { respect: -30, patience: -40, barrier: true },
-                        next: "bescom_response"
+                        next: "tneb_response"
                     },
                     {
                         text: "Anna, ⟨enna aachu⟩? Cable problem-aa?",
                         effect: { respect: 20, patience: 10 },
-                        next: "bescom_response"
+                        next: "tneb_response"
                     },
                     {
                         text: "Current ⟨eppo varum⟩ anna? WFH irukku.",
                         effect: { respect: 15 },
-                        next: "bescom_response"
+                        next: "tneb_response"
                     },
                     {
                         text: "Anna ⟨konjam seekiram pannunga⟩. Inverter down aayiduchu.",
@@ -242,7 +242,7 @@ export const LEVELS = {
                     }
                 ]
             },
-            bescom_response: {
+            tneb_response: {
                 speaker: "Lineman Murugan",
                 text: "Tree branch vizhundhuduchu cable mela. Vela paathutu irukkom.",
                 choices: [
@@ -273,8 +273,8 @@ export const LEVELS = {
 };
 
 export const RANKS = [
-    { threshold: 200, title: "Fresh Off the Boat", desc: "You survived, but your wallet took a beating. Start using 'Adjust Maadi'!" },
+    { threshold: 200, title: "Fresh Off the Boat", desc: "You survived, but your wallet took a beating. Start using 'Adjust Pannunga'!" },
     { threshold: 400, title: "Semma Student", desc: "Solid effort! You're navigating vendors and landlords with emerging confidence." },
-    { threshold: 600, title: "A True Thala", desc: "Boss! Your 'Adjust Maadi' game is strong. Everyone respects the swagger." },
+    { threshold: 600, title: "A True Thala", desc: "Boss! Your 'Adjust Pannunga' game is strong. Everyone respects the swagger." },
     { threshold: Infinity, title: "Local Legend", desc: "Namma Chennai Legend! You handle Chennai logistics better than the locals." }
 ];

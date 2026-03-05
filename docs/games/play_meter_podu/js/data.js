@@ -40,7 +40,7 @@ export const LEVELS = {
                 text: "Dynamic",   // Will be dynamic in game logic
                 choices: [
                     {
-                        text: "⟨Vanakkam⟩ Anna, Anna Nagar 12th Main banni.",
+                        text: "⟨Vanakkam⟩ Anna, Anna Nagar 12th Main vaanga.",
                         effect: { respect: 15 },
                         next: "fare_check"
                     },
@@ -64,7 +64,7 @@ export const LEVELS = {
             },
             fare_check: {
                 speaker: "Driver",
-                text: "Meter plus 20 kodi saar. Thumba traffic ide.",
+                text: "Meter plus 20 kudunga sir. Romba traffic irukku.",
                 choices: [
                     {
                         text: "Sari anna, ⟨polama⟩.",
@@ -72,7 +72,7 @@ export const LEVELS = {
                         next: "level_complete"
                     },
                     {
-                        text: "⟨Vendaam⟩ guru, meter haaki.",
+                        text: "⟨Vendaam⟩ anna, meter podu.",
                         effect: { respect: 15, patience: -10 },
                         next: "level_complete"
                     },
@@ -98,7 +98,7 @@ export const LEVELS = {
         dialogue: {
             engagement: {
                 speaker: "Driver",
-                text: "Saar, illi flyover work aagtide. Left-ah, right-ah?",
+                text: "Sir, inga flyover work nadakkudhu. Left-ah, right-ah?",
                 choices: [
                     {
                         text: "Illi ⟨right edunga⟩, aamele nera ⟨ponga⟩.",
@@ -125,10 +125,10 @@ export const LEVELS = {
             },
             shortcut_check: {
                 speaker: "Driver",
-                text: "Saar, shortcut thogolla? Time ulit-the.",
+                text: "Sir, shortcut edukkulama? Time michamagum.",
                 choices: [
                     {
-                        text: "Haudu, gully olgade ⟨ponga⟩.",
+                        text: "Aama, gully ulla ⟨ponga⟩.",
                         effect: { respect: 15, patience: 10 },
                         next: "destination_near"
                     },
@@ -138,7 +138,7 @@ export const LEVELS = {
                         next: "destination_near"
                     },
                     {
-                        text: "Nimage ⟨therinja⟩ thagoli anna.",
+                        text: "Ungalukku ⟨therinja⟩ eduthukkonga anna.",
                         effect: { respect: 20 },
                         next: "destination_near"
                     },
@@ -152,7 +152,7 @@ export const LEVELS = {
             },
             destination_near: {
                 speaker: "Driver",
-                text: "Destination banthu saar. Illi niruthuren.",
+                text: "Destination vandhuduchu sir. Inga niruthuren.",
                 choices: [
                     {
                         text: "⟨Nandri⟩ anna. Illi ⟨niruthunga⟩.",
@@ -187,10 +187,10 @@ export const LEVELS = {
         dialogue: {
             engagement: {
                 speaker: "Driver",
-                text: "Saar, thumba ⟨mazhai⟩ barthide. Niruthuren, illandre 200 kodi.",
+                text: "Sir, romba ⟨mazhai⟩ peyyudhu. Niruthuren, illana 200 kudunga.",
                 choices: [
                     {
-                        text: "Anna, thumba heavy ⟨mazhai⟩ ide. 50 extra kodthini, ⟨vaanga⟩.",
+                        text: "Anna, thumba heavy ⟨mazhai⟩ ide. 50 extra kudukkuren, ⟨vaanga⟩.",
                         effect: { respect: 20 },
                         next: "rain_negotiation"
                     },
@@ -217,16 +217,16 @@ export const LEVELS = {
                 text: "Dynamic",
                 choices: [
                     {
-                        text: "Sari anna, tumba kelsa ideya? ⟨Saaptacha⟩?",
+                        text: "Sari anna, romba vela irukka? ⟨Saaptacha⟩?",
                         effect: { respect: 30, patience: 20 },
                         next: "level_complete"
                     },
                     {
-                        text: "Illi ⟨niruthunga⟩, bere auto nodthini.",
+                        text: "Inga ⟨niruthunga⟩, vera auto paarkuren.",
                         effect: { end: 'reset' }
                     },
                     {
-                        text: "⟨Nandri⟩ anna, help madidri.",
+                        text: "⟨Nandri⟩ anna, help pannirkinga.",
                         effect: { respect: 15 },
                         next: "level_complete"
                     },
@@ -247,15 +247,15 @@ export const LEVELS = {
         dialogue: {
             engagement: {
                 speaker: "Driver",
-                text: "Yen guru, thumba traffic ide. Mathe?",
+                text: "Enna anna, romba traffic irukku. Apram?",
                 choices: [
                     {
-                        text: "Sakkath traffic guru. ⟨Konjam adjust pannunga⟩.",
+                        text: "Semma traffic anna. ⟨Konjam adjust pannunga⟩.",
                         effect: { respect: 20, patience: 10 },
                         next: "level_complete"
                     },
                     {
-                        text: "Indu thumba ⟨traffic⟩ ideya?",
+                        text: "Inniku romba ⟨traffic⟩ irukka?",
                         effect: { respect: 10 },
                         next: "level_complete"
                     },
@@ -281,7 +281,7 @@ export const LEVELS = {
         dialogue: {
             engagement: {
                 speaker: "Driver",
-                text: "Saar, illi daari illa. 'No Entry'. U-turn thonbond ⟨vaanga⟩.",
+                text: "Sir, inga vazhi illa. 'No Entry'. U-turn eduthuttu ⟨vaanga⟩.",
                 choices: [
                     {
                         text: "Sari anna, ⟨ponga⟩.",
@@ -289,12 +289,12 @@ export const LEVELS = {
                         next: "level_complete"
                     },
                     {
-                        text: "Alli ⟨niruthunga⟩, nanu hog-theeni.",
+                        text: "Anga ⟨niruthunga⟩, naan poren.",
                         effect: { respect: 5, patience: -10 },
                         next: "level_complete"
                     },
                     {
-                        text: "⟨Nera ponga⟩, bere daari ide.",
+                        text: "⟨Nera ponga⟩, vera vazhi irukku.",
                         effect: { respect: 10 },
                         next: "level_complete"
                     },
@@ -315,20 +315,20 @@ export const LEVELS = {
         dialogue: {
             engagement: {
                 speaker: "Driver",
-                text: "Banthu saar. 150 aaguthe.",
+                text: "Vandhuduchu sir. 150 aagudhu.",
                 choices: [
                     {
-                        text: "Sari anna, hattu rupayi extra kodi, change ⟨vendaam⟩.",
+                        text: "Sari anna, pathu ruba extra kudunga, change ⟨vendaam⟩.",
                         effect: { wallet: -160, respect: 25 },
                         next: "level_complete"
                     },
                     {
-                        text: "Change illa saar, PhonePe ⟨māḍōṇa⟩?",
+                        text: "Change illa sir, PhonePe ⟨māḍōṇa⟩?",
                         effect: { wallet: -150, respect: 10 },
                         next: "level_complete"
                     },
                     {
-                        text: "⟨Nandri⟩ anna. Change thagoli.",
+                        text: "⟨Nandri⟩ anna. Change eduthukkonga.",
                         effect: { respect: 15 },
                         next: "level_complete"
                     },
@@ -363,12 +363,12 @@ export const LEVELS = {
                         next: "refund_negotiation"
                     },
                     {
-                        text: "Auto stop aythu? ⟨Help venuma⟩?",
+                        text: "Auto stop aachu? ⟨Help venuma⟩?",
                         effect: { respect: 5, patience: 5 },
                         next: "refund_negotiation"
                     },
                     {
-                        text: "Ayyo! Rajinikanth avru ididre sari madthidru!",
+                        text: "Ayyo! Rajinikanth avru ididre sari pannirpanga!",
                         effect: { respect: 30, patience: 20 },
                         next: "refund_negotiation"
                     }
@@ -376,7 +376,7 @@ export const LEVELS = {
             },
             refund_negotiation: {
                 speaker: "Shankar Anna",
-                text: "Engine dead saar. Full fare kodi mathu service charge beku.",
+                text: "Engine dead sir. Full fare kudunga, apram service charge venum.",
                 choices: [
                     {
                         text: "I’m not paying! You didn't drop me.",
@@ -385,7 +385,7 @@ export const LEVELS = {
                         next: "level_complete"
                     },
                     {
-                        text: "Anna, ⟨nyayama pesunga⟩. Half fare thagoli.",
+                        text: "Anna, ⟨nyayama pesunga⟩. Half fare eduthukkonga.",
                         effect: { respect: 20, wallet: -75 },
                         next: "level_complete"
                     },
@@ -414,23 +414,23 @@ export const LEVELS = {
                 text: "(Leaning against the auto, ignoring everyone)",
                 choices: [
                     {
-                        text: "Are you free? OMR ⟨vaanga⟩. Meter haaki.",
+                        text: "Are you free? OMR ⟨vaanga⟩. Meter podunga.",
                         isEnglish: true,
                         effect: { respect: -20, patience: -15 },
                         next: "surcharge_negotiation"
                     },
                     {
-                        text: "⟨Vanakkam⟩ Anna, OMR bartira? Urgent ide.",
+                        text: "⟨Vanakkam⟩ Anna, OMR varingala? Urgent ide.",
                         effect: { respect: 20, patience: 15 },
                         next: "surcharge_negotiation"
                     },
                     {
-                        text: "OMR-aa? ⟨Meter podu⟩ madi banni.",
+                        text: "OMR-aa? ⟨Meter podu⟩ pottu vaanga.",
                         effect: { respect: 5, patience: 5 },
                         next: "surcharge_negotiation"
                     },
                     {
-                        text: "OMR? One-and-half... bartira?",
+                        text: "OMR? One-and-half... varingala?",
                         effect: { respect: 25, patience: 20, wallet: -50 },
                         next: "surcharge_negotiation"
                     }
@@ -438,7 +438,7 @@ export const LEVELS = {
             },
             surcharge_negotiation: {
                 speaker: "Manju",
-                text: "200 kodi flat. Empty return ide, traffic ide.",
+                text: "200 kudunga flat. Empty return irukku, traffic irukku.",
                 choices: [
                     {
                         text: "Ridiculous! I'll check Uber.",
@@ -452,12 +452,12 @@ export const LEVELS = {
                         next: "level_complete"
                     },
                     {
-                        text: "One-fifty koddthini. ⟨Vaanga polam⟩.",
+                        text: "One-fifty kudukkuren. ⟨Vaanga polam⟩.",
                         effect: { respect: 10, wallet: -150 },
                         next: "level_complete"
                     },
                     {
-                        text: "Anna, extra 30 koddthini. ⟨Polam⟩.",
+                        text: "Anna, extra 30 kudukkuren. ⟨Polam⟩.",
                         effect: { respect: 20, wallet: -180 },
                         next: "level_complete"
                     }
@@ -473,7 +473,7 @@ export const LEVELS = {
         dialogue: {
             engagement: {
                 speaker: "Gowda",
-                text: "Thumbā ⟨mazhai⟩ barthide. Manege hogabeku.",
+                text: "Romba ⟨mazhai⟩ peyyudhu. Veettukku ⟨poganum⟩.",
                 choices: [
                     {
                         text: "Please stop! Emergency! I'll pay double!",
@@ -500,7 +500,7 @@ export const LEVELS = {
             },
             humanity_check: {
                 speaker: "Gowda",
-                text: "(Arrival at Hospital) Meter says 120. ⟨Banni⟩ saar.",
+                text: "(Arrival at Hospital) Meter says 120. ⟨Vaanga⟩ sir.",
                 choices: [
                     {
                         text: "Here is 240 as promised. ⟨Nandri⟩.",
@@ -509,7 +509,7 @@ export const LEVELS = {
                         next: "level_complete"
                     },
                     {
-                        text: "Anna, neevu devru thara bandri. 300 thagoli.",
+                        text: "Anna, neevu devru thara bandri. 300 eduthukkonga.",
                         effect: { respect: 60, wallet: -300 },
                         next: "level_complete"
                     },
@@ -519,7 +519,7 @@ export const LEVELS = {
                         next: "level_complete"
                     },
                     {
-                        text: "Anna, Rajinikanth thara help madidri. ⟨Nandri⟩.",
+                        text: "Anna, Rajinikanth thara help pannirkinga. ⟨Nandri⟩.",
                         effect: { respect: 50, wallet: -120 },
                         next: "level_complete"
                     }

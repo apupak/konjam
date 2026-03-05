@@ -152,6 +152,8 @@ export async function syncProgressToFirestore() {
             lastSynced: new Date().toISOString()
         }, { merge: true });
         console.log("[KONJAM] All useful data synced to Firestore");
+        // Dispatch global event for iframes (games) to listen to
+        window.dispatchEvent(new CustomEvent('konjam-data-synced', { detail: 'completed' }));
     } catch (e) {
         console.error("Error syncing to Firestore:", e);
     }

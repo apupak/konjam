@@ -121,6 +121,7 @@ function loadGame() {
     if (saved) {
         const parsed = JSON.parse(saved);
         Object.assign(state, parsed);
+        console.log("[Adjust Pannunga] State loaded:", state);
     }
 }
 
@@ -431,3 +432,16 @@ window.playGameAudio = function (filename) {
 };
 
 window.addEventListener('load', init);
+
+// FIX: Race condition - Listen for cloud sync completion to refresh game state
+const refreshOnSync = () => {
+    console.log("[Adjust Pannunga] Cloud data synced, reloading state...");
+    loadGame();
+    updateUI();
+    updateBackground();
+};
+
+window.addEventListener('konjam-data-synced', refreshOnSync);
+if (window !== window.parent) {
+    window.parent.addEventListener('konjam-data-synced', refreshOnSync);
+}

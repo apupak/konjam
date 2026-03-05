@@ -5,7 +5,7 @@ hide:
   - header
   - footer
 title: Suffix Station
-description: Master Kannada word-building in this time-attack grammar game!
+description: Master Tamil word-building in this time-attack grammar game!
 image: assets/img/social/og_suffix_station.jpg
 ---
 

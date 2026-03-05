@@ -121,6 +121,7 @@ function loadGame() {
     if (saved) {
         const parsed = JSON.parse(saved);
         Object.assign(state, parsed);
+        console.log("[Meter Podu] State loaded:", state);
     }
 }
 
@@ -455,7 +456,7 @@ function startNextLevel() {
 }
 
 function shareResult(platform, rank, level) {
-    const text = `🛺 I just survived ${level} levels of Namma Chennai Traffic in the Meter-Podu game! \n\nMy Rank: ${rank}\n\nCan you negotiate like a pro? Try it on KONJAM.org! #KONJAM #ChennaiTraffic #MeterHaaki`;
+    const text = `🛺 I just survived ${level} levels of Namma Chennai Traffic in the Meter-Podu game! \n\nMy Rank: ${rank}\n\nCan you negotiate like a pro? Try it on KONJAM.org! #KONJAM #ChennaiTraffic #MeterPodu`;
     const url = "https://konjam.org/games/auto-rickshaw/";
     const fullMessage = `${text} \n\n${url}`;
 
@@ -485,3 +486,16 @@ window.playGameAudio = function (filename) {
 
 // Start the game on load
 window.addEventListener('load', init);
+
+// FIX: Race condition - Listen for cloud sync completion to refresh game state
+const refreshOnSync = () => {
+    console.log("[Meter Podu] Cloud data synced, reloading state...");
+    loadGame();
+    updateUI();
+    updateBackground();
+};
+
+window.addEventListener('konjam-data-synced', refreshOnSync);
+if (window !== window.parent) {
+    window.parent.addEventListener('konjam-data-synced', refreshOnSync);
+}

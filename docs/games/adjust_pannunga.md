@@ -4,7 +4,7 @@ image: assets/img/social/og_adjust_pannunga.jpg
 ---
 # Adjust Pannunga: Everyday Scenarios
 
-Navigate everyday Chennai logistics—from negotiating rent and dealing with BESCOM to bargaining with street vendors—all in Kannada. Put your social currency to the test!
+Navigate everyday Chennai logistics—from negotiating rent and dealing with TNEB to bargaining with street vendors—all in Tamil. Put your social currency to the test!
 
 <div class="game-frame-container" style="width: 100%; max-width: 500px; margin: 1rem auto; height: 800px; overflow: hidden; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); background: #000; border: 1px solid rgba(255, 255, 255, 0.1);">
     <iframe src="../play_adjust_pannunga/" style="width: 100%; height: 100%; border: none;"></iframe>

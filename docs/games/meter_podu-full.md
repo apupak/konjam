@@ -4,8 +4,8 @@ hide:
   - toc
   - header
   - footer
-title: Meter Haaki
-description: Play Meter Haaki — negotiate auto fares in Kannada!
+title: Meter Podu
+description: Play Meter Podu — negotiate auto fares in Tamil!
 image: assets/img/social/og_meter_podu.jpg
 ---
 
