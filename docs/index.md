@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 @keyframes blink { 50% { border-color: transparent; } }
 </style>
 
-Vanakkam! Welcome to **KONJAM** (**K**nowledge **O**f **N**ative **J**argon **A**nd **M**adras — and yes, we totally forced that backronym 🙃).
+Vanakkam! Welcome to **KONJAM** (**K**nowledge **O**f **N**ative **J**argon **A**nd **M**annerisms — and yes, we totally forced that backronym 🙃).
 
 ![KONJAM Hero Illustration](assets/img/hero.png){: .floating-hero }
 
